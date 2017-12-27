@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+  meta(charset="UTF-8")
+  title Document
+  link(rel="stylesheet", href="style.css")
+body
+  .workspace
+    .pmCtrlBox
+      table
+        col(width="35%")
+        col(width="15%")
+        col
+        tr
+          td
+            label(for="pmLv") PM Level:
+          td
+            input#pmLv(type="number" min="1" max="40" step="0.5"
+              value="30"
+              data-update="lv"
+              data-sync="pmLv--range")
+          td
+            input#pmLv--range(type="range" min="1" max="40" step="0.5"
+              value="30"
+              data-update="lv"
+              data-sync="pmLv")
+
+        -
+          var ivTypes = [
+            { type: 'atk', title: 'attack' },
+            { type: 'def', title: 'defense' },
+            { type: 'sta', title: 'stamina' }
+          ];
+
+        each i in ivTypes
+          tr
+            td
+              label(for=`iv-${i.type}`)= `${i.title}:`
+            td
+              input(type="number" min="0" max="15" value="15"
+                id=`iv-${i.type}`
+                data-update="iv"
+                data-type=i.type
+                data-sync=`iv-${i.type}--range`)
+            td
+              input(type="range" min="0" max="15" value="15"
+                id=`iv-${i.type}--range`
+                data-update="iv"
+                data-type=i.type
+                data-sync=`iv-${i.type}`)
+
+        tr
+          td IV
+          td.pmIV(colspan=2)
+    ul.pmList
+  script(src="script.js")

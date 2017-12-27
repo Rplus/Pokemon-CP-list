@@ -1,0 +1,31 @@
+:root {
+  --iv-percentage: 100; }
+
+.workspace {
+  max-width: 30rem;
+  margin: 0 auto; }
+
+.pmIV::before {
+  content: counter(iv-percentage) "%";
+  counter-reset: iv-percentage var(--iv-percentage); }
+
+.pmList {
+  list-style: none; }
+
+.pm_cp::before {
+  content: "== " counter(cp) " ==";
+  counter-reset: cp var(--pm-cp) hp var(--pm-hp); }
+
+.pm_info {
+  font-family: monospace; }
+  .pm_info::after {
+    content: attr(data-type) " A_" attr(data-atk) " D_" attr(data-def) " S_" attr(data-sta); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=style.css.map */
