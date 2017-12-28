@@ -4,9 +4,34 @@ if ('serviceWorker' in navigator) {
 
 const toJson = (d) => d.json();
 
+// src: http://hackll.com/2015/11/19/debounce-and-throttle/
+const throttle = (fn, threshhold = 250) => {
+  let last;
+  let timer;
+
+  return function() {
+    let context = this;
+    let args = arguments;
+
+    let now = +new Date();
+
+    if (last && now < last + threshhold) {
+      clearTimeout(timer);
+
+      timer = setTimeout(() => {
+        last = now;
+        fn.apply(context, args);
+      }, threshhold);
+    } else {
+      last = now;
+      fn.apply(context, args);
+    }
+  }
+};
+
 const updateIv = (iv = window.iv) => {
   let percentage = ((iv.atk + iv.def + iv.sta) * 100 / 45).toFixed();
-  elm.root.style.setProperty('--iv-percentage', percentage);
+  elm.pmCtrlBox.style.setProperty('--iv-percentage', percentage);
 };
 
 const calPmData = (pm, iv = window.iv, lv = window.lv) => {
@@ -39,7 +64,7 @@ window.lv = elm.pmLv.value * 1;
 updateIv();
 
 // change data
-elm.pmCtrlBox.addEventListener('input', (e) => {
+elm.pmCtrlBox.addEventListener('input', throttle((e) => {
   let _target = e.target;
   if (_target.dataset.sync) {
     elm[_target.dataset.sync].value = _target.value;
@@ -52,19 +77,25 @@ elm.pmCtrlBox.addEventListener('input', (e) => {
   }
 
   updatePmData();
-});
+}, 300));
 
 const createPmHTML = (pm) => {
+  let index = pm.number - 1;
+  let row = ~~(index / colCount);
+  let col = index % colCount;
   let {cp, hp} = calPmData(pm);
+  let typeHtml = pm.field_pokemon_type.split(', ').map(type => `<div class="pm_type pm_type--${type}"></div>`).join('');
   return `
     <li class="pm"
       data-type="${pm.field_pokemon_type}"
       data-maxcp="${pm.cp}"
       style="
+        --pm-col: ${col};
+        --pm-row: ${row};
         --pm-cp: var(--pm-${pm.number}-cp);
         --pm-hp: var(--pm-${pm.number}-hp);"
     >
-      <div class="pm_name">#${pm.number} ${pm.title_1}</div>
+      <div class="pm_name" data-podex=${pm.number}>${pm.title_1}</div>
       <div class="pm_img"></div>
       <div class="pm_cp" data-max-cp=pm.cp></div>
       <div class="pm_info"
@@ -73,6 +104,7 @@ const createPmHTML = (pm) => {
         data-def="${pm.def}"
         data-sta="${pm.sta}"
       ></div>
+      <div class="pm_types">${typeHtml}</div>
     </li>`;
 };
 
@@ -83,14 +115,20 @@ Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
   let [pms, levelMultiplier] = datas;
   window.pms = pms; // DEBUG
   window.levelMultiplier = levelMultiplier;
+  window.colCount = Number(window.getComputedStyle(document.documentElement).getPropertyValue('--sprite-grid-col'))
+  let pmTypes = [];
   let html = pms.map(pm => {
+    pmTypes = pmTypes.concat(pm.field_pokemon_type.split(', '));
     ['atk', 'def', 'sta'].forEach(i => {
       pm[i] = pm[i] * 1;
     });
     return createPmHTML(pm);
   });
-  elm.pmList.innerHTML = html;
+  elm.pmList.innerHTML = html.join('');
 
+  let uniPmTypes = [...new Set(pmTypes)];
+
+  console.log(uniPmTypes);
   console.dir(pms[0]);
   updatePmData();
 });

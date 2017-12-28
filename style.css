@@ -1,25 +1,135 @@
 :root {
-  --iv-percentage: 100; }
+  --iv-percentage: 100;
+  --sprite-url: url("img/sprite.png");
+  --sprite-grid-col: 25;
+  --sprite-grid-row: 16;
+  --pm-col: 0;
+  --pm-row: 0;
+  --img-size: 80px; }
 
 .workspace {
-  max-width: 30rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 1vmin; }
 
 .pmIV::before {
   content: counter(iv-percentage) "%";
   counter-reset: iv-percentage var(--iv-percentage); }
 
 .pmList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(160px, 1fr))[auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-gap: 2vmin 1vmin;
   list-style: none; }
 
-.pm_cp::before {
-  content: "== " counter(cp) " ==";
-  counter-reset: cp var(--pm-cp) hp var(--pm-hp); }
+.pm {
+  position: relative;
+  padding-top: 1em;
+  transition: transform .3s; }
+  .pm:hover * {
+    opacity: unset; }
+
+.pm_img {
+  width: var(--img-size);
+  height: var(--img-size);
+  margin: 0 auto;
+  background-image: var(--sprite-url);
+  background-size: calc(var(--sprite-grid-col) * var(--img-size)) calc(var(--sprite-grid-row) * var(--img-size));
+  background-repeat: no-repeat;
+  background-position: calc(var(--pm-col) * var(--img-size) * -1) calc(var(--pm-row) * var(--img-size) * -1);
+  transition: opacity .3s;
+  opacity: .3; }
+
+.pm_cp {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .pm_cp::before {
+    content: counter(cp);
+    counter-reset: cp var(--pm-cp) hp var(--pm-hp);
+    font-size: larger;
+    font-family: monospace;
+    font: 100 calc(1em + 2vmin) monospace; }
+
+.pm_name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: .5em;
+  white-space: pre-wrap;
+  text-align: right;
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.75);
+  opacity: .3; }
+  .pm_name::after {
+    content: "\a#" attr(data-podex) " "; }
 
 .pm_info {
-  font-family: monospace; }
+  white-space: pre-line;
+  font-family: monospace;
+  text-align: right;
+  color: rgba(0, 0, 0, 0.3);
+  opacity: .5; }
   .pm_info::after {
-    content: attr(data-type) " A_" attr(data-atk) " D_" attr(data-def) " S_" attr(data-sta); }
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: attr(data-atk) " A" "\a" attr(data-def) " D" "\a" attr(data-sta) " S"; }
+
+.pm_types {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: .5; }
+  .pm:hover .pm_types {
+    opacity: 1; }
+
+.pm_type {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box; }
+  .pm_type--Normal {
+    background-image: url("img/Badge_Type_Normal_01.png"); }
+  .pm_type--Fighting {
+    background-image: url("img/Badge_Type_Fighting_01.png"); }
+  .pm_type--Flying {
+    background-image: url("img/Badge_Type_Flying_01.png"); }
+  .pm_type--Poison {
+    background-image: url("img/Badge_Type_Poison_01.png"); }
+  .pm_type--Ground {
+    background-image: url("img/Badge_Type_Ground_01.png"); }
+  .pm_type--Rock {
+    background-image: url("img/Badge_Type_Rock_01.png"); }
+  .pm_type--Bug {
+    background-image: url("img/Badge_Type_Bug_01.png"); }
+  .pm_type--Ghost {
+    background-image: url("img/Badge_Type_Ghost_01.png"); }
+  .pm_type--Steel {
+    background-image: url("img/Badge_Type_Steel_01.png"); }
+  .pm_type--Fire {
+    background-image: url("img/Badge_Type_Fire_01.png"); }
+  .pm_type--Water {
+    background-image: url("img/Badge_Type_Water_01.png"); }
+  .pm_type--Grass {
+    background-image: url("img/Badge_Type_Grass_01.png"); }
+  .pm_type--Electric {
+    background-image: url("img/Badge_Type_Electric_01.png"); }
+  .pm_type--Psychic {
+    background-image: url("img/Badge_Type_Psychic_01.png"); }
+  .pm_type--Ice {
+    background-image: url("img/Badge_Type_Ice_01.png"); }
+  .pm_type--Dragon {
+    background-image: url("img/Badge_Type_Dragon_01.png"); }
+  .pm_type--Dark {
+    background-image: url("img/Badge_Type_Dark_01.png"); }
+  .pm_type--Fairy {
+    background-image: url("img/Badge_Type_Fairy_01.png"); }
 
 *,
 *::before,
