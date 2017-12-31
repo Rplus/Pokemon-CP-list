@@ -88,6 +88,8 @@ const createPmHTML = (pm) => {
   let col = index % colCount;
   let {cp, hp} = calPmData(pm);
   let typeHtml = pm.field_pokemon_type.split(', ').map(type => `<div class="pm_type pm_type--${type}"></div>`).join('');
+  pm.hp = hp;
+  pm.tank = pm.sta * pm.def;
   return `
     <li class="pm"
       data-type="${pm.field_pokemon_type}"
@@ -97,6 +99,7 @@ const createPmHTML = (pm) => {
         --pm-atk: ${pm.atk};
         --pm-def: ${pm.def};
         --pm-sta: ${pm.sta};
+        --pm-tank: ${pm.tank};
         --pm-col: ${col};
         --pm-row: ${row};
         --pm-cp: var(--pm-${pm.number}-cp);
@@ -184,6 +187,7 @@ Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
 
   updatePmData();
   updatePokedexFilter();
+
 });
 
 const updatePokedexFilter = () => {

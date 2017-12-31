@@ -196,6 +196,8 @@ $sort-type: (
   ('sort-by-def-▼' --pm-def -1),
   ('sort-by-sta-▲' --pm-sta 1),
   ('sort-by-sta-▼' --pm-sta -1),
+  ('sort-by-tank-▲' --pm-tank 1),
+  ('sort-by-tank-▼' --pm-tank -1),
 );
 @each $typeG in $sort-type {
   $type: nth($typeG, 1);
