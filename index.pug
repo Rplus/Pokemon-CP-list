@@ -6,7 +6,20 @@ head
   meta(name="viewport" content="width=device-width, initial-scale=1")
   link(rel="stylesheet", href="style.css")
 body
+
+  - var sortTypes = ['id', 'cp', 'atk', 'def', 'sta'];
+
+
   .workspace
+
+    input(type="checkbox" class="sr-only" id="show-ads")
+    input(type="checkbox" class="sr-only" checked id="show-types")
+
+    a#go-to-top(href="#") go to top
+
+    each type in sortTypes
+      input(type="radio" class="sr-only" name="sort-by" id=`sort-by-${type}-▲` value="▲")
+      input(type="radio" class="sr-only" name="sort-by" id=`sort-by-${type}-▼` value="▼")
     .pmCtrlBox
       table
         col(width="35%")
@@ -53,5 +66,31 @@ body
         tr
           td IV
           td.pmIV(colspan=2)
+      .pmSortBox
+        each type in sortTypes
+          .pmSortGroup
+            label(class="pmSort" for=`sort-by-${type}-▲` data-anti-dir="▲")= type
+            label(class="pmSort" for=`sort-by-${type}-▼` data-anti-dir="▼")= type
+      .pmFilter
+    style.pmCustomStyle
     ul.pmList
+
+    footer.footer
+      label(class="ctrl-info" for="show-ads") show ADS
+      label(class="ctrl-info" for="show-types") show types
+
   script(src="script.js")
+
+  template.pmFilter__header--temp
+    .pmFilter__header
+      button(data-hook="js" data-type="none") none
+      | filter by types
+      button(data-hook="js" data-type="all") all
+  template.pokedexRange--temp
+    .pokedexRange
+      h3.pokedexRange__header filter by pokedex
+      label(for="pokedexRange1" style="--value: var(--pokedex-range1)")
+        input(id="pokedexRange1" data-pokedex-range="1" type="range" min="1")
+      label(for="pokedexRange2" style="--value: var(--pokedex-range2)")
+        input(id="pokedexRange2" data-pokedex-range="2" type="range" min="1")
+      style

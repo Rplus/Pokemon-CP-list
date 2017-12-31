@@ -22,7 +22,8 @@ const PRECACHE_URLS = [
   'index.html',
   './', // Alias for index.html
   'style.css',
-  'hant.json',
+  'levelMultiplier.json',
+  'pms.json',
   'script.js'
 ];
 

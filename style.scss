@@ -1,18 +1,25 @@
 $types: ('Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy');
 
+%matched-type {
+  display: unset;
+}
+
+%activity-itrm {
+  --activity: 1;
+}
+
 :root {
   --iv-percentage: 100;
-  --sprite-url: url('img/sprite.png');
   --sprite-grid-col: 25;
   --sprite-grid-row: 16;
-  --pm-col: 0;
-  --pm-row: 0;
   --img-size: 80px;
+  --pm-sort-by: var(--pm-pokedex);
+  --pm-sort-dir: -1;
 }
 
 .workspace {
   margin: 0 auto;
-  padding: 1vmin;
+  padding: 1vmin calc(1vmin + .5em);
 }
 
 .pmIV {
@@ -25,7 +32,7 @@ $types: ('Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Gho
 .pmList {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  grid-gap: 2vmin 1vmin;
+  grid-gap: calc(2vmin + .5em) calc(1vmin + .5em);
   list-style: none;
 }
 
@@ -33,6 +40,8 @@ $types: ('Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Gho
   position: relative;
   padding-top: 1em;
   transition: transform .3s;
+  display: none;
+  order: calc(var(--pm-sort-by) * var(--pm-sort-dir));
 
   &:hover {
     * {
@@ -45,7 +54,7 @@ $types: ('Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Gho
   width: var(--img-size);
   height: var(--img-size);
   margin: 0 auto;
-  background-image: var(--sprite-url);
+  background-image: url('sprite.png');
   background-size:
     calc(var(--sprite-grid-col) * var(--img-size))
     calc(var(--sprite-grid-row) * var(--img-size));
@@ -88,25 +97,28 @@ $types: ('Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Gho
 }
 
 .pm_info {
-  white-space: pre-line;
-  font-family: monospace;
-  text-align: right;
-  color: rgba(#000, .3);
   opacity: .5;
 
   &::after {
     position: absolute;
-    right: 0;
+    left: 0;
     bottom: 0;
-    content: attr(data-atk) ' A'
-        '\A' attr(data-def) ' D'
-        '\A' attr(data-sta) ' S';
+    white-space: pre-line;
+    font-family: monospace;
+    font-size: smaller;
+    text-align: right;
+    color: rgba(#000, .5);
+    content:
+      attr(data-hp) ' HP'
+      '\A' attr(data-atk) ' A '
+      '\A' attr(data-def) ' D '
+      '\A' attr(data-sta) ' S.';
   }
 }
 
 .pm_types {
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
   display: flex;
   opacity: .5;
@@ -126,8 +138,297 @@ $types: ('Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Gho
 
   @for $i from 1 through length($types) {
     &--#{nth($types, $i)} {
-      background-image: url('img/Badge_Type_#{nth($types, $i)}_01.png');
+      background-image: url('type_#{nth($types, $i)}.png');
     }
+  }
+}
+
+
+// sort
+.pmSortBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+  text-align: center;
+
+  &::before {
+    content: 'sort by';
+    margin-right: 1em;
+    font-style: italic;
+    color: rgba(#000, .5);
+  }
+}
+
+.pmSortGroup {
+  position: relative;
+}
+
+.pmSort {
+  position: relative;
+  z-index: calc(1 - var(--activity, 0));
+  padding: 0 .5em;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(#000, .2);
+  background-color: #{'rgba(255, 255, 200, var(--activity, 0))'};
+  text-transform: uppercase;
+  opacity: var(--activity, .3);
+
+  &::after {
+    content: attr(data-anti-dir);
+    opacity: var(--activity, 0);
+  }
+
+  + #{&} {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+$sort-type: (
+  ('sort-by-id-▲' --pm-pokedex 1),
+  ('sort-by-id-▼' --pm-pokedex -1),
+  ('sort-by-cp-▲' --pm-cp 1),
+  ('sort-by-cp-▼' --pm-cp -1),
+  ('sort-by-atk-▲' --pm-atk 1),
+  ('sort-by-atk-▼' --pm-atk -1),
+  ('sort-by-def-▲' --pm-def 1),
+  ('sort-by-def-▼' --pm-def -1),
+  ('sort-by-sta-▲' --pm-sta 1),
+  ('sort-by-sta-▼' --pm-sta -1),
+);
+@each $typeG in $sort-type {
+  $type: nth($typeG, 1);
+  input[name="sort-by"][id="#{$type}"]:checked {
+    ~ .pmCtrlBox .pmSort[for="#{$type}"] {
+      @extend %activity-itrm;
+    }
+
+    ~ .pmList .pm {
+      --pm-sort-by: var(nth($typeG, 2));
+      --pm-sort-dir: nth($typeG, 3);
+    }
+  }
+}
+
+// Filter
+.pmCtrlBox {
+  max-width: 50rem;
+  margin: 0 auto;
+
+  table {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  > * {
+    margin-bottom: 2em;
+  }
+}
+
+.pmFilter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: start;
+}
+
+.pmFilter__header {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 1.5em;
+  font-style: italic;
+  color: rgba(#000, .5);
+
+  button {
+    padding: 0 .5em;
+    text-transform: uppercase;
+  }
+}
+
+.pmFilter__label {
+  position: relative;
+  flex-basis: 6.5em;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 1em;
+  transform-origin: 0 0;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.8);
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin-right: .2em;
+    // background-image: var(--bgi);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: var(--activity, .3);
+    filter: contrast(var(--activity, 0));
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin: -.5em;
+    background-color: rgba(#ff9, .5);
+    opacity: var(--activity, 0);
+  }
+}
+
+@for $i from 1 through length($types) {
+  $type: nth($types, $i);
+
+  .pmFilter__label[for="ck-#{$type}"]::before {
+    background-image: url('type_#{nth($types, $i)}.png');
+  }
+
+  .pmFilter__checkbox[id="ck-#{$type}"]:checked {
+    ~ .pmCtrlBox .pmFilter__label[for="ck-#{$type}"] {
+      @extend %activity-itrm;
+    }
+
+    ~ .pmList .pm[data-type*="#{$type}"] {
+      @extend %matched-type;
+    }
+  }
+}
+
+.pokedexRange {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+  text-align: center;
+  border-top: 1px dashed rgba(#000, .1);
+
+  > label {
+    position: relative;
+    display: block;
+    width: 100%;
+    counter-reset: value var(--value);
+    order: var(--value);
+    background-image:
+      linear-gradient(
+        to right,
+        rgba(#000, .05) 0,
+        rgba(#000, 0) 100% * 151 / 386,
+        rgba(#000, .05) 0,
+        rgba(#000, 0) 100% * 251 / 386,
+        rgba(#000, .05) 0,
+        rgba(#000, 0)
+      );
+
+    &::before {
+      content: counter(value);
+      position: absolute;
+      right: 100%;
+      margin-right: .5em;
+    }
+  }
+
+  input {
+    width: 100%;
+  }
+
+  &__header {
+    position: relative;
+    margin: 0;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    font-weight: 500;
+    font-size: 1em;
+    font-style: italic;
+    color: rgba(#000, .5);
+
+    &::before,
+    &::after {
+      content: '~ 151';
+      position: absolute;
+      top: 2em;
+      right: 100% * (386 - 151) / 386;
+      font-size: smaller;
+      font-style: normal;
+      opacity: .5;
+    }
+
+    &::after {
+      content: '~ 251';
+      right: 100% * (386 - 251) / 386;
+    }
+  }
+}
+
+.footer {
+  padding: 3em;
+}
+
+.ctrl-info {
+  position: relative;
+  padding-left: 1.25em;
+  margin-right: 1em;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 1em;
+    height: 1em;
+    box-shadow: inset 0 0 1px 1px rgba(#000, .5);
+  }
+
+  &::before {
+    opacity: var(--activity, 0);
+    box-shadow:
+      inset 0 0 1px 1px rgba(#000, .5),
+      inset 0 0 0 4px #fff,
+      inset 0 0 0 10px rgba(#000, .5);
+  }
+
+  input[id="show-ads"]:checked ~ .footer &[for="show-ads"],
+  input[id="show-types"]:checked ~ .footer &[for="show-types"] {
+    --activity: 1;
+  }
+}
+
+input[id="show-ads"]:not(:checked) ~ .pmList .pm_info,
+input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
+  display: none;
+}
+
+#go-to-top {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: .5em 1em;
+  text-transform: capitalize;
+  background-color: #ffc;
+  opacity: .3;
+
+  &:hover {
+    opacity: 1;
   }
 }
 
@@ -138,4 +439,21 @@ $types: ('Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Gho
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.sr-only {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

@@ -8,6 +8,18 @@
 </head>
 <body>
   <div class="workspace">
+    <input class="sr-only" type="checkbox" id="show-ads"/>
+    <input class="sr-only" type="checkbox" checked="checked" id="show-types"/><a id="go-to-top" href="#">go to top</a>
+    <input class="sr-only" type="radio" name="sort-by" id="sort-by-id-▲" value="▲"/>
+    <input class="sr-only" type="radio" name="sort-by" id="sort-by-id-▼" value="▼"/>
+    <input class="sr-only" type="radio" name="sort-by" id="sort-by-cp-▲" value="▲"/>
+    <input class="sr-only" type="radio" name="sort-by" id="sort-by-cp-▼" value="▼"/>
+    <input class="sr-only" type="radio" name="sort-by" id="sort-by-atk-▲" value="▲"/>
+    <input class="sr-only" type="radio" name="sort-by" id="sort-by-atk-▼" value="▼"/>
+    <input class="sr-only" type="radio" name="sort-by" id="sort-by-def-▲" value="▲"/>
+    <input class="sr-only" type="radio" name="sort-by" id="sort-by-def-▼" value="▼"/>
+    <input class="sr-only" type="radio" name="sort-by" id="sort-by-sta-▲" value="▲"/>
+    <input class="sr-only" type="radio" name="sort-by" id="sort-by-sta-▼" value="▼"/>
     <div class="pmCtrlBox">
       <table>
         <col width="35%"/>
@@ -62,8 +74,54 @@
           <td class="pmIV" colspan="2"></td>
         </tr>
       </table>
+      <div class="pmSortBox">
+        <div class="pmSortGroup">
+          <label class="pmSort" for="sort-by-id-▲" data-anti-dir="▲">id</label>
+          <label class="pmSort" for="sort-by-id-▼" data-anti-dir="▼">id</label>
+        </div>
+        <div class="pmSortGroup">
+          <label class="pmSort" for="sort-by-cp-▲" data-anti-dir="▲">cp</label>
+          <label class="pmSort" for="sort-by-cp-▼" data-anti-dir="▼">cp</label>
+        </div>
+        <div class="pmSortGroup">
+          <label class="pmSort" for="sort-by-atk-▲" data-anti-dir="▲">atk</label>
+          <label class="pmSort" for="sort-by-atk-▼" data-anti-dir="▼">atk</label>
+        </div>
+        <div class="pmSortGroup">
+          <label class="pmSort" for="sort-by-def-▲" data-anti-dir="▲">def</label>
+          <label class="pmSort" for="sort-by-def-▼" data-anti-dir="▼">def</label>
+        </div>
+        <div class="pmSortGroup">
+          <label class="pmSort" for="sort-by-sta-▲" data-anti-dir="▲">sta</label>
+          <label class="pmSort" for="sort-by-sta-▼" data-anti-dir="▼">sta</label>
+        </div>
+      </div>
+      <div class="pmFilter"></div>
     </div>
+    <style class="pmCustomStyle"></style>
     <ul class="pmList"></ul>
+    <footer class="footer">
+      <label class="ctrl-info" for="show-ads">show ADS</label>
+      <label class="ctrl-info" for="show-types">show types</label>
+    </footer>
   </div>
   <script src="script.js"></script>
+  <template class="pmFilter__header--temp">
+    <div class="pmFilter__header">
+      <button data-hook="js" data-type="none">none</button>filter by types
+      <button data-hook="js" data-type="all">all</button>
+    </div>
+  </template>
+  <template class="pokedexRange--temp">
+    <div class="pokedexRange">
+      <h3 class="pokedexRange__header">filter by pokedex</h3>
+      <label for="pokedexRange1" style="--value: var(--pokedex-range1)">
+        <input id="pokedexRange1" data-pokedex-range="1" type="range" min="1"/>
+      </label>
+      <label for="pokedexRange2" style="--value: var(--pokedex-range2)">
+        <input id="pokedexRange2" data-pokedex-range="2" type="range" min="1"/>
+      </label>
+      <style></style>
+    </div>
+  </template>
 </body>
