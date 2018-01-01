@@ -44,22 +44,25 @@ const calPmData = (pm, iv = window.iv, lv = window.lv) => {
   };
 };
 
+window.$ = document.querySelector.bind(document);
+window.$$ = document.querySelectorAll.bind(document);
+
 const elm = {
   root: document.documentElement,
-  pmCtrlBox: document.querySelector('.pmCtrlBox'),
-  pmList: document.querySelector('.pmList'),
-  pmFilter: document.querySelector('.pmFilter'),
-  pmCustomStyle: document.querySelector('.pmCustomStyle'),
-  'pmLv': document.querySelector('#pmLv'),
-  'pmLv--range': document.querySelector('#pmLv--range'),
+  pmCtrlBox: $('.pmCtrlBox'),
+  pmList: $('.pmList'),
+  pmFilter: $('.pmFilter'),
+  pmCustomStyle: $('.pmCustomStyle'),
+  'pmLv': $('#pmLv'),
+  'pmLv--range': $('#pmLv--range'),
 };
 
 window.iv = { atk: 0, def: 0, sta: 0 };
 window.lv = elm.pmLv.value * 1;
 
 ['atk', 'def', 'sta'].forEach(i => {
-  elm[`iv-${i}`] = document.querySelector(`#iv-${i}`);
-  elm[`iv-${i}--range`] = document.querySelector(`#iv-${i}--range`);
+  elm[`iv-${i}`] = $(`#iv-${i}`);
+  elm[`iv-${i}--range`] = $(`#iv-${i}--range`);
   window.iv[i] = elm[`iv-${i}`].value * 1;
 });
 
@@ -136,7 +139,7 @@ const createFilter = () => {
 };
 
 const getTemplateHtml = (selector) => {
-  return document.querySelector(selector).innerHTML;
+  return $(selector).innerHTML;
 };
 
 // fetch data
@@ -166,17 +169,17 @@ Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
       updataTypeChecbox(e.target.dataset.type === 'none' ? false : true);
     }
   });
-  elm.pmTypeCheckboxs = document.querySelectorAll('.pmFilter__checkbox');
+  elm.pmTypeCheckboxs = $$('.pmFilter__checkbox');
 
-  document.querySelector('[name="sort-by"]').checked = true;
+  $('[name="sort-by"]').checked = true;
 
   // pokedex filter
   elm.pmCtrlBox.insertAdjacentHTML('beforeend', getTemplateHtml('.pokedexRange--temp'));
 
-  elm.pokedexRange = document.querySelector('.pokedexRange');
-  elm.pokedexRange1 = elm.pokedexRange.querySelector('#pokedexRange1');
-  elm.pokedexRange2 = elm.pokedexRange.querySelector('#pokedexRange2');
-  elm.pokedexRangeStyle = elm.pokedexRange.querySelector('style');
+  elm.pokedexRange = $('.pokedexRange');
+  elm.pokedexRange1 = $('#pokedexRange1');
+  elm.pokedexRange2 = $('#pokedexRange2');
+  elm.pokedexRangeStyle = $('style');
   elm.pokedexRange.addEventListener('input', updatePokedexFilter);
 
   // pokedex filter init
