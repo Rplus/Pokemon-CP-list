@@ -59,7 +59,7 @@ h1 {
   width: var(--img-size);
   height: var(--img-size);
   margin: 0 auto;
-  background-image: url('sprite.png');
+  background-image: url('img/sprite.png');
   background-size:
     calc(var(--sprite-grid-col) * var(--img-size))
     calc(var(--sprite-grid-row) * var(--img-size));
@@ -139,7 +139,7 @@ h1 {
 
   @for $i from 1 through length($types) {
     &--#{nth($types, $i)} {
-      background-image: url('type_#{nth($types, $i)}.png');
+      background-image: url('img/type_#{nth($types, $i)}.png');
     }
   }
 }
@@ -297,7 +297,7 @@ $sort-type: (
   $type: nth($types, $i);
 
   .pmFilter__label[for="ck-#{$type}"]::before {
-    background-image: url('type_#{nth($types, $i)}.png');
+    background-image: url('img/type_#{nth($types, $i)}.png');
   }
 
   .pmFilter__checkbox[id="ck-#{$type}"]:checked {
