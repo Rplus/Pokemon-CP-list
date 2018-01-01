@@ -1,6 +1,9 @@
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('service-worker.js');
+  // navigator.serviceWorker.register('service-worker.js');
 }
+
+window.$ = document.querySelector.bind(document);
+window.$$ = document.querySelectorAll.bind(document);
 
 const toJson = (d) => d.json();
 
@@ -29,12 +32,12 @@ const throttle = (fn, threshhold = 250) => {
   }
 };
 
-const updateIv = (iv = window.iv) => {
+const updateIv = (iv = window.ctrl.iv) => {
   let percentage = ((iv.atk + iv.def + iv.sta) * 100 / 45).toFixed();
   elm.pmCtrlBox.style.setProperty('--iv-percentage', percentage);
 };
 
-const calPmData = (pm, iv = window.iv, lv = window.lv) => {
+const calPmData = (pm, iv = window.ctrl.iv, lv = window.ctrl.lv) => {
   let mFactor = levelMultiplier[lv];
   let ADS = (pm.atk + iv.atk) * Math.pow((pm.def + iv.def) * (pm.sta + iv.sta), 0.5);
   let total = ADS * Math.pow(mFactor, 2.0);
@@ -44,10 +47,7 @@ const calPmData = (pm, iv = window.iv, lv = window.lv) => {
   };
 };
 
-window.$ = document.querySelector.bind(document);
-window.$$ = document.querySelectorAll.bind(document);
-
-const elm = {
+window.elm = {
   root: document.documentElement,
   pmCtrlBox: $('.pmCtrlBox'),
   pmList: $('.pmList'),
@@ -57,16 +57,16 @@ const elm = {
   'pmLv--range': $('#pmLv--range'),
 };
 
-window.iv = { atk: 0, def: 0, sta: 0 };
-window.lv = elm.pmLv.value * 1;
+window.ctrl = {
+  iv: { atk: 0, def: 0, sta: 0 },
+  lv: elm.pmLv.value * 1,
+};
 
 ['atk', 'def', 'sta'].forEach(i => {
   elm[`iv-${i}`] = $(`#iv-${i}`);
   elm[`iv-${i}--range`] = $(`#iv-${i}--range`);
-  window.iv[i] = elm[`iv-${i}`].value * 1;
+  window.ctrl.iv[i] = elm[`iv-${i}`].value * 1;
 });
-
-updateIv();
 
 // change data
 elm.pmCtrlBox.addEventListener('input', (e) => {
@@ -75,15 +75,46 @@ elm.pmCtrlBox.addEventListener('input', (e) => {
     elm[_target.dataset.sync].value = _target.value;
   }
   if (_target.dataset.update === 'iv') {
-    window.iv[_target.dataset.type] = _target.value * 1;
+    window.ctrl.iv[_target.dataset.type] = _target.value * 1;
     updateIv();
   } else if (_target.dataset.update === 'lv') {
-    window.lv = _target.value * 1;
+    window.ctrl.lv = _target.value * 1;
   }
 
-  // throttle(setTimeout(updatePmData, 60), 500)();
   throttle(updatePmData, 500)();
 });
+
+// fetch data
+let upstreamUrls = ['pms.json', 'levelMultiplier.json'];
+Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
+.then(datas => {
+  let [pms, levelMultiplier] = datas;
+  window.pms = pms; // DEBUG
+  window.levelMultiplier = levelMultiplier;
+  window.colCount = Number(window.getComputedStyle(document.documentElement).getPropertyValue('--sprite-grid-col'))
+
+  let pmHtml = pms.map(pm => {
+    ['atk', 'def', 'sta'].forEach(i => {
+      pm[i] = pm[i] * 1;
+    });
+    return createPmHTML(pm);
+  });
+  elm.pmList.innerHTML += pmHtml.join('');
+
+  // init sort-by value
+  $('[name="sort-by"]').checked = true;
+
+  initTypeFilter();
+  initPokedexFilter();
+
+  updateIv();
+  updatePmData();
+  updatePokedexFilter();
+});
+
+const getTemplateHtml = (selector) => {
+  return $(selector).innerHTML;
+};
 
 const createPmHTML = (pm) => {
   let index = pm.number - 1;
@@ -98,7 +129,7 @@ const createPmHTML = (pm) => {
       data-type="${pm.field_pokemon_type}"
       data-maxcp="${pm.cp}"
       style="
-        --pm-pokedex: ${pm.number * 1};
+        --pm-pokedex: ${pm.number};
         --pm-atk: ${pm.atk};
         --pm-def: ${pm.def};
         --pm-sta: ${pm.sta};
@@ -123,8 +154,6 @@ const createPmHTML = (pm) => {
 };
 
 const createFilter = () => {
-  let typeFilter__checkbox = [];
-  let typeFilter__label =[];
   let types = ['Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy'];
 
   return types.reduce((obj, type) => {
@@ -138,27 +167,7 @@ const createFilter = () => {
   }, { checkbox: [], label: [] });
 };
 
-const getTemplateHtml = (selector) => {
-  return $(selector).innerHTML;
-};
-
-// fetch data
-let upstreamUrls = ['pms.json', 'levelMultiplier.json'];
-Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
-.then(datas => {
-  let [pms, levelMultiplier] = datas;
-  window.pms = pms; // DEBUG
-  window.levelMultiplier = levelMultiplier;
-  window.colCount = Number(window.getComputedStyle(document.documentElement).getPropertyValue('--sprite-grid-col'))
-
-  let pmHtml = pms.map(pm => {
-    ['atk', 'def', 'sta'].forEach(i => {
-      pm[i] = pm[i] * 1;
-    });
-    return createPmHTML(pm);
-  });
-  elm.pmList.innerHTML += pmHtml.join('');
-
+const initTypeFilter = () => {
   // filters
   let filterHtml = createFilter();
   elm.pmCtrlBox.insertAdjacentHTML('beforebegin', filterHtml.checkbox.join(''));
@@ -170,10 +179,9 @@ Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
     }
   });
   elm.pmTypeCheckboxs = $$('.pmFilter__checkbox');
+};
 
-  $('[name="sort-by"]').checked = true;
-
-  // pokedex filter
+const initPokedexFilter = () => {
   elm.pmCtrlBox.insertAdjacentHTML('beforeend', getTemplateHtml('.pokedexRange--temp'));
 
   elm.pokedexRange = $('.pokedexRange');
@@ -182,16 +190,12 @@ Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
   elm.pokedexRangeStyle = $('style');
   elm.pokedexRange.addEventListener('input', updatePokedexFilter);
 
-  // pokedex filter init
+  // init pokedex filter value
   elm.pokedexRange1.value = elm.pokedexRange1.min;
   elm.pokedexRange1.max = pms.length;
   elm.pokedexRange2.max = pms.length;
   elm.pokedexRange2.value = pms.length;
-
-  updatePmData();
-  updatePokedexFilter();
-
-});
+};
 
 const updatePokedexFilter = () => {
   let pokedexFilter = [

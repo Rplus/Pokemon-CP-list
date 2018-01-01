@@ -1,2 +1,463 @@
-@charset "UTF-8";.pmFilter__checkbox[id=ck-Bug]:checked~.pmList .pm[data-type*=Bug],.pmFilter__checkbox[id=ck-Dark]:checked~.pmList .pm[data-type*=Dark],.pmFilter__checkbox[id=ck-Dragon]:checked~.pmList .pm[data-type*=Dragon],.pmFilter__checkbox[id=ck-Electric]:checked~.pmList .pm[data-type*=Electric],.pmFilter__checkbox[id=ck-Fairy]:checked~.pmList .pm[data-type*=Fairy],.pmFilter__checkbox[id=ck-Fighting]:checked~.pmList .pm[data-type*=Fighting],.pmFilter__checkbox[id=ck-Fire]:checked~.pmList .pm[data-type*=Fire],.pmFilter__checkbox[id=ck-Flying]:checked~.pmList .pm[data-type*=Flying],.pmFilter__checkbox[id=ck-Ghost]:checked~.pmList .pm[data-type*=Ghost],.pmFilter__checkbox[id=ck-Grass]:checked~.pmList .pm[data-type*=Grass],.pmFilter__checkbox[id=ck-Ground]:checked~.pmList .pm[data-type*=Ground],.pmFilter__checkbox[id=ck-Ice]:checked~.pmList .pm[data-type*=Ice],.pmFilter__checkbox[id=ck-Normal]:checked~.pmList .pm[data-type*=Normal],.pmFilter__checkbox[id=ck-Poison]:checked~.pmList .pm[data-type*=Poison],.pmFilter__checkbox[id=ck-Psychic]:checked~.pmList .pm[data-type*=Psychic],.pmFilter__checkbox[id=ck-Rock]:checked~.pmList .pm[data-type*=Rock],.pmFilter__checkbox[id=ck-Steel]:checked~.pmList .pm[data-type*=Steel],.pmFilter__checkbox[id=ck-Water]:checked~.pmList .pm[data-type*=Water]{display:unset}.pmFilter__checkbox[id=ck-Bug]:checked~.pmCtrlBox .pmFilter__label[for=ck-Bug],.pmFilter__checkbox[id=ck-Dark]:checked~.pmCtrlBox .pmFilter__label[for=ck-Dark],.pmFilter__checkbox[id=ck-Dragon]:checked~.pmCtrlBox .pmFilter__label[for=ck-Dragon],.pmFilter__checkbox[id=ck-Electric]:checked~.pmCtrlBox .pmFilter__label[for=ck-Electric],.pmFilter__checkbox[id=ck-Fairy]:checked~.pmCtrlBox .pmFilter__label[for=ck-Fairy],.pmFilter__checkbox[id=ck-Fighting]:checked~.pmCtrlBox .pmFilter__label[for=ck-Fighting],.pmFilter__checkbox[id=ck-Fire]:checked~.pmCtrlBox .pmFilter__label[for=ck-Fire],.pmFilter__checkbox[id=ck-Flying]:checked~.pmCtrlBox .pmFilter__label[for=ck-Flying],.pmFilter__checkbox[id=ck-Ghost]:checked~.pmCtrlBox .pmFilter__label[for=ck-Ghost],.pmFilter__checkbox[id=ck-Grass]:checked~.pmCtrlBox .pmFilter__label[for=ck-Grass],.pmFilter__checkbox[id=ck-Ground]:checked~.pmCtrlBox .pmFilter__label[for=ck-Ground],.pmFilter__checkbox[id=ck-Ice]:checked~.pmCtrlBox .pmFilter__label[for=ck-Ice],.pmFilter__checkbox[id=ck-Normal]:checked~.pmCtrlBox .pmFilter__label[for=ck-Normal],.pmFilter__checkbox[id=ck-Poison]:checked~.pmCtrlBox .pmFilter__label[for=ck-Poison],.pmFilter__checkbox[id=ck-Psychic]:checked~.pmCtrlBox .pmFilter__label[for=ck-Psychic],.pmFilter__checkbox[id=ck-Rock]:checked~.pmCtrlBox .pmFilter__label[for=ck-Rock],.pmFilter__checkbox[id=ck-Steel]:checked~.pmCtrlBox .pmFilter__label[for=ck-Steel],.pmFilter__checkbox[id=ck-Water]:checked~.pmCtrlBox .pmFilter__label[for=ck-Water],input[name=sort-by][id=sort-by-atk-▲]:checked~.pmCtrlBox .pmSort[for=sort-by-atk-▲],input[name=sort-by][id=sort-by-atk-▼]:checked~.pmCtrlBox .pmSort[for=sort-by-atk-▼],input[name=sort-by][id=sort-by-cp-▲]:checked~.pmCtrlBox .pmSort[for=sort-by-cp-▲],input[name=sort-by][id=sort-by-cp-▼]:checked~.pmCtrlBox .pmSort[for=sort-by-cp-▼],input[name=sort-by][id=sort-by-def-▲]:checked~.pmCtrlBox .pmSort[for=sort-by-def-▲],input[name=sort-by][id=sort-by-def-▼]:checked~.pmCtrlBox .pmSort[for=sort-by-def-▼],input[name=sort-by][id=sort-by-id-▲]:checked~.pmCtrlBox .pmSort[for=sort-by-id-▲],input[name=sort-by][id=sort-by-id-▼]:checked~.pmCtrlBox .pmSort[for=sort-by-id-▼],input[name=sort-by][id=sort-by-sta-▲]:checked~.pmCtrlBox .pmSort[for=sort-by-sta-▲],input[name=sort-by][id=sort-by-sta-▼]:checked~.pmCtrlBox .pmSort[for=sort-by-sta-▼],input[name=sort-by][id=sort-by-tank-▲]:checked~.pmCtrlBox .pmSort[for=sort-by-tank-▲],input[name=sort-by][id=sort-by-tank-▼]:checked~.pmCtrlBox .pmSort[for=sort-by-tank-▼]{--activity:1}:root{--iv-percentage:100;--sprite-grid-col:25;--sprite-grid-row:16;--img-size:80px;--pm-sort-by:var(--pm-pokedex);--pm-sort-dir:-1}.workspace{margin:0 auto;padding:1vmin calc(1vmin + .5em)}h1{margin-bottom:1.5rem;text-align:center}.pmIV:before{content:counter(iv-percentage) "%";counter-reset:iv-percentage var(--iv-percentage)}.pmList{display:-ms-grid;display:grid;-ms-grid-columns:(minmax(160px, 1fr))[auto-fill];grid-template-columns:repeat(auto-fill, minmax(160px, 1fr));grid-gap:calc(2vmin + .5em) calc(1vmin + .5em);list-style:none}.pm{position:relative;padding-top:1em;transition:transform .3s;display:none;-ms-flex-order:calc(var(--pm-sort-by) * var(--pm-sort-dir));order:calc(var(--pm-sort-by) * var(--pm-sort-dir))}.pm:hover *{opacity:unset!important}.pm_img{width:var(--img-size);height:var(--img-size);margin:0 auto;background-image:url("img/sprite.png");background-size:calc(var(--sprite-grid-col) * var(--img-size)) calc(var(--sprite-grid-row) * var(--img-size));background-repeat:no-repeat;background-position:calc(var(--pm-col) * var(--img-size) * -1) calc(var(--pm-row) * var(--img-size) * -1);transition:opacity .3s;opacity:.3}.pm_cp{position:absolute;top:0;left:0}.pm_cp:before{content:counter(cp);counter-reset:cp var(--pm-cp) hp var(--pm-hp);font-size:larger;font-family:monospace;font:100 calc(1em + 2vmin) monospace}.pm_name{position:absolute;top:0;right:0;padding-left:.5em;white-space:pre-wrap;text-align:right;font-size:smaller;color:rgba(0, 0, 0, 0.75);opacity:.3}.pm_name:after{content:"\a#" attr(data-podex) " "}.pm_info{opacity:.5}.pm_info:after{position:absolute;left:0;bottom:0;white-space:pre-line;font-family:monospace;font-size:smaller;text-align:right;color:rgba(0, 0, 0, 0.5);content:attr(data-hp) " HP" "\a" attr(data-atk) " A " "\a" attr(data-def) " D " "\a" attr(data-sta) " S."}.pm_types{position:absolute;right:0;bottom:0;display:-ms-flexbox;display:flex;opacity:.5}.pm_type{width:1rem;height:1rem;margin-right:2px;background-size:contain;background-repeat:no-repeat;background-origin:content-box}.pm_type--Normal{background-image:url("img/type_Normal.png")}.pm_type--Fighting{background-image:url("img/type_Fighting.png")}.pm_type--Flying{background-image:url("img/type_Flying.png")}.pm_type--Poison{background-image:url("img/type_Poison.png")}.pm_type--Ground{background-image:url("img/type_Ground.png")}.pm_type--Rock{background-image:url("img/type_Rock.png")}.pm_type--Bug{background-image:url("img/type_Bug.png")}.pm_type--Ghost{background-image:url("img/type_Ghost.png")}.pm_type--Steel{background-image:url("img/type_Steel.png")}.pm_type--Fire{background-image:url("img/type_Fire.png")}.pm_type--Water{background-image:url("img/type_Water.png")}.pm_type--Grass{background-image:url("img/type_Grass.png")}.pm_type--Electric{background-image:url("img/type_Electric.png")}.pm_type--Psychic{background-image:url("img/type_Psychic.png")}.pm_type--Ice{background-image:url("img/type_Ice.png")}.pm_type--Dragon{background-image:url("img/type_Dragon.png")}.pm_type--Dark{background-image:url("img/type_Dark.png")}.pm_type--Fairy{background-image:url("img/type_Fairy.png")}.pmSortBox{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;margin-bottom:2em;text-align:center}.pmSortBox:before{content:'sort by';margin-right:1em;font-style:italic;color:rgba(0, 0, 0, 0.5)}.pmSortGroup{position:relative}.pmSort{position:relative;z-index:calc(1 - var(--activity, 0));padding:0 .5em;cursor:pointer;box-shadow:0 0 0 1px rgba(0, 0, 0, 0.2);background-color:rgba(255, 255, 200, var(--activity, 0));text-transform:uppercase;opacity:var(--activity, 0.3)}.pmSort:after{content:attr(data-anti-dir);opacity:var(--activity, 0)}.pmSort+.pmSort{position:absolute;top:0;left:0}input[name=sort-by][id=sort-by-id-▲]:checked~.pmList .pm{--pm-sort-by:var(--pm-pokedex);--pm-sort-dir:1}input[name=sort-by][id=sort-by-id-▼]:checked~.pmList .pm{--pm-sort-by:var(--pm-pokedex);--pm-sort-dir:-1}input[name=sort-by][id=sort-by-cp-▲]:checked~.pmList .pm{--pm-sort-by:var(--pm-cp);--pm-sort-dir:1}input[name=sort-by][id=sort-by-cp-▼]:checked~.pmList .pm{--pm-sort-by:var(--pm-cp);--pm-sort-dir:-1}input[name=sort-by][id=sort-by-atk-▲]:checked~.pmList .pm{--pm-sort-by:var(--pm-atk);--pm-sort-dir:1}input[name=sort-by][id=sort-by-atk-▼]:checked~.pmList .pm{--pm-sort-by:var(--pm-atk);--pm-sort-dir:-1}input[name=sort-by][id=sort-by-def-▲]:checked~.pmList .pm{--pm-sort-by:var(--pm-def);--pm-sort-dir:1}input[name=sort-by][id=sort-by-def-▼]:checked~.pmList .pm{--pm-sort-by:var(--pm-def);--pm-sort-dir:-1}input[name=sort-by][id=sort-by-sta-▲]:checked~.pmList .pm{--pm-sort-by:var(--pm-sta);--pm-sort-dir:1}input[name=sort-by][id=sort-by-sta-▼]:checked~.pmList .pm{--pm-sort-by:var(--pm-sta);--pm-sort-dir:-1}input[name=sort-by][id=sort-by-tank-▲]:checked~.pmList .pm{--pm-sort-by:var(--pm-tank);--pm-sort-dir:1}input[name=sort-by][id=sort-by-tank-▼]:checked~.pmList .pm{--pm-sort-by:var(--pm-tank);--pm-sort-dir:-1}.pmCtrlBox{max-width:50rem;margin:0 auto}.pmCtrlBox table{max-width:90%;margin-left:auto;margin-right:auto}.pmCtrlBox>*{margin-bottom:2em}.pmFilter{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-pack:center;justify-content:center;text-align:start}.pmFilter__header{display:-ms-flexbox;display:flex;width:100%;-ms-flex-pack:distribute;justify-content:space-around;margin-bottom:1.5em;font-style:italic;color:rgba(0, 0, 0, 0.5)}.pmFilter__header button{padding:0 .5em;text-transform:uppercase}.pmFilter__label{position:relative;-ms-flex-preferred-size:6.5em;flex-basis:6.5em;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-align:center;align-items:center;margin-left:1vw;margin-right:1vw;margin-bottom:1em;transform-origin:0 0;text-transform:capitalize;cursor:pointer;font-size:smaller;color:rgba(0, 0, 0, 0.8)}.pmFilter__label:before{content:'';display:inline-block;width:2em;height:2em;margin-right:.2em;background-size:contain;background-repeat:no-repeat;opacity:var(--activity, 0.3);filter:contrast(var(--activity, 0))}.pmFilter__label:after{content:'';position:absolute;top:0;left:0;z-index:-1;width:3em;height:3em;border-radius:50%;margin:-.5em;background-color:rgba(255, 255, 153, 0.5);opacity:var(--activity, 0)}.pmFilter__label[for=ck-Normal]:before{background-image:url("img/type_Normal.png")}.pmFilter__label[for=ck-Fighting]:before{background-image:url("img/type_Fighting.png")}.pmFilter__label[for=ck-Flying]:before{background-image:url("img/type_Flying.png")}.pmFilter__label[for=ck-Poison]:before{background-image:url("img/type_Poison.png")}.pmFilter__label[for=ck-Ground]:before{background-image:url("img/type_Ground.png")}.pmFilter__label[for=ck-Rock]:before{background-image:url("img/type_Rock.png")}.pmFilter__label[for=ck-Bug]:before{background-image:url("img/type_Bug.png")}.pmFilter__label[for=ck-Ghost]:before{background-image:url("img/type_Ghost.png")}.pmFilter__label[for=ck-Steel]:before{background-image:url("img/type_Steel.png")}.pmFilter__label[for=ck-Fire]:before{background-image:url("img/type_Fire.png")}.pmFilter__label[for=ck-Water]:before{background-image:url("img/type_Water.png")}.pmFilter__label[for=ck-Grass]:before{background-image:url("img/type_Grass.png")}.pmFilter__label[for=ck-Electric]:before{background-image:url("img/type_Electric.png")}.pmFilter__label[for=ck-Psychic]:before{background-image:url("img/type_Psychic.png")}.pmFilter__label[for=ck-Ice]:before{background-image:url("img/type_Ice.png")}.pmFilter__label[for=ck-Dragon]:before{background-image:url("img/type_Dragon.png")}.pmFilter__label[for=ck-Dark]:before{background-image:url("img/type_Dark.png")}.pmFilter__label[for=ck-Fairy]:before{background-image:url("img/type_Fairy.png")}.pokedexRange{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;width:50%;margin-left:auto;margin-right:auto;padding-bottom:2em;text-align:center;border-top:1px dashed rgba(0, 0, 0, 0.1)}.pokedexRange>label{position:relative;display:block;width:100%;counter-reset:value var(--value);-ms-flex-order:var(--value);order:var(--value);background-image:linear-gradient(to right, rgba(0, 0, 0, 0.05) 0, transparent 39.11917%, rgba(0, 0, 0, 0.05) 0, transparent 65.02591%, rgba(0, 0, 0, 0.05) 0, transparent)}.pokedexRange>label:before{content:counter(value);position:absolute;right:100%;margin-right:.5em}.pokedexRange input{width:100%}.pokedexRange__header{position:relative;margin:0;padding-top:.5em;padding-bottom:1em;font-weight:500;font-size:1em;font-style:italic;color:rgba(0, 0, 0, 0.5)}.pokedexRange__header:after,.pokedexRange__header:before{content:'~ 151';position:absolute;top:2em;right:60.88083%;font-size:smaller;font-style:normal;opacity:.5}.pokedexRange__header:after{content:'~ 251';right:34.97409%}.footer{padding:3em}.ctrl-info{position:relative;padding-left:1.25em;margin-right:1em}.ctrl-info:after,.ctrl-info:before{content:'';position:absolute;top:0;left:0;bottom:0;margin-top:auto;margin-bottom:auto;width:1em;height:1em;box-shadow:inset 0 0 1px 1px rgba(0, 0, 0, 0.5)}.ctrl-info:before{opacity:var(--activity, 0);box-shadow:inset 0 0 1px 1px rgba(0, 0, 0, 0.5), inset 0 0 0 4px #fff, inset 0 0 0 10px rgba(0, 0, 0, 0.5)}input[id=show-ads]:checked~.footer .ctrl-info[for=show-ads],input[id=show-types]:checked~.footer .ctrl-info[for=show-types]{--activity:1}input[id=show-ads]:not(:checked)~.pmList .pm_info,input[id=show-types]:not(:checked)~.pmList .pm_types{opacity:0}#go-to-top{position:fixed;left:0;bottom:0;z-index:1;padding:.5em 1em;text-transform:capitalize;background-color:#ffc;opacity:.3}#go-to-top:hover{opacity:1}*,:after,:before{margin:0;padding:0;box-sizing:border-box}body{overflow-y:scroll}.sr-only{position:fixed;top:0;left:0;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}
+@charset "UTF-8";
+.pmFilter__checkbox[id="ck-Normal"]:checked ~ .pmList .pm[data-type*="Normal"], .pmFilter__checkbox[id="ck-Fighting"]:checked ~ .pmList .pm[data-type*="Fighting"], .pmFilter__checkbox[id="ck-Flying"]:checked ~ .pmList .pm[data-type*="Flying"], .pmFilter__checkbox[id="ck-Poison"]:checked ~ .pmList .pm[data-type*="Poison"], .pmFilter__checkbox[id="ck-Ground"]:checked ~ .pmList .pm[data-type*="Ground"], .pmFilter__checkbox[id="ck-Rock"]:checked ~ .pmList .pm[data-type*="Rock"], .pmFilter__checkbox[id="ck-Bug"]:checked ~ .pmList .pm[data-type*="Bug"], .pmFilter__checkbox[id="ck-Ghost"]:checked ~ .pmList .pm[data-type*="Ghost"], .pmFilter__checkbox[id="ck-Steel"]:checked ~ .pmList .pm[data-type*="Steel"], .pmFilter__checkbox[id="ck-Fire"]:checked ~ .pmList .pm[data-type*="Fire"], .pmFilter__checkbox[id="ck-Water"]:checked ~ .pmList .pm[data-type*="Water"], .pmFilter__checkbox[id="ck-Grass"]:checked ~ .pmList .pm[data-type*="Grass"], .pmFilter__checkbox[id="ck-Electric"]:checked ~ .pmList .pm[data-type*="Electric"], .pmFilter__checkbox[id="ck-Psychic"]:checked ~ .pmList .pm[data-type*="Psychic"], .pmFilter__checkbox[id="ck-Ice"]:checked ~ .pmList .pm[data-type*="Ice"], .pmFilter__checkbox[id="ck-Dragon"]:checked ~ .pmList .pm[data-type*="Dragon"], .pmFilter__checkbox[id="ck-Dark"]:checked ~ .pmList .pm[data-type*="Dark"], .pmFilter__checkbox[id="ck-Fairy"]:checked ~ .pmList .pm[data-type*="Fairy"] {
+  display: unset; }
+
+input[name="sort-by"][id="sort-by-id-▲"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-id-▲"], input[name="sort-by"][id="sort-by-id-▼"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-id-▼"], input[name="sort-by"][id="sort-by-cp-▲"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-cp-▲"], input[name="sort-by"][id="sort-by-cp-▼"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-cp-▼"], input[name="sort-by"][id="sort-by-atk-▲"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-atk-▲"], input[name="sort-by"][id="sort-by-atk-▼"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-atk-▼"], input[name="sort-by"][id="sort-by-def-▲"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-def-▲"], input[name="sort-by"][id="sort-by-def-▼"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-def-▼"], input[name="sort-by"][id="sort-by-sta-▲"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-sta-▲"], input[name="sort-by"][id="sort-by-sta-▼"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-sta-▼"], input[name="sort-by"][id="sort-by-tank-▲"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-tank-▲"], input[name="sort-by"][id="sort-by-tank-▼"]:checked ~ .pmCtrlBox .pmSort[for="sort-by-tank-▼"], .pmFilter__checkbox[id="ck-Normal"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Normal"], .pmFilter__checkbox[id="ck-Fighting"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Fighting"], .pmFilter__checkbox[id="ck-Flying"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Flying"], .pmFilter__checkbox[id="ck-Poison"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Poison"], .pmFilter__checkbox[id="ck-Ground"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Ground"], .pmFilter__checkbox[id="ck-Rock"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Rock"], .pmFilter__checkbox[id="ck-Bug"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Bug"], .pmFilter__checkbox[id="ck-Ghost"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Ghost"], .pmFilter__checkbox[id="ck-Steel"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Steel"], .pmFilter__checkbox[id="ck-Fire"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Fire"], .pmFilter__checkbox[id="ck-Water"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Water"], .pmFilter__checkbox[id="ck-Grass"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Grass"], .pmFilter__checkbox[id="ck-Electric"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Electric"], .pmFilter__checkbox[id="ck-Psychic"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Psychic"], .pmFilter__checkbox[id="ck-Ice"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Ice"], .pmFilter__checkbox[id="ck-Dragon"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Dragon"], .pmFilter__checkbox[id="ck-Dark"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Dark"], .pmFilter__checkbox[id="ck-Fairy"]:checked ~ .pmCtrlBox .pmFilter__label[for="ck-Fairy"] {
+  --activity: 1; }
+
+:root {
+  --iv-percentage: 100;
+  --sprite-grid-col: 25;
+  --sprite-grid-row: 16;
+  --img-size: 80px;
+  --pm-sort-by: var(--pm-pokedex);
+  --pm-sort-dir: -1; }
+
+.workspace {
+  margin: 0 auto;
+  padding: 1vmin calc(1vmin + .5em); }
+
+h1 {
+  margin-bottom: 1.5rem;
+  text-align: center; }
+
+.pmIV::before {
+  content: counter(iv-percentage) "%";
+  counter-reset: iv-percentage var(--iv-percentage); }
+
+.pmList {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(160px, 1fr))[auto-fill];
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-gap: calc(2vmin + .5em) calc(1vmin + .5em);
+  list-style: none; }
+
+.pm {
+  position: relative;
+  padding-top: 1em;
+  transition: transform .3s;
+  display: none;
+  -ms-flex-order: calc(var(--pm-sort-by) * var(--pm-sort-dir));
+  order: calc(var(--pm-sort-by) * var(--pm-sort-dir)); }
+  .pm:hover * {
+    opacity: unset !important; }
+
+.pm_img {
+  width: var(--img-size);
+  height: var(--img-size);
+  margin: 0 auto;
+  background-image: url("img/sprite.png");
+  background-size: calc(var(--sprite-grid-col) * var(--img-size)) calc(var(--sprite-grid-row) * var(--img-size));
+  background-repeat: no-repeat;
+  background-position: calc(var(--pm-col) * var(--img-size) * -1) calc(var(--pm-row) * var(--img-size) * -1);
+  transition: opacity .3s;
+  opacity: .3; }
+
+.pm_cp {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  .pm_cp::before {
+    content: counter(cp);
+    counter-reset: cp var(--pm-cp) hp var(--pm-hp);
+    font-size: larger;
+    font-family: monospace;
+    font: 100 calc(1em + 2vmin) monospace; }
+
+.pm_name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: .5em;
+  white-space: pre-wrap;
+  text-align: right;
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.75);
+  opacity: .3; }
+  .pm_name::after {
+    content: "\a#" attr(data-podex) " "; }
+
+.pm_info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  white-space: pre;
+  font-family: monospace;
+  font-size: smaller;
+  text-align: right;
+  opacity: .5;
+  color: rgba(0, 0, 0, 0.5); }
+  .pm_info::after {
+    content: attr(data-hp) " HP" "\a" attr(data-atk) " A." "\a" attr(data-def) " D." "\a" attr(data-sta) " S."; }
+
+.pm_types {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: .5; }
+
+.pm_type {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 2px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box; }
+  .pm_type--Normal {
+    background-image: url("img/type_Normal.png"); }
+  .pm_type--Fighting {
+    background-image: url("img/type_Fighting.png"); }
+  .pm_type--Flying {
+    background-image: url("img/type_Flying.png"); }
+  .pm_type--Poison {
+    background-image: url("img/type_Poison.png"); }
+  .pm_type--Ground {
+    background-image: url("img/type_Ground.png"); }
+  .pm_type--Rock {
+    background-image: url("img/type_Rock.png"); }
+  .pm_type--Bug {
+    background-image: url("img/type_Bug.png"); }
+  .pm_type--Ghost {
+    background-image: url("img/type_Ghost.png"); }
+  .pm_type--Steel {
+    background-image: url("img/type_Steel.png"); }
+  .pm_type--Fire {
+    background-image: url("img/type_Fire.png"); }
+  .pm_type--Water {
+    background-image: url("img/type_Water.png"); }
+  .pm_type--Grass {
+    background-image: url("img/type_Grass.png"); }
+  .pm_type--Electric {
+    background-image: url("img/type_Electric.png"); }
+  .pm_type--Psychic {
+    background-image: url("img/type_Psychic.png"); }
+  .pm_type--Ice {
+    background-image: url("img/type_Ice.png"); }
+  .pm_type--Dragon {
+    background-image: url("img/type_Dragon.png"); }
+  .pm_type--Dark {
+    background-image: url("img/type_Dark.png"); }
+  .pm_type--Fairy {
+    background-image: url("img/type_Fairy.png"); }
+
+.pmSortBox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 2em;
+  text-align: center; }
+  .pmSortBox::before {
+    content: 'sort by';
+    margin-right: 1em;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5); }
+
+.pmSortGroup {
+  position: relative; }
+
+.pmSort {
+  position: relative;
+  z-index: calc(1 - var(--activity, 0));
+  padding: 0 .5em;
+  cursor: pointer;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 200, var(--activity, 0));
+  text-transform: uppercase;
+  opacity: var(--activity, 0.3); }
+  .pmSort::after {
+    content: attr(data-anti-dir);
+    opacity: var(--activity, 0); }
+  .pmSort + .pmSort {
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+input[name="sort-by"][id="sort-by-id-▲"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-pokedex);
+  --pm-sort-dir: 1; }
+
+input[name="sort-by"][id="sort-by-id-▼"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-pokedex);
+  --pm-sort-dir: -1; }
+
+input[name="sort-by"][id="sort-by-cp-▲"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-cp);
+  --pm-sort-dir: 1; }
+
+input[name="sort-by"][id="sort-by-cp-▼"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-cp);
+  --pm-sort-dir: -1; }
+
+input[name="sort-by"][id="sort-by-atk-▲"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-atk);
+  --pm-sort-dir: 1; }
+
+input[name="sort-by"][id="sort-by-atk-▼"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-atk);
+  --pm-sort-dir: -1; }
+
+input[name="sort-by"][id="sort-by-def-▲"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-def);
+  --pm-sort-dir: 1; }
+
+input[name="sort-by"][id="sort-by-def-▼"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-def);
+  --pm-sort-dir: -1; }
+
+input[name="sort-by"][id="sort-by-sta-▲"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-sta);
+  --pm-sort-dir: 1; }
+
+input[name="sort-by"][id="sort-by-sta-▼"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-sta);
+  --pm-sort-dir: -1; }
+
+input[name="sort-by"][id="sort-by-tank-▲"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-tank);
+  --pm-sort-dir: 1; }
+
+input[name="sort-by"][id="sort-by-tank-▼"]:checked ~ .pmList .pm {
+  --pm-sort-by: var(--pm-tank);
+  --pm-sort-dir: -1; }
+
+.pmCtrlBox {
+  max-width: 50rem;
+  margin: 0 auto; }
+  .pmCtrlBox table {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: capitalize; }
+  .pmCtrlBox > * {
+    margin-bottom: 2em; }
+
+.pmFilter {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: start; }
+
+.pmFilter__header {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 1.5em;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5); }
+  .pmFilter__header button {
+    padding: 0 .5em;
+    text-transform: uppercase; }
+
+.pmFilter__label {
+  position: relative;
+  -ms-flex-preferred-size: 6.5em;
+  flex-basis: 6.5em;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 1em;
+  transform-origin: 0 0;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.8); }
+  .pmFilter__label::before {
+    content: '';
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin-right: .2em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: var(--activity, 0.3);
+    filter: contrast(var(--activity, 0)); }
+  .pmFilter__label::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin: -.5em;
+    background-color: rgba(255, 255, 153, 0.5);
+    opacity: var(--activity, 0); }
+
+.pmFilter__label[for="ck-Normal"]::before {
+  background-image: url("img/type_Normal.png"); }
+
+.pmFilter__label[for="ck-Fighting"]::before {
+  background-image: url("img/type_Fighting.png"); }
+
+.pmFilter__label[for="ck-Flying"]::before {
+  background-image: url("img/type_Flying.png"); }
+
+.pmFilter__label[for="ck-Poison"]::before {
+  background-image: url("img/type_Poison.png"); }
+
+.pmFilter__label[for="ck-Ground"]::before {
+  background-image: url("img/type_Ground.png"); }
+
+.pmFilter__label[for="ck-Rock"]::before {
+  background-image: url("img/type_Rock.png"); }
+
+.pmFilter__label[for="ck-Bug"]::before {
+  background-image: url("img/type_Bug.png"); }
+
+.pmFilter__label[for="ck-Ghost"]::before {
+  background-image: url("img/type_Ghost.png"); }
+
+.pmFilter__label[for="ck-Steel"]::before {
+  background-image: url("img/type_Steel.png"); }
+
+.pmFilter__label[for="ck-Fire"]::before {
+  background-image: url("img/type_Fire.png"); }
+
+.pmFilter__label[for="ck-Water"]::before {
+  background-image: url("img/type_Water.png"); }
+
+.pmFilter__label[for="ck-Grass"]::before {
+  background-image: url("img/type_Grass.png"); }
+
+.pmFilter__label[for="ck-Electric"]::before {
+  background-image: url("img/type_Electric.png"); }
+
+.pmFilter__label[for="ck-Psychic"]::before {
+  background-image: url("img/type_Psychic.png"); }
+
+.pmFilter__label[for="ck-Ice"]::before {
+  background-image: url("img/type_Ice.png"); }
+
+.pmFilter__label[for="ck-Dragon"]::before {
+  background-image: url("img/type_Dragon.png"); }
+
+.pmFilter__label[for="ck-Dark"]::before {
+  background-image: url("img/type_Dark.png"); }
+
+.pmFilter__label[for="ck-Fairy"]::before {
+  background-image: url("img/type_Fairy.png"); }
+
+.pokedexRange {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+  text-align: center;
+  border-top: 1px dashed rgba(0, 0, 0, 0.1); }
+  .pokedexRange > label {
+    position: relative;
+    display: block;
+    width: 100%;
+    counter-reset: value var(--value);
+    -ms-flex-order: var(--value);
+    order: var(--value);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 0, transparent 39.11917%, rgba(0, 0, 0, 0.05) 0, transparent 65.02591%, rgba(0, 0, 0, 0.05) 0, transparent); }
+    .pokedexRange > label::before {
+      content: counter(value);
+      position: absolute;
+      right: 100%;
+      margin-right: .5em; }
+  .pokedexRange input {
+    width: 100%; }
+  .pokedexRange__header {
+    position: relative;
+    margin: 0;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    font-weight: 500;
+    font-size: 1em;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5); }
+    .pokedexRange__header::before, .pokedexRange__header::after {
+      content: '~ 151';
+      position: absolute;
+      top: 2em;
+      right: 60.88083%;
+      font-size: smaller;
+      font-style: normal;
+      opacity: .5; }
+    .pokedexRange__header::after {
+      content: '~ 251';
+      right: 34.97409%; }
+
+.footer {
+  padding: 3em; }
+
+.ctrl-info {
+  position: relative;
+  padding-left: 1.25em;
+  margin-right: 1em; }
+  .ctrl-info::before, .ctrl-info::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 1em;
+    height: 1em;
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.5); }
+  .ctrl-info::before {
+    opacity: var(--activity, 0);
+    box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.5), inset 0 0 0 4px #fff, inset 0 0 0 10px rgba(0, 0, 0, 0.5); }
+  input[id="show-ads"]:checked ~ .footer .ctrl-info[for="show-ads"],
+  input[id="show-types"]:checked ~ .footer .ctrl-info[for="show-types"] {
+    --activity: 1; }
+
+input[id="show-ads"]:not(:checked) ~ .pmList .pm_info,
+input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
+  opacity: 0; }
+
+#go-to-top {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  padding: .5em 1em;
+  text-transform: capitalize;
+  background-color: #ffc;
+  opacity: .3; }
+  #go-to-top:hover {
+    opacity: 1; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  overflow-y: scroll; }
+
+.sr-only {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
 /*# sourceMappingURL=style.css.map */

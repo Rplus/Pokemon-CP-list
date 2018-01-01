@@ -102,21 +102,21 @@ h1 {
 }
 
 .pm_info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  white-space: pre;
+  font-family: monospace;
+  font-size: smaller;
+  text-align: right;
   opacity: .5;
+    color: rgba(#000, .5);
 
   &::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    white-space: pre-line;
-    font-family: monospace;
-    font-size: smaller;
-    text-align: right;
-    color: rgba(#000, .5);
     content:
       attr(data-hp) ' HP'
-      '\A' attr(data-atk) ' A '
-      '\A' attr(data-def) ' D '
+      '\A' attr(data-atk) ' A.'
+      '\A' attr(data-def) ' D.'
       '\A' attr(data-sta) ' S.';
   }
 }
@@ -223,6 +223,7 @@ $sort-type: (
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
+    text-transform: capitalize;
   }
 
   > * {

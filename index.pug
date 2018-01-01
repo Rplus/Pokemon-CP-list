@@ -2,16 +2,17 @@
 html(lang="en")
 head
   meta(charset="UTF-8")
-  title 👁 Pokémons CP table
+  title 👁 Pokémons CP list
   meta(name="viewport" content="width=device-width, initial-scale=1")
   link(rel="stylesheet", href="style.css")
+  meta(property="og:image" content="https://i.imgur.com/tDO1Ggv.png")
 body
 
 
   - var sortTypes = ['id', 'cp', 'atk', 'def', 'sta', 'tank'];
 
   .workspace
-    h1 Pokémons CP look up
+    h1 Pokémons CP list
 
     input(type="checkbox" class="sr-only" id="show-ads")
     input(type="checkbox" class="sr-only" checked id="show-types")
