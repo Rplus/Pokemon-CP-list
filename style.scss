@@ -45,7 +45,7 @@ $types: ('Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Gho
 
   &:hover {
     * {
-      opacity: unset;
+      opacity: unset !important;
     }
   }
 }
@@ -122,10 +122,6 @@ $types: ('Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Gho
   bottom: 0;
   display: flex;
   opacity: .5;
-
-  .pm:hover & {
-    opacity: 1;
-  }
 }
 
 .pm_type {
@@ -416,7 +412,7 @@ $sort-type: (
 
 input[id="show-ads"]:not(:checked) ~ .pmList .pm_info,
 input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
-  display: none;
+  opacity: 0;
 }
 
 #go-to-top {
