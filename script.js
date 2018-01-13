@@ -126,7 +126,7 @@ const createPmHTML = (pm) => {
   pm.tank = pm.sta * pm.def;
   return `
     <li class="pm"
-      data-type="${pm.field_pokemon_type}"
+      data-type="${[pm.field_pokemon_type, pm.pokemon_class && pm.pokemon_class !== 'Normal' && 'Legendary'].join(', ')}"
       data-maxcp="${pm.cp}"
       style="
         --pm-pokedex: ${pm.number};
@@ -154,10 +154,10 @@ const createPmHTML = (pm) => {
 };
 
 const createFilter = () => {
-  let types = ['Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy'];
+  let types = ['Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy', 'Legendary'];
 
   return types.reduce((obj, type) => {
-    let _checkboxHtml = `<input type="checkbox" id="ck-${type}" value="${type}" class="pmFilter__checkbox sr-only ck-${type}" ${type === 'Dragon' ? 'checked': ''}>`;
+    let _checkboxHtml = `<input type="checkbox" id="ck-${type}" value="${type}" class="pmFilter__checkbox sr-only ck-${type}" ${type === 'Legendary' ? 'checked': ''}>`;
 
     let _labelHtml = `<label for="ck-${type}" class="pmFilter__label" style="--bgi: var(--type-bgi--${type}">${type}</label>`;
 
