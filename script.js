@@ -139,7 +139,7 @@ const createPmHTML = (pm) => {
         --pm-cp: var(--pm-${pm.number}-cp);
         --pm-hp: var(--pm-${pm.number}-hp);"
     >
-      <div class="pm_name" data-podex=${pm.number}>${pm.title_1}</div>
+      <div class="pm_name" data-podex=${pm.number} title="${pm.title.match(/[^>]+\>([^<]+)/)[1]}">${pm.title_1}</div>
       <div class="pm_img"></div>
       <div class="pm_cp" data-max-cp=pm.cp></div>
       <div class="pm_info"
