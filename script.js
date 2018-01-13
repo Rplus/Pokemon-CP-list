@@ -157,7 +157,7 @@ const createFilter = () => {
   let types = ['Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy'];
 
   return types.reduce((obj, type) => {
-    let _checkboxHtml = `<input type="checkbox" id="ck-${type}" value="${type}" class="pmFilter__checkbox sr-only ck-${type}" checked>`;
+    let _checkboxHtml = `<input type="checkbox" id="ck-${type}" value="${type}" class="pmFilter__checkbox sr-only ck-${type}" ${type === 'Dragon' ? 'checked': ''}>`;
 
     let _labelHtml = `<label for="ck-${type}" class="pmFilter__label" style="--bgi: var(--type-bgi--${type}">${type}</label>`;
 
