@@ -1,0 +1,13 @@
+{
+  "name": "👁 Pokémons CP list",
+  "short_name": "👁 Pokémons CP list",
+  "lang": "zh-TW",
+  "start_url": "./",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "img/type_Legendary.png",
+      "sizes": "144x144"
+    }
+  ]
+}
