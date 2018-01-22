@@ -21,9 +21,19 @@ h1 {
   margin-bottom: 1.5rem;
   text-align: center; }
 
+td > input {
+  display: block; }
+
 .pmIV::before {
   content: counter(iv-percentage) "%";
   counter-reset: iv-percentage var(--iv-percentage); }
+
+.pmCost::before {
+  content: "stardust: " counter(cost-stardust) "\a candy: " counter(cost-candy);
+  counter-reset: cost-stardust var(--cost-stardust) cost-candy var(--cost-candy);
+  white-space: pre-wrap;
+  color: #999;
+  font-size: smaller; }
 
 .pmList {
   display: -ms-grid;
