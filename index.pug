@@ -10,6 +10,7 @@ body
 
 
   - var sortTypes = ['id', 'cp', 'atk', 'def', 'sta', 'tank'];
+  - var initLv = 30;
 
   .workspace
     h1 Pokémons CP list
@@ -32,12 +33,12 @@ body
             label(for="pmLv") PM Level:
           td
             input#pmLv(type="number" min="1" max="40" step="0.5"
-              value="30"
+              value=initLv
               data-update="lv"
               data-sync="pmLv--range")
           td
             input#pmLv--range(type="range" min="1" max="40" step="0.5"
-              value="30"
+              value=initLv
               data-update="lv"
               data-sync="pmLv")
 
@@ -67,7 +68,8 @@ body
 
         tr
           td IV
-          td.pmIV(colspan=2)
+          td.pmIV
+          td.pmCost(title="cost to Lv40")
       .pmSortBox
         each type in sortTypes
           .pmSortGroup

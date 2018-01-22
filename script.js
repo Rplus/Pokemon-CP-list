@@ -37,6 +37,13 @@ const updateIv = (iv = window.ctrl.iv) => {
   elm.pmCtrlBox.style.setProperty('--iv-percentage', percentage);
 };
 
+const updateLv = (lv = window.ctrl.lv) => {
+  let _cost = calcPowerCost(lv);
+  // elm.pmCtrlBox.style.setProperty('--lv', lv);
+  elm.pmCtrlBox.style.setProperty('--cost-candy', _cost.candy);
+  elm.pmCtrlBox.style.setProperty('--cost-stardust', _cost.stardust);
+};
+
 const calPmData = (pm, iv = window.ctrl.iv, lv = window.ctrl.lv) => {
   let mFactor = levelMultiplier[lv];
   let ADS = (pm.atk + iv.atk) * Math.pow((pm.def + iv.def) * (pm.sta + iv.sta), 0.5);
@@ -79,18 +86,29 @@ elm.pmCtrlBox.addEventListener('input', (e) => {
     updateIv();
   } else if (_target.dataset.update === 'lv') {
     window.ctrl.lv = _target.value * 1;
+    updateLv();
   }
 
   throttle(updatePmData, 500)();
 });
 
 // fetch data
-let upstreamUrls = ['pms.json', 'levelMultiplier.json'];
+let upstreamUrls = ['pms.json', 'levelMultiplier.json', 'power-up.json'];
 Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
 .then(datas => {
-  let [pms, levelMultiplier] = datas;
+  let [pms, levelMultiplier, powerUp] = datas;
   window.pms = pms; // DEBUG
   window.levelMultiplier = levelMultiplier;
+  window.powerUp = powerUp;
+
+  window.calcPowerCost = (lv = 40) => powerUp.reduce((sum, i) => {
+    if (i.lv - lv >= 0) {
+      sum.stardust += i.stardust;
+      sum.candy += i.candy;
+    }
+    return sum;
+  }, {stardust: 0, candy: 0});
+
   window.colCount = Number(window.getComputedStyle(document.documentElement).getPropertyValue('--sprite-grid-col'))
 
   let pmHtml = pms.map(pm => {
@@ -108,6 +126,7 @@ Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
   initPokedexFilter();
 
   updateIv();
+  updateLv();
   updatePmData();
   updatePokedexFilter();
 });
