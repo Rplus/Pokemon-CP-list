@@ -462,6 +462,11 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
   #go-to-top:hover {
     opacity: 1; }
 
+.repo-info {
+  margin-top: 3em;
+  opacity: .5;
+  text-align: right; }
+
 *,
 *::before,
 *::after {
