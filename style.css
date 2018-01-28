@@ -22,7 +22,8 @@ h1 {
   text-align: center; }
 
 td > input {
-  display: block; }
+  display: block;
+  width: 100%; }
 
 .pmIV::before {
   content: counter(iv-percentage) "%";
@@ -247,7 +248,11 @@ input[name="sort-by"][id="sort-by-tank-▼"]:checked ~ .pmList .pm {
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    border-spacing: .5em .25em; }
+  .pmCtrlBox input[type="button"] {
+    padding-left: .25em;
+    padding-right: .25em; }
   .pmCtrlBox > * {
     margin-bottom: 2em; }
 
