@@ -78,19 +78,54 @@ window.ctrl = {
 // change data
 elm.pmCtrlBox.addEventListener('input', (e) => {
   let _target = e.target;
-  if (_target.dataset.sync) {
-    elm[_target.dataset.sync].value = _target.value;
+  let { sync, update, type } = _target.dataset;
+  updateInput({
+    value: _target.value,
+    sync,
+    update,
+    type,
+  });
+});
+
+elm.pmCtrlBox.addEventListener('click', (e) => {
+  if (e.target.dataset.ctrl) {
+    let _target = e.target;
+    let syncTarget = $$(`[data-sync="${e.target.dataset.ctrl}"]`)[0];
+    let newValue = syncTarget.value * 1 + _target.value * 1;
+
+    newValue = Math.min(Math.max(newValue, syncTarget.min), syncTarget.max);
+
+    if (newValue === syncTarget.value * 1) {
+      return;
+    }
+
+    updateInput({
+      value: newValue,
+      sync: _target.dataset.ctrl,
+      update: _target.dataset.update,
+      type: _target.dataset.type
+    });
   }
-  if (_target.dataset.update === 'iv') {
-    window.ctrl.iv[_target.dataset.type] = _target.value * 1;
+});
+
+const updateInput = ({ value, sync, update, type, target } = {}) => {
+  if (sync) {
+    [...$$(`[data-sync="${sync}"]`)]
+      .filter(i => i !== target)
+      .forEach(i => {
+        i.value = value
+      });
+  }
+  if (update === 'iv') {
+    window.ctrl.iv[type] = value * 1;
     updateIv();
-  } else if (_target.dataset.update === 'lv') {
-    window.ctrl.lv = _target.value * 1;
+  } else if (update === 'lv') {
+    window.ctrl.lv = value * 1;
     updateLv();
   }
 
   throttle(updatePmData, 500)();
-});
+};
 
 // fetch data
 let upstreamUrls = ['pms.json', 'levelMultiplier.json', 'power-up.json'];

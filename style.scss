@@ -29,6 +29,7 @@ h1 {
 
 td > input {
   display: block;
+  width: 100%;
 }
 
 .pmIV {
@@ -243,6 +244,12 @@ $sort-type: (
     margin-left: auto;
     margin-right: auto;
     text-transform: capitalize;
+    border-spacing: .5em .25em;
+  }
+
+  input[type="button"] {
+    padding-left: .25em;
+    padding-right: .25em;
   }
 
   > * {

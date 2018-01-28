@@ -41,12 +41,20 @@ body
             input#pmLv(type="number" min="1" max="40" step="0.5"
               value=initLv
               data-update="lv"
-              data-sync="pmLv--range")
+              data-sync="pmLv")
+          td
+            input(type="button" value="-5"
+              data-update="lv"
+              data-ctrl="pmLv")
           td
             input#pmLv--range(type="range" min="1" max="40" step="0.5"
               value=initLv
               data-update="lv"
               data-sync="pmLv")
+          td
+            input(type="button" value="+5"
+              data-update="lv"
+              data-ctrl="pmLv")
 
         -
           var ivTypes = [
@@ -64,18 +72,29 @@ body
                 id=`iv-${i.type}`
                 data-update="iv"
                 data-type=i.type
-                data-sync=`iv-${i.type}--range`)
+                data-sync=`iv-${i.type}`)
+            td
+              input(type="button" value="-1"
+                data-ctrl=`iv-${i.type}`
+                data-type=i.type
+                data-update="iv")
             td
               input(type="range" min="0" max="15" value="15"
                 id=`iv-${i.type}--range`
                 data-update="iv"
                 data-type=i.type
                 data-sync=`iv-${i.type}`)
+            td
+              input(type="button" value="+1"
+                data-ctrl=`iv-${i.type}`
+                data-type=i.type
+                data-update="iv")
 
         tr
           td IV
           td.pmIV
-          td.pmCost(title="cost to Lv40")
+          td.pmCost(title="cost to Lv40" colspan="3")
+
       .pmSortBox
         each type in sortTypes
           .pmSortGroup
