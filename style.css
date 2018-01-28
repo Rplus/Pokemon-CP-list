@@ -245,11 +245,11 @@ input[name="sort-by"][id="sort-by-tank-▼"]:checked ~ .pmList .pm {
   max-width: 50rem;
   margin: 0 auto; }
   .pmCtrlBox table {
-    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-transform: capitalize;
-    border-spacing: .5em .25em; }
+    border-spacing: .5em .25em;
+    font-size: smaller; }
   .pmCtrlBox input[type="button"] {
     padding-left: .25em;
     padding-right: .25em; }

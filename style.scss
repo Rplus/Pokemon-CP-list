@@ -240,11 +240,11 @@ $sort-type: (
   margin: 0 auto;
 
   table {
-    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     text-transform: capitalize;
     border-spacing: .5em .25em;
+    font-size: smaller;
   }
 
   input[type="button"] {
