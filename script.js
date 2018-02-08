@@ -284,3 +284,24 @@ const updatePmData = () => {
 
   elm.pmCustomStyle.textContent = `.pmList {${data.join(' ')}}`;
 };
+
+const pollNewData = (url = 'https://s3.us-east-2.amazonaws.com/gamepress-json/pogo/pokemon-list/en.json') => {
+  fetch(url)
+  .then(toJson)
+  .then(newPms => {
+    let diffPms = newPms.filter((pm, index) => {
+      let isDiff = (
+        pm.atk != pms[index].atk ||
+        pm.def != pms[index].def ||
+        pm.sta != pms[index].sta
+      );
+      if (isDiff) {
+        pms[index].atk = pm.atk * 1;
+        pms[index].def = pm.def * 1;
+        pms[index].sta = pm.sta * 1;
+      }
+      return isDiff;
+    });
+    console.log({newPms, diffPms});
+  });
+};
