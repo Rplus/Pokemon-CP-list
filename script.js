@@ -61,8 +61,9 @@ window.elm = {
   pmFilter: $('.pmFilter'),
   pmCustomStyle: $('.pmCustomStyle'),
   dialog: $('#dialog'),
-  dialogCaption: $('#dialog caption'),
-  dialogTbody: $('#dialog tbody'),
+  dialogCaption: $('#dialog .caption'),
+  dialogTbody: $('#dialog .tbody'),
+  dialogClose: $('.dialog__closeBtn'),
   'pmLv': $('#pmLv'),
   'pmLv--range': $('#pmLv--range'),
 };
@@ -357,15 +358,17 @@ elm.pmList.addEventListener('click', (e) => {
   elm.dialogCaption.innerHTML = `${pmData.title_1} LV:${window.ctrl.lv}`;
 
   elm.dialogTbody.innerHTML = cpList.map(i => `
-    <tr>
-      <td>${i.cp}</td>
-      <td>${i.atk}</td>
-      <td>${i.def}</td>
-      <td>${i.sta}</td>
-      <td>${i.iv}%</td>
-    </tr>
+    <div class="tr">
+      <div>${i.cp}</div>
+      <div>${i.atk}</div>
+      <div>${i.def}</div>
+      <div>${i.sta}</div>
+      <div>${i.iv}%</div>
+    </div class="tr">
   `).join('');
-  elm.dialog.showModal();
+  elm.dialog.setAttribute('aria-hidden', false);
 });
 
-elm.dialog.addEventListener('click', elm.dialog.close)
+elm.dialogClose.addEventListener('click', () => {
+  elm.dialog.setAttribute('aria-hidden', true);
+});
