@@ -60,6 +60,9 @@ window.elm = {
   pmList: $('.pmList'),
   pmFilter: $('.pmFilter'),
   pmCustomStyle: $('.pmCustomStyle'),
+  dialog: $('#dialog'),
+  dialogCaption: $('#dialog caption'),
+  dialogTbody: $('#dialog tbody'),
   'pmLv': $('#pmLv'),
   'pmLv--range': $('#pmLv--range'),
 };
@@ -285,6 +288,43 @@ const updatePmData = () => {
   elm.pmCustomStyle.textContent = `.pmList {${data.join(' ')}}`;
 };
 
+const getIVCPList = (pm, lv = window.ctrl.lv) => {
+  let ivs = [10, 11, 12, 13, 14, 15];
+  // src: https://stackoverflow.com/a/15030117
+  let flatten = (arr) => {
+    return arr.reduce((flat, toFlatten) => {
+      return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
+    }, []);
+  };
+  let ceil = (number) => Math.ceil(number * 100);
+  const IV_LIST = flatten(
+    ivs.map(atk =>
+      ivs.map(def =>
+        ivs.map(sta => ({ atk, def, sta, iv: ceil((atk + def + sta) / 45) }))
+      )
+    )
+  );
+  let cpList = IV_LIST.map(iv => {
+    iv.cp = calPmData(pm, iv, lv).cp;
+    return iv;
+  });
+  cpList.sort((a, b) => {
+    let cpDelta = b.cp - a.cp;
+    let atkDelta = b.atk - a.atk;
+    let defDelta = b.def - a.def;
+    let staDelta = b.sta - a.sta;
+    return cpDelta
+            ? cpDelta
+            : atkDelta
+              ? atkDelta
+              : defDelta
+                ? defDelta
+                : staDelta;
+  });
+  window.cpList = cpList;
+  return cpList;
+};
+
 const pollNewData = (url = 'https://s3.us-east-2.amazonaws.com/gamepress-json/pogo/pokemon-list/en.json') => {
   fetch(url)
   .then(toJson)
@@ -305,3 +345,27 @@ const pollNewData = (url = 'https://s3.us-east-2.amazonaws.com/gamepress-json/po
     console.log({newPms, diffPms});
   });
 };
+
+elm.pmList.addEventListener('click', (e) => {
+  let pmDom = e.target;
+  if (!pmDom.classList.contains('pm_info')) {
+    return;
+  }
+  let pmData = pms[window.getComputedStyle(pmDom).getPropertyValue('--pm-pokedex') - 1];
+  let cpList = getIVCPList(pmData);
+
+  elm.dialogCaption.innerHTML = `${pmData.title_1} LV:${window.ctrl.lv}`;
+
+  elm.dialogTbody.innerHTML = cpList.map(i => `
+    <tr>
+      <td>${i.cp}</td>
+      <td>${i.atk}</td>
+      <td>${i.def}</td>
+      <td>${i.sta}</td>
+      <td>${i.iv}%</td>
+    </tr>
+  `).join('');
+  elm.dialog.showModal();
+});
+
+elm.dialog.addEventListener('click', elm.dialog.close)
