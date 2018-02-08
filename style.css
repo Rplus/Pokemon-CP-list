@@ -469,19 +469,62 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
 
 .dialog {
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: calc(12em + 10vw);
+  max-height: 80vh;
+  margin: auto;
+  padding: 0 3vw;
+  background-color: #fff;
   font-family: monospace;
-  max-height: 90vh;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1vh 3vw;
   font-size: larger;
-  overflow: auto; }
-  .dialog th {
-    padding: .5em 0; }
+  overflow: auto;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.25); }
+  .dialog[aria-hidden="true"] {
+    display: none; }
+  .dialog .caption {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: smaller;
+    height: 15px;
+    text-align: center;
+    background-color: #fff; }
+  .dialog .thead {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    font-size: smaller;
+    margin-bottom: 5px;
+    font-weight: 900;
+    border-bottom: 1px dotted;
+    background-color: #fff; }
+  .dialog .tr {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    padding-bottom: 2px;
+    text-align: center; }
+    .dialog .tr:nth-of-type(3n) {
+      padding-bottom: 10px; }
+    .dialog .tr > div {
+      width: 15%; }
+    .dialog .tr > div:first-child,
+    .dialog .tr > div:last-child {
+      width: 25%; }
   .dialog td {
     padding: 1px .5em; }
-  .dialog tr:nth-of-type(3n) td {
-    padding-bottom: 10px; }
+  .dialog .dialog__closeBtn {
+    position: fixed;
+    top: 5vh;
+    right: 2vw;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 8vw; }
 
 *,
 *::before,

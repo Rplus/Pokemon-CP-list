@@ -142,19 +142,22 @@
       <label class="ctrl-info" for="show-types">show types</label>
       <p class="repo-info">GitHub repo: <a href="https://github.com/Rplus">Rplus</a> > <a href="https://github.com/Rplus/Pokemon-CP-list">Pokemon-CP-list</a></p>
     </footer>
-    <dialog class="dialog" id="dialog">
-      <table>
-        <caption></caption>
-        <thead>
-          <th>CP</th>
-          <th>A</th>
-          <th>D</th>
-          <th>S</th>
-          <th>IV</th>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </dialog>
+    <div class="dialog" id="dialog" aria-hidden="true">
+      <button class="dialog__closeBtn">X</button>
+      <div class="table">
+        <div class="caption"></div>
+        <div class="thead">
+          <div class="tr">
+            <div class="th">CP</div>
+            <div class="th">A</div>
+            <div class="th">D</div>
+            <div class="th">S</div>
+            <div class="th">IV</div>
+          </div>
+        </div>
+        <div class="tbody"></div>
+      </div>
+    </div>
   </div>
   <script src="script.js"></script>
   <template class="pmFilter__header--temp">
