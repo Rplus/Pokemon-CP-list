@@ -278,6 +278,15 @@ input[name="sort-by"][id="sort-by-tank-▼"]:checked ~ .pmList .pm {
     padding: 0 .5em;
     text-transform: uppercase; }
 
+label[for="types-filter-ctrl"]::before {
+  content: '😚';
+  padding-right: .25em;
+  font-style: normal;
+  color: #000; }
+
+#types-filter-ctrl:checked ~ .pmFilter__header label[for="types-filter-ctrl"]::before {
+  content: '😄'; }
+
 .pmFilter__label {
   position: relative;
   -ms-flex-preferred-size: 6.5em;
@@ -316,6 +325,8 @@ input[name="sort-by"][id="sort-by-tank-▼"]:checked ~ .pmList .pm {
     margin: -.5em;
     background-color: rgba(255, 255, 153, 0.5);
     opacity: var(--activity, 0); }
+  #types-filter-ctrl:not(:checked) ~ .pmFilter__label {
+    display: none; }
 
 .pmFilter__label[for="ck-Normal"]::before {
   background-image: url("img/type_Normal.png"); }

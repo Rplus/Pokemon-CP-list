@@ -161,8 +161,10 @@
   </div>
   <script src="script.js"></script>
   <template class="pmFilter__header--temp">
+    <input class="sr-only" id="types-filter-ctrl" type="checkbox" checked="checked"/>
     <div class="pmFilter__header">
-      <button data-hook="js" data-type="none">none</button>filter by types
+      <button data-hook="js" data-type="none">none</button>
+      <label for="types-filter-ctrl">filter by types</label>
       <button data-hook="js" data-type="all">all</button>
     </div>
   </template>
