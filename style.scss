@@ -278,6 +278,19 @@ $sort-type: (
   }
 }
 
+label[for="types-filter-ctrl"] {
+  &::before {
+    content: '😚';
+    padding-right: .25em;
+    font-style: normal;
+    color: #000;
+  }
+
+  #types-filter-ctrl:checked ~ .pmFilter__header &::before {
+    content: '😄';
+  }
+}
+
 .pmFilter__label {
   position: relative;
   flex-basis: 6.5em;
@@ -317,6 +330,10 @@ $sort-type: (
     margin: -.5em;
     background-color: rgba(#ff9, .5);
     opacity: var(--activity, 0);
+  }
+
+  #types-filter-ctrl:not(:checked) ~ & {
+    display: none;
   }
 }
 

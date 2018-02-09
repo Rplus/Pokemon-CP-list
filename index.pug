@@ -129,9 +129,10 @@ body
   script(src="script.js")
 
   template.pmFilter__header--temp
+    input#types-filter-ctrl.sr-only(type="checkbox" checked)
     .pmFilter__header
       button(data-hook="js" data-type="none") none
-      | filter by types
+      label(for="types-filter-ctrl") filter by types
       button(data-hook="js" data-type="all") all
   template.pokedexRange--temp
     .pokedexRange
