@@ -297,11 +297,11 @@ const getIVCPList = (pm, lv = window.ctrl.lv) => {
       return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
     }, []);
   };
-  let ceil = (number) => Math.ceil(number * 100);
+  let round = (number) => Math.round(number * 100);
   const IV_LIST = flatten(
     ivs.map(atk =>
       ivs.map(def =>
-        ivs.map(sta => ({ atk, def, sta, iv: ceil((atk + def + sta) / 45) }))
+        ivs.map(sta => ({ atk, def, sta, iv: round((atk + def + sta) / 45) }))
       )
     )
   );
