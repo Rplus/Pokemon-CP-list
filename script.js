@@ -306,8 +306,10 @@ const getIVCPList = (pm, lv = window.ctrl.lv) => {
     )
   );
   let cpList = IV_LIST.map(iv => {
-    iv.cp = calPmData(pm, iv, lv).cp;
-    return iv;
+    return {
+      ...iv,
+      ...calPmData(pm, iv, lv)
+    };
   });
   cpList.sort((a, b) => {
     let cpDelta = b.cp - a.cp;
@@ -364,6 +366,7 @@ elm.pmList.addEventListener('click', (e) => {
       <div>${i.def}</div>
       <div>${i.sta}</div>
       <div>${i.iv}%</div>
+      <div>${i.hp}</div>
     </div class="tr">
   `).join('');
   elm.dialog.setAttribute('aria-hidden', false);

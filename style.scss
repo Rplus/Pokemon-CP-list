@@ -541,8 +541,12 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
     }
 
     > div:first-child,
-    > div:last-child {
+    > div:nth-of-type(5) {
       width: 25%;
+    }
+
+    > div:nth-of-type(6) {
+      margin-left: .5em;
     }
   }
 
