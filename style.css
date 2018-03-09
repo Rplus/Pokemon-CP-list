@@ -525,8 +525,10 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
     .dialog .tr > div {
       width: 15%; }
     .dialog .tr > div:first-child,
-    .dialog .tr > div:last-child {
+    .dialog .tr > div:nth-of-type(5) {
       width: 25%; }
+    .dialog .tr > div:nth-of-type(6) {
+      margin-left: .5em; }
   .dialog td {
     padding: 1px .5em; }
   .dialog .dialog__closeBtn {
