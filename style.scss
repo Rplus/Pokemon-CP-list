@@ -64,6 +64,7 @@ td > input {
   transition: transform .3s;
   display: none;
   order: calc(var(--pm-sort-by) * var(--pm-sort-dir));
+  counter-reset: cp var(--pm-cp) hp var(--pm-hp);
 
   &:hover {
     * {
@@ -95,7 +96,6 @@ td > input {
 
   &::before {
     content: counter(cp);
-    counter-reset: cp var(--pm-cp) hp var(--pm-hp);
     font-size: larger;
     font-family: monospace;
     font: 100 calc(1em + 2vmin) monospace;
@@ -131,7 +131,7 @@ td > input {
 
   &::after {
     content:
-      attr(data-hp) ' HP'
+      counter(hp) ' HP'
       '\A' attr(data-atk) ' A.'
       '\A' attr(data-def) ' D.'
       '\A' attr(data-sta) ' S.';
