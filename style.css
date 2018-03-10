@@ -50,7 +50,8 @@ td > input {
   transition: transform .3s;
   display: none;
   -ms-flex-order: calc(var(--pm-sort-by) * var(--pm-sort-dir));
-  order: calc(var(--pm-sort-by) * var(--pm-sort-dir)); }
+  order: calc(var(--pm-sort-by) * var(--pm-sort-dir));
+  counter-reset: cp var(--pm-cp) hp var(--pm-hp); }
   .pm:hover * {
     opacity: unset !important; }
 
@@ -71,7 +72,6 @@ td > input {
   left: 0; }
   .pm_cp::before {
     content: counter(cp);
-    counter-reset: cp var(--pm-cp) hp var(--pm-hp);
     font-size: larger;
     font-family: monospace;
     font: 100 calc(1em + 2vmin) monospace; }
@@ -100,7 +100,7 @@ td > input {
   opacity: .5;
   color: rgba(0, 0, 0, 0.5); }
   .pm_info::after {
-    content: attr(data-hp) " HP" "\a" attr(data-atk) " A." "\a" attr(data-def) " D." "\a" attr(data-sta) " S."; }
+    content: counter(hp) " HP" "\a" attr(data-atk) " A." "\a" attr(data-def) " D." "\a" attr(data-sta) " S."; }
 
 .pm_types {
   position: absolute;
