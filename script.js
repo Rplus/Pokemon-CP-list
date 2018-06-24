@@ -132,10 +132,10 @@ const updateInput = ({ value, sync, update, type, target } = {}) => {
 };
 
 // fetch data
-let upstreamUrls = ['pms.json', 'levelMultiplier.json', 'power-up.json'];
+let upstreamUrls = ['list-en.json', 'levelMultiplier.json', 'power-up.json', 'pm-name.json'];
 Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
 .then(datas => {
-  let [pms, levelMultiplier, powerUp] = datas;
+  let [pms, levelMultiplier, powerUp, pmsName] = datas;
   window.pms = pms; // DEBUG
   window.levelMultiplier = levelMultiplier;
   window.powerUp = powerUp;
@@ -151,6 +151,19 @@ Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
   window.colCount = Number(window.getComputedStyle(document.documentElement).getPropertyValue('--sprite-grid-col'))
 
   let pmHtml = pms.map(pm => {
+    pm.isAlolan = /^Alolan/.test(pm.title_1);
+    pm.idx = pm.number;
+    pm.title_1 = pmsName[pm.number];
+    pm.type = [
+      pm.field_pokemon_type,
+      pm.pokemon_class && pm.pokemon_class !== 'Normal' && 'Legendary',
+      pm.isAlolan ? 'Alolan' : ''
+    ].join(', ');
+
+    if (pm.isAlolan) {
+      pm.idx += '-alolan';
+      pm.title_1 = `(阿羅拉) ${pm.title_1}`;
+    }
     ['atk', 'def', 'sta'].forEach(i => {
       pm[i] = pm[i] * 1;
     });
@@ -184,18 +197,21 @@ const createPmHTML = (pm) => {
   pm.tank = pm.sta * pm.def;
   return `
     <li class="pm"
-      data-type="${[pm.field_pokemon_type, pm.pokemon_class && pm.pokemon_class !== 'Normal' && 'Legendary'].join(', ')}"
+      data-type="${pm.type}"
       data-maxcp="${pm.cp}"
+      data-alolan="${pm.isAlolan}"
       style="
         --pm-pokedex: ${pm.number};
+        --pm-idx: ${pm.idx};
         --pm-atk: ${pm.atk};
         --pm-def: ${pm.def};
         --pm-sta: ${pm.sta};
         --pm-tank: ${pm.tank};
         --pm-col: ${col};
         --pm-row: ${row};
-        --pm-cp: var(--pm-${pm.number}-cp);
-        --pm-hp: var(--pm-${pm.number}-hp);"
+        --pm-alolan-bgi: url('./img/alolan-${pm.number.padStart(3, '0')}-61.png');
+        --pm-cp: var(--pm-${pm.idx}-cp);
+        --pm-hp: var(--pm-${pm.idx}-hp);"
     >
       <div class="pm_name" data-podex=${pm.number} title="${pm.title.match(/[^>]+\>([^<]+)/)[1]}">${pm.title_1}</div>
       <div class="pm_img"></div>
@@ -212,7 +228,7 @@ const createPmHTML = (pm) => {
 };
 
 const createFilter = () => {
-  let types = ['Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy', 'Legendary'];
+  let types = ['Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy', 'Legendary', 'Alolan'];
 
   return types.reduce((obj, type) => {
     let _checkboxHtml = `<input type="checkbox" id="ck-${type}" value="${type}" class="pmFilter__checkbox sr-only ck-${type}" ${type === 'Legendary' ? 'checked': ''}>`;
@@ -283,7 +299,7 @@ const updataTypeChecbox = (value) => {
 const updatePmData = () => {
   let data = pms.map(pm => {
     let {cp, hp} = calPmData(pm);
-    return `--pm-${pm.number}-cp: ${cp}; --pm-${pm.number}-hp: ${hp};`
+    return `--pm-${pm.idx}-cp: ${cp}; --pm-${pm.idx}-hp: ${hp};`
   });
 
   elm.pmCustomStyle.textContent = `.pmList {${data.join(' ')}}`;
@@ -350,11 +366,20 @@ const pollNewData = (url = 'https://s3.us-east-2.amazonaws.com/gamepress-json/po
 };
 
 elm.pmList.addEventListener('click', (e) => {
-  let pmDom = e.target;
-  if (!pmDom.classList.contains('pm_info')) {
+  let target = e.target;
+  if (!target.classList.contains('pm_info')) {
     return;
   }
-  let pmData = pms[window.getComputedStyle(pmDom).getPropertyValue('--pm-pokedex') - 1];
+  let pmDom = target.closest('.pm');
+
+  if (!pmDom) { return; }
+
+  let pokedex = +pmDom.style.getPropertyValue('--pm-pokedex');
+  let maxcp = +pmDom.dataset.maxcp;
+  let pmData = pms.find((pm) => +pm.number === pokedex && +pm.cp === maxcp)
+
+  if (!pmData) { return; }
+
   let cpList = getIVCPList(pmData);
 
   elm.dialogCaption.innerHTML = `${pmData.title_1} LV:${window.ctrl.lv}`;

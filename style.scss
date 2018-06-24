@@ -1,4 +1,4 @@
-$types: ('Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy', 'Legendary');
+$types: ('Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy', 'Legendary', 'Alolan');
 
 %matched-type {
   display: unset;
@@ -85,8 +85,13 @@ td > input {
   background-position:
     calc(var(--pm-col) * var(--img-size) * -1)
     calc(var(--pm-row) * var(--img-size) * -1);
-  transition: opacity .3s;
-  opacity: .3;
+  // transition: opacity .3s;
+  opacity: .5;
+
+  .pm[data-alolan="true"] & {
+    background: var(--pm-alolan-bgi);
+    background-size: contain;
+  }
 }
 
 .pm_cp {
