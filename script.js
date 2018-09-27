@@ -158,7 +158,7 @@ Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
       pm.field_pokemon_type,
       pm.pokemon_class && pm.pokemon_class !== 'Normal' && 'Legendary',
       pm.isAlolan ? 'Alolan' : ''
-    ].join(', ');
+    ].filter(Boolean).join(', ');
 
     if (pm.isAlolan) {
       pm.idx += '-alolan';
