@@ -164,6 +164,13 @@ Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
       pm.idx += '-alolan';
       pm.title_1 = `(阿羅拉) ${pm.title_1}`;
     }
+
+    if (pm.number === '386') {
+      let type = pm.title.match(/386\-(\w+)/)[1];
+      pm.idx += `-${type}`;
+      pm.title_1 += ` \n${type}`;
+    }
+
     ['atk', 'def', 'sta'].forEach(i => {
       pm[i] = pm[i] * 1;
     });
@@ -200,6 +207,7 @@ const createPmHTML = (pm) => {
       data-type="${pm.type}"
       data-maxcp="${pm.cp}"
       data-alolan="${pm.isAlolan}"
+      data-number="${pm.number}"
       style="
         --pm-pokedex: ${pm.number};
         --pm-idx: ${pm.idx};
@@ -209,7 +217,12 @@ const createPmHTML = (pm) => {
         --pm-tank: ${pm.tank};
         --pm-col: ${col};
         --pm-row: ${row};
-        --pm-alolan-bgi: url('./img/alolan-${pm.number.padStart(3, '0')}-61.png');
+        ${
+          pm.isAlolan ? `--pm-special-bgi: url('./img/alolan-${pm.number.padStart(3, '0')}-61.png');` : ''
+        }
+        ${
+          pm.number === '386' ? `--pm-special-bgi: url('./img/${pm.idx}.png');` : ''
+        }
         --pm-cp: var(--pm-${pm.idx}-cp);
         --pm-hp: var(--pm-${pm.idx}-hp);"
     >
@@ -229,6 +242,7 @@ const createPmHTML = (pm) => {
 
 const createFilter = () => {
   let types = ['Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy', 'Legendary', 'Alolan'];
+  let types = ['Normal', 'Fighting', 'Flying', 'Poison', 'Ground', 'Rock', 'Bug', 'Ghost', 'Steel', 'Fire', 'Water', 'Grass', 'Electric', 'Psychic', 'Ice', 'Dragon', 'Dark', 'Fairy', 'Legendary', 'Alolan'].sort();
 
   return types.reduce((obj, type) => {
     let _checkboxHtml = `<input type="checkbox" id="ck-${type}" value="${type}" class="pmFilter__checkbox sr-only ck-${type}" ${type === 'Legendary' ? 'checked': ''}>`;
