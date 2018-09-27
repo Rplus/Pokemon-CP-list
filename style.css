@@ -65,7 +65,10 @@ td > input {
   background-position: calc(var(--pm-col) * var(--img-size) * -1) calc(var(--pm-row) * var(--img-size) * -1);
   opacity: .5; }
   .pm[data-alolan="true"] .pm_img {
-    background: var(--pm-alolan-bgi);
+    background: var(--pm-special-bgi);
+    background-size: contain; }
+  .pm[data-number="386"] .pm_img {
+    background: var(--pm-special-bgi);
     background-size: contain; }
 
 .pm_cp {
