@@ -116,17 +116,30 @@ body
 
     #dialog.dialog(aria-hidden="true")
       button.dialog__closeBtn X
-      .table
-        .caption
-        .thead
-          .tr
-            .th CP
-            .th A
-            .th D
-            .th S
-            .th IV
-            .th HP
-        .tbody
+
+      details.lv-cp(open)
+        summary
+        .table
+          .thead
+            .tr
+              .th CP
+              .th A
+              .th D
+              .th S
+              .th IV
+              .th HP
+          .tbody
+
+      details.lv-cp__iv100
+        summary
+        .table
+          .thead
+            .tr
+              .th Lv
+              .th CP
+              .th HP
+          .tbody
+
   script(src="script.js")
 
   template.pmFilter__header--temp

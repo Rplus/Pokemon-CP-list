@@ -503,7 +503,7 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
   bottom: 0;
   z-index: 1;
   width: calc(12em + 10vw);
-  max-height: 80vh;
+  max-height: 85vh;
   margin: auto;
   padding: 0 3vw;
   background-color: #fff;
@@ -516,21 +516,27 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
     display: none;
   }
 
+  summary,
   .caption {
     position: sticky;
     top: 0;
     z-index: 1;
     font-size: smaller;
     height: 15px;
-    text-align: center;
     background-color: #fff;
+  }
+
+  .caption {
+    visibility: hidden;
+    text-align: center;
   }
 
   .thead {
     position: sticky;
-    top: 15px;
-    font-size: smaller;
+    top: 1em;
     margin-bottom: 5px;
+    padding-top: .3em;
+    font-size: smaller;
     font-weight: 900;
     border-bottom: 1px dotted;
     background-color: #fff;
@@ -538,6 +544,7 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
 
   .tr {
     display: flex;
+    align-items: center;
     width: 100%;
     padding-bottom: 2px;
     text-align: center;
@@ -560,7 +567,7 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
     }
   }
 
-  td {
+  .td {
     padding: 1px .5em;
   }
 
@@ -571,6 +578,47 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
     width: 1.5em;
     height: 1.5em;
     font-size: 8vw;
+  }
+
+  .lv-cp__iv100 {
+    .thead,
+    .tbody {
+      columns: 2;
+      column-gap: .5em;
+      column-rule: dotted 1px #ccc;
+    }
+
+    .tr {
+      &:nth-of-type(3n) {
+        padding-bottom: unset;
+      }
+
+      &:nth-of-type(5n) {
+        padding-bottom: 10px;
+      }
+
+      > div {
+        width: 30%;
+        color: lighten(#000, 70%);
+        font-size: smaller;
+
+        &:nth-of-type(1) {
+          width: 20%;
+        }
+
+        &:nth-of-type(2) {
+          width: 50%;
+          color: #000;
+          font-size: larger;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+
+  details {
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }
 

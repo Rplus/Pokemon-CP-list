@@ -61,8 +61,10 @@ window.elm = {
   pmFilter: $('.pmFilter'),
   pmCustomStyle: $('.pmCustomStyle'),
   dialog: $('#dialog'),
-  dialogCaption: $('#dialog .caption'),
-  dialogTbody: $('#dialog .tbody'),
+  dialogLvCpSummary: $('#dialog .lv-cp summary'),
+  dialogLvCpTbody: $('#dialog .lv-cp .tbody'),
+  dialogLvCpIv100Summary: $('#dialog .lv-cp__iv100 summary'),
+  dialogLvCpIv100Tbody: $('#dialog .lv-cp__iv100 .tbody'),
   dialogClose: $('.dialog__closeBtn'),
   'pmLv': $('#pmLv'),
   'pmLv--range': $('#pmLv--range'),
@@ -395,9 +397,8 @@ elm.pmList.addEventListener('click', (e) => {
 
   let cpList = getIVCPList(pmData);
 
-  elm.dialogCaption.innerHTML = `${pmData.title_1} LV:${window.ctrl.lv}`;
-
-  elm.dialogTbody.innerHTML = cpList.map(i => `
+  elm.dialogLvCpSummary.innerText = `${pmData.title_1} LV:${window.ctrl.lv} CP list`;
+  elm.dialogLvCpTbody.innerHTML = cpList.map(i => `
     <div class="tr">
       <div>${i.cp}</div>
       <div>${i.atk}</div>
@@ -405,7 +406,27 @@ elm.pmList.addEventListener('click', (e) => {
       <div>${i.sta}</div>
       <div>${i.iv}%</div>
       <div>${i.hp}</div>
-    </div class="tr">
+    </div>
+  `).join('');
+
+
+  let _100data = Array.apply(null, {length: 40})
+  .map((i, v) => {
+    return {
+      ...calPmData(
+        pmData,
+        { def: 15, atk: 15, sta: 15},
+        v + 1
+      ), lv: v + 1};
+  });
+
+  elm.dialogLvCpIv100Summary.innerText = `${pmData.title_1} IV100 Lv & CP`;
+  elm.dialogLvCpIv100Tbody.innerHTML = _100data.map(i => `
+    <div class="tr">
+      <div>${i.lv}</div>
+      <div>${i.cp}</div>
+      <div>${i.hp}</div>
+    </div>
   `).join('');
   elm.dialog.setAttribute('aria-hidden', false);
 });
