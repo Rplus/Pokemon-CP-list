@@ -7,8 +7,8 @@ input[name="sort-by"][id="sort-by-id-▲"]:checked ~ .pmCtrlBox .pmSort[for="sor
 
 :root {
   --iv-percentage: 100;
-  --sprite-grid-col: 25;
-  --sprite-grid-row: 16;
+  --sprite-grid-col: 28;
+  --sprite-grid-row: 18;
   --img-size: 80px;
   --pm-sort-by: var(--pm-pokedex);
   --pm-sort-dir: -1; }
@@ -413,7 +413,7 @@ label[for="types-filter-ctrl"]::before {
     counter-reset: value var(--value);
     -ms-flex-order: var(--value);
     order: var(--value);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 0, transparent 39.11917%, rgba(0, 0, 0, 0.05) 0, transparent 65.02591%, rgba(0, 0, 0, 0.05) 0, transparent); }
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 0, transparent 29.26357%, rgba(0, 0, 0, 0.05) 0, transparent 48.64341%, rgba(0, 0, 0, 0.05) 0, transparent 74.8062%, rgba(0, 0, 0, 0.05) 0, transparent); }
     .pokedexRange > label::before {
       content: counter(value);
       position: absolute;
@@ -430,17 +430,22 @@ label[for="types-filter-ctrl"]::before {
     font-size: 1em;
     font-style: italic;
     color: rgba(0, 0, 0, 0.5); }
-    .pokedexRange__header::before, .pokedexRange__header::after {
-      content: '~ 151';
+    .pokedexRange__header .gen1,
+    .pokedexRange__header .gen2,
+    .pokedexRange__header .gen3,
+    .pokedexRange__header .gen4 {
       position: absolute;
       top: 2em;
-      right: 60.88083%;
+      right: 70.73643%;
       font-size: smaller;
       font-style: normal;
       opacity: .5; }
-    .pokedexRange__header::after {
-      content: '~ 251';
-      right: 34.97409%; }
+    .pokedexRange__header .gen2 {
+      right: 51.35659%; }
+    .pokedexRange__header .gen3 {
+      right: 25.1938%; }
+    .pokedexRange__header .gen4 {
+      right: 4.45736%; }
 
 .footer {
   padding: 3em; }
