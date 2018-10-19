@@ -150,7 +150,12 @@ body
       button(data-hook="js" data-type="all") all
   template.pokedexRange--temp
     .pokedexRange
-      h3.pokedexRange__header filter by pokedex
+      h3.pokedexRange__header
+        | filter by order
+        div.gen1 ~ 151
+        div.gen2 ~ 251
+        div.gen3 ~ 386
+        div.gen4 ~ 493
       label(for="pokedexRange1" style="--value: var(--pokedex-range1)")
         input(id="pokedexRange1" data-pokedex-range="1" type="range" min="1")
       label(for="pokedexRange2" style="--value: var(--pokedex-range2)")
