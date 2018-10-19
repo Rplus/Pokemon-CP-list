@@ -496,7 +496,7 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
   bottom: 0;
   z-index: 1;
   width: calc(12em + 10vw);
-  max-height: 80vh;
+  max-height: 85vh;
   margin: auto;
   padding: 0 3vw;
   background-color: #fff;
@@ -506,6 +506,7 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
   box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.25); }
   .dialog[aria-hidden="true"] {
     display: none; }
+  .dialog summary,
   .dialog .caption {
     position: -webkit-sticky;
     position: sticky;
@@ -513,20 +514,25 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
     z-index: 1;
     font-size: smaller;
     height: 15px;
-    text-align: center;
     background-color: #fff; }
+  .dialog .caption {
+    visibility: hidden;
+    text-align: center; }
   .dialog .thead {
     position: -webkit-sticky;
     position: sticky;
-    top: 15px;
-    font-size: smaller;
+    top: 1em;
     margin-bottom: 5px;
+    padding-top: .3em;
+    font-size: smaller;
     font-weight: 900;
     border-bottom: 1px dotted;
     background-color: #fff; }
   .dialog .tr {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
     padding-bottom: 2px;
     text-align: center; }
@@ -539,7 +545,7 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
       width: 25%; }
     .dialog .tr > div:nth-of-type(6) {
       margin-left: .5em; }
-  .dialog td {
+  .dialog .td {
     padding: 1px .5em; }
   .dialog .dialog__closeBtn {
     position: fixed;
@@ -548,6 +554,32 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
     width: 1.5em;
     height: 1.5em;
     font-size: 8vw; }
+  .dialog .lv-cp__iv100 .thead,
+  .dialog .lv-cp__iv100 .tbody {
+    -moz-columns: 2;
+    columns: 2;
+    -moz-column-gap: .5em;
+    column-gap: .5em;
+    -moz-column-rule: dotted 1px #ccc;
+    column-rule: dotted 1px #ccc; }
+  .dialog .lv-cp__iv100 .tr:nth-of-type(3n) {
+    padding-bottom: unset; }
+  .dialog .lv-cp__iv100 .tr:nth-of-type(5n) {
+    padding-bottom: 10px; }
+  .dialog .lv-cp__iv100 .tr > div {
+    width: 30%;
+    color: #b3b3b3;
+    font-size: smaller; }
+    .dialog .lv-cp__iv100 .tr > div:nth-of-type(1) {
+      width: 20%; }
+    .dialog .lv-cp__iv100 .tr > div:nth-of-type(2) {
+      width: 50%;
+      color: #000;
+      font-size: larger;
+      font-weight: 900; }
+  .dialog details {
+    margin-top: 1em;
+    margin-bottom: 1em; }
 
 *,
 *::before,
