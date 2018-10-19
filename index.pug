@@ -14,6 +14,8 @@ html(lang="en")
     meta(name="apple-mobile-web-app-capable" content="yes")
     meta(name="application-name" content="👁 Pokémons CP list")
     meta(name="apple-mobile-web-app-title" content="👁 Pokémons CP list")
+    script(src="powerUp.js" defer)
+    script(src="script.js" defer)
 
 body
 
@@ -145,7 +147,6 @@ body
               .th HP
           .tbody
 
-  script(src="script.js")
 
   template.pmFilter__header--temp
     input#types-filter-ctrl.sr-only(type="checkbox" checked)

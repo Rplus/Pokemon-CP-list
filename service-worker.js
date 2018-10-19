@@ -24,7 +24,6 @@ const PRECACHE_URLS = [
   './img/',
   'style.css',
   'levelMultiplier.json',
-  'power-up.json',
   'list-en.json',
   'pm-name.json',
   'script.js'

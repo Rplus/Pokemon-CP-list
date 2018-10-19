@@ -1,4 +1,4 @@
-[
+let powerUp = [
   { "lv": 1, "stardust": 200, "candy": 1 },
   { "lv": 1.5, "stardust": 200, "candy": 1 },
   { "lv": 2, "stardust": 200, "candy": 1 },
@@ -77,4 +77,4 @@
   { "lv": 38.5, "stardust": 9000,  "candy": 12 },
   { "lv": 39, "stardust": 10000, "candy": 15 },
   { "lv": 39.5, "stardust": 10000, "candy": 15 }
-]
+];
