@@ -49,8 +49,8 @@ const calPmData = (pm, iv = window.ctrl.iv, lv = window.ctrl.lv) => {
   let ADS = (pm.atk + iv.atk) * Math.pow((pm.def + iv.def) * (pm.sta + iv.sta), 0.5);
   let total = ADS * Math.pow(mFactor, 2.0);
   return {
-    cp: Math.floor(total / 10),
-    hp: Math.floor((pm.sta + iv.sta) * mFactor)
+    cp: Math.max(10, Math.floor(total / 10)),
+    hp: Math.max(10, Math.floor((pm.sta + iv.sta) * mFactor))
   };
 };
 
