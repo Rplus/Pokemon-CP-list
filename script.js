@@ -1,5 +1,13 @@
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/Pokemon-CP-list/service-worker.js');
+
+  caches.keys().then((cacheNames) => {
+    console.log(cacheNames);
+    // cacheNames.forEach((cacheName) => {
+    //   caches.delete(cacheName);
+    // });
+  });
+
 }
 
 window.$ = document.querySelector.bind(document);
