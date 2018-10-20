@@ -546,8 +546,10 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
     width: 100%;
     padding-bottom: 2px;
     text-align: center; }
+    .dialog .tr:hover {
+      background-color: #eee; }
     .dialog .tr:nth-of-type(3n) {
-      padding-bottom: 10px; }
+      margin-bottom: 10px; }
     .dialog .tr > div {
       width: 15%; }
     .dialog .tr > div:first-child,
@@ -573,9 +575,9 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
     -moz-column-rule: dotted 1px #ccc;
     column-rule: dotted 1px #ccc; }
   .dialog .lv-cp__iv100 .tr:nth-of-type(3n) {
-    padding-bottom: unset; }
+    margin-bottom: unset; }
   .dialog .lv-cp__iv100 .tr:nth-of-type(5n) {
-    padding-bottom: 10px; }
+    margin-bottom: 10px; }
   .dialog .lv-cp__iv100 .tr > div {
     width: 30%;
     color: #b3b3b3;
