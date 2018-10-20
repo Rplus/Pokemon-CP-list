@@ -564,8 +564,12 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
     padding-bottom: 2px;
     text-align: center;
 
+    &:hover {
+      background-color: #eee;
+    }
+
     &:nth-of-type(3n) {
-      padding-bottom: 10px;
+      margin-bottom: 10px;
     }
 
     > div {
@@ -605,11 +609,11 @@ input[id="show-types"]:not(:checked) ~ .pmList .pm_types {
 
     .tr {
       &:nth-of-type(3n) {
-        padding-bottom: unset;
+        margin-bottom: unset;
       }
 
       &:nth-of-type(5n) {
-        padding-bottom: 10px;
+        margin-bottom: 10px;
       }
 
       > div {
