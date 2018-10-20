@@ -133,13 +133,7 @@ const updateInput = ({ value, sync, update, type, target } = {}) => {
   throttle(updatePmData, 500)();
 };
 
-// fetch data
-let upstreamUrls = ['list-en.json', 'pm-name.json'];
-Promise.all(upstreamUrls.map(url => fetch(url).then(toJson)))
-.then(datas => {
-  let [pms, pmsName] = datas;
-  window.pms = pms; // DEBUG
-
+setTimeout(() => {
   window.calcPowerCost = (lv = 40) => powerUp.reduce((sum, i) => {
     if (i.lv - lv >= 0) {
       sum.stardust += i.stardust;

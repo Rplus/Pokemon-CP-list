@@ -1,4 +1,4 @@
-[
+let pms = [
 {
 "number": "1",
 "image": "  <a href=\"/pokemon/1\"><img src=\"/sites/pokemongo/files/styles/pokemon_small/public/2016-08/1_0.png?itok=tjI51av5\" width=\"35\" height=\"32\" alt=\"Bulbasaur\" typeof=\"foaf:Image\" class=\"image-style-pokemon-small\" />\n\n</a>\n",

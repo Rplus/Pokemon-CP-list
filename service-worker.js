@@ -23,8 +23,6 @@ const PRECACHE_URLS = [
   './', // Alias for index.html
   './img/',
   'style.css',
-  'list-en.json',
-  'pm-name.json',
   'script.js'
 ];
 
