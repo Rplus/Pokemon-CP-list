@@ -152,7 +152,7 @@ setTimeout(() => {
 
   window.colCount = Number(window.getComputedStyle(document.documentElement).getPropertyValue('--sprite-grid-col'))
 
-  let pmHtml = pms.map(pm => {
+  let pmHtml = pms.map((pm, i) => {
     pm.isAlolan = /^Alolan/.test(pm.title_1);
     pm.idx = pm.number;
     pm.title_1 = pmsName[pm.number];
@@ -162,15 +162,13 @@ setTimeout(() => {
       pm.isAlolan ? 'Alolan' : ''
     ].filter(Boolean).join(', ');
 
-    if (pm.isAlolan) {
-      pm.idx += '-alolan';
-      pm.title_1 = `(阿羅拉) ${pm.title_1}`;
-    }
+    let firstIndex = pms.findIndex(_pm => _pm.idx === pm.idx);
 
-    if (pm.number === '386') {
-      let type = pm.title.match(/386\-(\w+)/)[1];
+    if (firstIndex !== i) {
+      let type = pm.title.match(/(\d+)\-(\w+)/)[2];
       pm.idx += `-${type}`;
-      pm.title_1 += ` \n${type}`;
+      pm.title_1 += `-${type}`;
+      pm.isotope = true;
     }
 
     ['atk', 'def', 'sta'].forEach(i => {
@@ -220,10 +218,9 @@ const createPmHTML = (pm) => {
         --pm-col: ${col};
         --pm-row: ${row};
         ${
-          pm.isAlolan ? `--pm-special-bgi: url('./img/alolan-${pm.number.padStart(3, '0')}-61.png');` : ''
-        }
-        ${
-          pm.number === '386' ? `--pm-special-bgi: url('./img/${pm.idx}.png');` : ''
+          pm.isotope
+           ? `--pm-special-bgi: url('./img/${pm.idx}.png');`
+           : ''
         }
         --pm-cp: var(--pm-${pm.idx}-cp);
         --pm-hp: var(--pm-${pm.idx}-hp);"

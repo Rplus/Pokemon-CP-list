@@ -88,12 +88,7 @@ td > input {
   // transition: opacity .3s;
   opacity: .5;
 
-  .pm[data-alolan="true"] & {
-    background: var(--pm-special-bgi);
-    background-size: contain;
-  }
-
-  .pm[data-number="386"] & {
+  .pm[style*="pm-special-bgi"] & {
     background: var(--pm-special-bgi);
     background-size: contain;
   }
