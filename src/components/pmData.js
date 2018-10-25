@@ -3,17 +3,42 @@ import pmName from '../pm-name.json';
 
 console.log({ pmData, pmName });
 
-let data = Object.values(pmData);
+let uniDex = [
+  351,
+  421,
+  422,
+  423,
+  493,
+];
 
-console.log(111);
+let getPmName = (pm = 1, lang) => {
+  let dex = `${pm.pokedex}`.padStart(3, '0');
+  return (lang ? pmName[dex][lang] : pmName[dex]) || pm.pokemonId;
+};
 
-console.log(pmData[1][0]);
+Object.keys(pmData).forEach((dex) => {
+  let _pmWithDex = pmData[dex];
 
-console.log(data);
-console.log(222);
+  _pmWithDex.forEach(pm => {
+    pm.names = getPmName(pm);
+  });
 
-// console.log(data);
+  if (_pmWithDex.length > 2 && !pmData.filted) {
+    let pm1 = _pmWithDex[0];
+
+    if (uniDex.includes(pm1.pokedex)) {
+      pmData[dex] = [pm1];
+    } else {
+      pmData[dex].shift();
+      pmData[dex].sort((a, b) => {
+        return b.templateId.indexOf('NORMAL') - a.templateId.indexOf('NORMAL');
+      });
+    }
+  }
+});
+
+pmData.filted = true;
 
 export default {
-  name: 'pmData2',
+  pm: pmData,
 };
