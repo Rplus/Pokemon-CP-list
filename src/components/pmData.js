@@ -1,7 +1,6 @@
-import pmData from '../pm-data-by-dex.json';
-import pmName from '../pm-name.json';
-
-console.log({ pmData, pmName });
+import pmData from '../data/pm-data-by-dex.json';
+import pmName from '../data/pm-name.json';
+import levelMultiplier from '../data/level-multiplier.json';
 
 let uniDex = [
   351,
@@ -16,29 +15,75 @@ let getPmName = (pm = 1, lang) => {
   return (lang ? pmName[dex][lang] : pmName[dex]) || pm.pokemonId;
 };
 
+let pmTypes = {};
+
 Object.keys(pmData).forEach((dex) => {
-  let _pmWithDex = pmData[dex];
+  pmData[dex].sort((a, b) => (
+    b.templateId.indexOf('NORMAL') - a.templateId.indexOf('NORMAL')
+  ));
 
-  _pmWithDex.forEach(pm => {
+  pmData[dex] = pmData[dex].filter(pm => {
+    pm.uid = `${pm.pokedex}${pm.isotope ? '_' + pm.isotope : ''}`;
     pm.names = getPmName(pm);
-  });
-
-  if (_pmWithDex.length > 2 && !pmData.filted) {
-    let pm1 = _pmWithDex[0];
-
-    if (uniDex.includes(pm1.pokedex)) {
-      pmData[dex] = [pm1];
-    } else {
-      pmData[dex].shift();
-      pmData[dex].sort((a, b) => {
-        return b.templateId.indexOf('NORMAL') - a.templateId.indexOf('NORMAL');
-      });
+    if (pm.rarity) {
+      pm.types.push('POKEMON_TYPE_RARITY');
     }
-  }
+    if (pm.isotope === 'ALOLA') {
+      pm.types.push('POKEMON_TYPE_ALOLA');
+    }
+    pm.types.forEach(t => (pmTypes[t] = ''));
+
+    if (pmData[dex].length > 1) {
+      // console.log(pm.templateId);
+      return (uniDex.indexOf(+dex) !== -1) ? !pm.isotope : pm.isotope;
+    }
+    return true;
+  });
 });
 
-pmData.filted = true;
+pmTypes = (
+  Object.keys(pmTypes)
+    .sort()
+    .map(t => t.replace('POKEMON_TYPE_', '').toLowerCase())
+);
+
+const dexMap = (
+  Object.keys(pmData)
+    .reduce((all, dex) => {
+      all[dex] = dex;
+      return all;
+    }, [])
+);
+
+const pms = [];
+
+Object.keys(pmData).forEach(dex => {
+  pmData[dex].forEach(pm => {
+    pms.push(pm);
+  });
+});
+
+const calPmData = (pm, adsl) => {
+  let [a, d, s, l] = adsl;
+  let mFactor = levelMultiplier[l];
+  let ADS = (pm.stats.baseAttack + a) * Math.pow((pm.stats.baseDefense + d) * (pm.stats.baseStamina + s), 0.5);
+  let total = ADS * Math.pow(mFactor, 2.0);
+
+  return {
+    cp: Math.max(10, Math.floor(total / 10)),
+    hp: Math.max(10, Math.floor((pm.stats.baseStamina + s) * mFactor)),
+  };
+};
 
 export default {
-  pm: pmData,
+  pms: pms,
+  types: pmTypes,
+  dexMap,
+  calPmData: calPmData,
+  genDex: {
+    'gen1': [1, 151],
+    'gen2': [152, 251],
+    'gen3': [252, 386],
+    'gen4': [387, 493],
+  },
 };
