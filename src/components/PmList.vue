@@ -28,9 +28,11 @@ export default {
     getL10n (strings, lang = window.lang) {
       return strings[lang];
     },
+
     getPmName: function (p) {
       return this.getL10n(p.names);
     },
+
     genStyle: function (pm) {
       return {
         '--pm-atk': pm.stats.baseAttack,
@@ -43,9 +45,10 @@ export default {
         '--pm-custom-bg': pm.isotope && pm.isotope !== 'NORMAL' ? '1' : null,
       };
     },
+
     genClass: function (pm) {
       return ['pm', ...pm.types].map(t => t.toLowerCase());
-    }
+    },
   },
 };
 </script>

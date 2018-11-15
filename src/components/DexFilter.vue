@@ -58,7 +58,7 @@ export default {
       max: max,
       v0: (this.dex && this.dex[0]) || min,
       v1: (this.dex && this.dex[1]) || max,
-    }
+    };
   },
 
   computed: {
@@ -87,7 +87,7 @@ export default {
     setDexRange (gen) {
       this.v0 = genDex[gen][0];
       this.v1 = genDex[gen][1];
-    }
+    },
   },
 };
 </script>

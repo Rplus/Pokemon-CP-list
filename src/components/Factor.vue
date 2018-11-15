@@ -85,14 +85,12 @@ export default {
 
     pmCpHp () {
       let adsl = [this.a, this.d, this.s, this.l];
-      let ooo = pmData.pms.map(pm => {
+      let pmDataStyle = pmData.pms.map(pm => {
         let { cp, hp } = pmData.calPmData(pm, adsl);
         return `--pm-${pm.uid}-cp: ${cp}; --pm-${pm.uid}-hp: ${hp};`;
       });
-      console.log({ ooo });
-      return `.pm-list { ${ooo.join(' ')} }`;
-    }
+      return `.pm-list { ${pmDataStyle.join(' ')} }`;
+    },
   },
-
 };
 </script>
