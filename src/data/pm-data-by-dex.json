@@ -4,9 +4,9 @@
       "templateId": "V0001_POKEMON_BULBASAUR",
       "pokemonId": "BULBASAUR",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 118,
-        "baseDefense": 118
+        "baseDefense": 111
       },
       "familyId": "FAMILY_BULBASAUR",
       "types": [
@@ -21,9 +21,9 @@
       "templateId": "V0002_POKEMON_IVYSAUR",
       "pokemonId": "IVYSAUR",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 151,
-        "baseDefense": 151
+        "baseDefense": 143
       },
       "familyId": "FAMILY_BULBASAUR",
       "types": [
@@ -38,9 +38,9 @@
       "templateId": "V0003_POKEMON_VENUSAUR",
       "pokemonId": "VENUSAUR",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 198,
-        "baseDefense": 198
+        "baseDefense": 189
       },
       "familyId": "FAMILY_BULBASAUR",
       "types": [
@@ -55,9 +55,9 @@
       "templateId": "V0004_POKEMON_CHARMANDER",
       "pokemonId": "CHARMANDER",
       "stats": {
-        "baseStamina": 78,
+        "baseStamina": 118,
         "baseAttack": 116,
-        "baseDefense": 96
+        "baseDefense": 93
       },
       "familyId": "FAMILY_CHARMANDER",
       "types": [
@@ -71,9 +71,9 @@
       "templateId": "V0005_POKEMON_CHARMELEON",
       "pokemonId": "CHARMELEON",
       "stats": {
-        "baseStamina": 116,
+        "baseStamina": 151,
         "baseAttack": 158,
-        "baseDefense": 129
+        "baseDefense": 126
       },
       "familyId": "FAMILY_CHARMANDER",
       "types": [
@@ -87,9 +87,9 @@
       "templateId": "V0006_POKEMON_CHARIZARD",
       "pokemonId": "CHARIZARD",
       "stats": {
-        "baseStamina": 156,
+        "baseStamina": 186,
         "baseAttack": 223,
-        "baseDefense": 176
+        "baseDefense": 173
       },
       "familyId": "FAMILY_CHARMANDER",
       "types": [
@@ -104,9 +104,9 @@
       "templateId": "V0007_POKEMON_SQUIRTLE",
       "pokemonId": "SQUIRTLE",
       "stats": {
-        "baseStamina": 88,
+        "baseStamina": 127,
         "baseAttack": 94,
-        "baseDefense": 122
+        "baseDefense": 121
       },
       "familyId": "FAMILY_SQUIRTLE",
       "types": [
@@ -120,7 +120,7 @@
       "templateId": "V0008_POKEMON_WARTORTLE",
       "pokemonId": "WARTORTLE",
       "stats": {
-        "baseStamina": 118,
+        "baseStamina": 153,
         "baseAttack": 126,
         "baseDefense": 155
       },
@@ -136,9 +136,9 @@
       "templateId": "V0009_POKEMON_BLASTOISE",
       "pokemonId": "BLASTOISE",
       "stats": {
-        "baseStamina": 158,
+        "baseStamina": 188,
         "baseAttack": 171,
-        "baseDefense": 210
+        "baseDefense": 207
       },
       "familyId": "FAMILY_SQUIRTLE",
       "types": [
@@ -152,9 +152,9 @@
       "templateId": "V0010_POKEMON_CATERPIE",
       "pokemonId": "CATERPIE",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 55,
-        "baseDefense": 62
+        "baseDefense": 55
       },
       "familyId": "FAMILY_CATERPIE",
       "types": [
@@ -168,9 +168,9 @@
       "templateId": "V0011_POKEMON_METAPOD",
       "pokemonId": "METAPOD",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 45,
-        "baseDefense": 94
+        "baseDefense": 80
       },
       "familyId": "FAMILY_CATERPIE",
       "types": [
@@ -184,9 +184,9 @@
       "templateId": "V0012_POKEMON_BUTTERFREE",
       "pokemonId": "BUTTERFREE",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 167,
-        "baseDefense": 151
+        "baseDefense": 137
       },
       "familyId": "FAMILY_CATERPIE",
       "types": [
@@ -201,9 +201,9 @@
       "templateId": "V0013_POKEMON_WEEDLE",
       "pokemonId": "WEEDLE",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 63,
-        "baseDefense": 55
+        "baseDefense": 50
       },
       "familyId": "FAMILY_WEEDLE",
       "types": [
@@ -218,9 +218,9 @@
       "templateId": "V0014_POKEMON_KAKUNA",
       "pokemonId": "KAKUNA",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 46,
-        "baseDefense": 86
+        "baseDefense": 75
       },
       "familyId": "FAMILY_WEEDLE",
       "types": [
@@ -235,9 +235,9 @@
       "templateId": "V0015_POKEMON_BEEDRILL",
       "pokemonId": "BEEDRILL",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 169,
-        "baseDefense": 150
+        "baseDefense": 130
       },
       "familyId": "FAMILY_WEEDLE",
       "types": [
@@ -252,9 +252,9 @@
       "templateId": "V0016_POKEMON_PIDGEY",
       "pokemonId": "PIDGEY",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 85,
-        "baseDefense": 76
+        "baseDefense": 73
       },
       "familyId": "FAMILY_PIDGEY",
       "types": [
@@ -269,9 +269,9 @@
       "templateId": "V0017_POKEMON_PIDGEOTTO",
       "pokemonId": "PIDGEOTTO",
       "stats": {
-        "baseStamina": 126,
+        "baseStamina": 160,
         "baseAttack": 117,
-        "baseDefense": 108
+        "baseDefense": 105
       },
       "familyId": "FAMILY_PIDGEY",
       "types": [
@@ -286,9 +286,9 @@
       "templateId": "V0018_POKEMON_PIDGEOT",
       "pokemonId": "PIDGEOT",
       "stats": {
-        "baseStamina": 166,
+        "baseStamina": 195,
         "baseAttack": 166,
-        "baseDefense": 157
+        "baseDefense": 154
       },
       "familyId": "FAMILY_PIDGEY",
       "types": [
@@ -303,7 +303,7 @@
       "templateId": "V0019_POKEMON_RATTATA",
       "pokemonId": "RATTATA",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 103,
         "baseDefense": 70
       },
@@ -317,7 +317,7 @@
       "templateId": "V0019_POKEMON_RATTATA_ALOLA",
       "pokemonId": "RATTATA",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 103,
         "baseDefense": 70
       },
@@ -333,7 +333,7 @@
       "templateId": "V0019_POKEMON_RATTATA_NORMAL",
       "pokemonId": "RATTATA",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 103,
         "baseDefense": 70
       },
@@ -350,9 +350,9 @@
       "templateId": "V0020_POKEMON_RATICATE",
       "pokemonId": "RATICATE",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 161,
-        "baseDefense": 144
+        "baseDefense": 139
       },
       "familyId": "FAMILY_RATTATA",
       "types": [
@@ -364,9 +364,9 @@
       "templateId": "V0020_POKEMON_RATICATE_ALOLA",
       "pokemonId": "RATICATE",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 135,
-        "baseDefense": 159
+        "baseDefense": 154
       },
       "familyId": "FAMILY_RATTATA",
       "isotope": "ALOLA",
@@ -380,9 +380,9 @@
       "templateId": "V0020_POKEMON_RATICATE_NORMAL",
       "pokemonId": "RATICATE",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 161,
-        "baseDefense": 144
+        "baseDefense": 139
       },
       "familyId": "FAMILY_RATTATA",
       "isotope": "NORMAL",
@@ -397,9 +397,9 @@
       "templateId": "V0021_POKEMON_SPEAROW",
       "pokemonId": "SPEAROW",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 112,
-        "baseDefense": 61
+        "baseDefense": 60
       },
       "familyId": "FAMILY_SPEAROW",
       "types": [
@@ -414,9 +414,9 @@
       "templateId": "V0022_POKEMON_FEAROW",
       "pokemonId": "FEAROW",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 182,
-        "baseDefense": 135
+        "baseDefense": 133
       },
       "familyId": "FAMILY_SPEAROW",
       "types": [
@@ -431,9 +431,9 @@
       "templateId": "V0023_POKEMON_EKANS",
       "pokemonId": "EKANS",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 110,
-        "baseDefense": 102
+        "baseDefense": 97
       },
       "familyId": "FAMILY_EKANS",
       "types": [
@@ -447,9 +447,9 @@
       "templateId": "V0024_POKEMON_ARBOK",
       "pokemonId": "ARBOK",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 167,
-        "baseDefense": 158
+        "baseDefense": 153
       },
       "familyId": "FAMILY_EKANS",
       "types": [
@@ -463,9 +463,9 @@
       "templateId": "V0025_POKEMON_PIKACHU",
       "pokemonId": "PIKACHU",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 112,
-        "baseDefense": 101
+        "baseDefense": 96
       },
       "familyId": "FAMILY_PIKACHU",
       "types": [
@@ -479,9 +479,9 @@
       "templateId": "V0026_POKEMON_RAICHU",
       "pokemonId": "RAICHU",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 193,
-        "baseDefense": 165
+        "baseDefense": 151
       },
       "familyId": "FAMILY_PIKACHU",
       "types": [
@@ -493,9 +493,9 @@
       "templateId": "V0026_POKEMON_RAICHU_ALOLA",
       "pokemonId": "RAICHU",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 201,
-        "baseDefense": 172
+        "baseDefense": 154
       },
       "familyId": "FAMILY_PIKACHU",
       "isotope": "ALOLA",
@@ -509,9 +509,9 @@
       "templateId": "V0026_POKEMON_RAICHU_NORMAL",
       "pokemonId": "RAICHU",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 193,
-        "baseDefense": 165
+        "baseDefense": 151
       },
       "familyId": "FAMILY_PIKACHU",
       "isotope": "NORMAL",
@@ -526,9 +526,9 @@
       "templateId": "V0027_POKEMON_SANDSHREW",
       "pokemonId": "SANDSHREW",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 126,
-        "baseDefense": 145
+        "baseDefense": 120
       },
       "familyId": "FAMILY_SANDSHREW",
       "types": [
@@ -540,9 +540,9 @@
       "templateId": "V0027_POKEMON_SANDSHREW_ALOLA",
       "pokemonId": "SANDSHREW",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 125,
-        "baseDefense": 154
+        "baseDefense": 129
       },
       "familyId": "FAMILY_SANDSHREW",
       "isotope": "ALOLA",
@@ -556,9 +556,9 @@
       "templateId": "V0027_POKEMON_SANDSHREW_NORMAL",
       "pokemonId": "SANDSHREW",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 126,
-        "baseDefense": 145
+        "baseDefense": 120
       },
       "familyId": "FAMILY_SANDSHREW",
       "isotope": "NORMAL",
@@ -573,9 +573,9 @@
       "templateId": "V0028_POKEMON_SANDSLASH",
       "pokemonId": "SANDSLASH",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 182,
-        "baseDefense": 202
+        "baseDefense": 175
       },
       "familyId": "FAMILY_SANDSHREW",
       "types": [
@@ -587,9 +587,9 @@
       "templateId": "V0028_POKEMON_SANDSLASH_ALOLA",
       "pokemonId": "SANDSLASH",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 177,
-        "baseDefense": 221
+        "baseDefense": 195
       },
       "familyId": "FAMILY_SANDSHREW",
       "isotope": "ALOLA",
@@ -603,9 +603,9 @@
       "templateId": "V0028_POKEMON_SANDSLASH_NORMAL",
       "pokemonId": "SANDSLASH",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 182,
-        "baseDefense": 202
+        "baseDefense": 175
       },
       "familyId": "FAMILY_SANDSHREW",
       "isotope": "NORMAL",
@@ -620,9 +620,9 @@
       "templateId": "V0029_POKEMON_NIDORAN",
       "pokemonId": "NIDORAN_FEMALE",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 86,
-        "baseDefense": 94
+        "baseDefense": 89
       },
       "familyId": "FAMILY_NIDORAN_FEMALE",
       "types": [
@@ -636,9 +636,9 @@
       "templateId": "V0030_POKEMON_NIDORINA",
       "pokemonId": "NIDORINA",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 117,
-        "baseDefense": 126
+        "baseDefense": 120
       },
       "familyId": "FAMILY_NIDORAN_FEMALE",
       "types": [
@@ -652,9 +652,9 @@
       "templateId": "V0031_POKEMON_NIDOQUEEN",
       "pokemonId": "NIDOQUEEN",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 180,
-        "baseDefense": 174
+        "baseDefense": 173
       },
       "familyId": "FAMILY_NIDORAN_FEMALE",
       "types": [
@@ -669,7 +669,7 @@
       "templateId": "V0032_POKEMON_NIDORAN",
       "pokemonId": "NIDORAN_MALE",
       "stats": {
-        "baseStamina": 92,
+        "baseStamina": 130,
         "baseAttack": 105,
         "baseDefense": 76
       },
@@ -685,9 +685,9 @@
       "templateId": "V0033_POKEMON_NIDORINO",
       "pokemonId": "NIDORINO",
       "stats": {
-        "baseStamina": 122,
+        "baseStamina": 156,
         "baseAttack": 137,
-        "baseDefense": 112
+        "baseDefense": 111
       },
       "familyId": "FAMILY_NIDORAN_MALE",
       "types": [
@@ -701,9 +701,9 @@
       "templateId": "V0034_POKEMON_NIDOKING",
       "pokemonId": "NIDOKING",
       "stats": {
-        "baseStamina": 162,
+        "baseStamina": 191,
         "baseAttack": 204,
-        "baseDefense": 157
+        "baseDefense": 156
       },
       "familyId": "FAMILY_NIDORAN_MALE",
       "types": [
@@ -718,9 +718,9 @@
       "templateId": "V0035_POKEMON_CLEFAIRY",
       "pokemonId": "CLEFAIRY",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 107,
-        "baseDefense": 116
+        "baseDefense": 108
       },
       "familyId": "FAMILY_CLEFAIRY",
       "types": [
@@ -734,9 +734,9 @@
       "templateId": "V0036_POKEMON_CLEFABLE",
       "pokemonId": "CLEFABLE",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 178,
-        "baseDefense": 171
+        "baseDefense": 162
       },
       "familyId": "FAMILY_CLEFAIRY",
       "types": [
@@ -750,9 +750,9 @@
       "templateId": "V0037_POKEMON_VULPIX",
       "pokemonId": "VULPIX",
       "stats": {
-        "baseStamina": 76,
+        "baseStamina": 116,
         "baseAttack": 96,
-        "baseDefense": 122
+        "baseDefense": 109
       },
       "familyId": "FAMILY_VULPIX",
       "types": [
@@ -764,9 +764,9 @@
       "templateId": "V0037_POKEMON_VULPIX_ALOLA",
       "pokemonId": "VULPIX",
       "stats": {
-        "baseStamina": 76,
+        "baseStamina": 116,
         "baseAttack": 96,
-        "baseDefense": 122
+        "baseDefense": 109
       },
       "familyId": "FAMILY_VULPIX",
       "isotope": "ALOLA",
@@ -779,9 +779,9 @@
       "templateId": "V0037_POKEMON_VULPIX_NORMAL",
       "pokemonId": "VULPIX",
       "stats": {
-        "baseStamina": 76,
+        "baseStamina": 116,
         "baseAttack": 96,
-        "baseDefense": 122
+        "baseDefense": 109
       },
       "familyId": "FAMILY_VULPIX",
       "isotope": "NORMAL",
@@ -796,9 +796,9 @@
       "templateId": "V0038_POKEMON_NINETALES",
       "pokemonId": "NINETALES",
       "stats": {
-        "baseStamina": 146,
+        "baseStamina": 177,
         "baseAttack": 169,
-        "baseDefense": 204
+        "baseDefense": 190
       },
       "familyId": "FAMILY_VULPIX",
       "types": [
@@ -810,9 +810,9 @@
       "templateId": "V0038_POKEMON_NINETALES_ALOLA",
       "pokemonId": "NINETALES",
       "stats": {
-        "baseStamina": 146,
+        "baseStamina": 177,
         "baseAttack": 170,
-        "baseDefense": 207
+        "baseDefense": 193
       },
       "familyId": "FAMILY_VULPIX",
       "isotope": "ALOLA",
@@ -826,9 +826,9 @@
       "templateId": "V0038_POKEMON_NINETALES_NORMAL",
       "pokemonId": "NINETALES",
       "stats": {
-        "baseStamina": 146,
+        "baseStamina": 177,
         "baseAttack": 169,
-        "baseDefense": 204
+        "baseDefense": 190
       },
       "familyId": "FAMILY_VULPIX",
       "isotope": "NORMAL",
@@ -843,9 +843,9 @@
       "templateId": "V0039_POKEMON_JIGGLYPUFF",
       "pokemonId": "JIGGLYPUFF",
       "stats": {
-        "baseStamina": 230,
+        "baseStamina": 251,
         "baseAttack": 80,
-        "baseDefense": 44
+        "baseDefense": 41
       },
       "familyId": "FAMILY_JIGGLYPUFF",
       "types": [
@@ -860,9 +860,9 @@
       "templateId": "V0040_POKEMON_WIGGLYTUFF",
       "pokemonId": "WIGGLYTUFF",
       "stats": {
-        "baseStamina": 280,
+        "baseStamina": 295,
         "baseAttack": 156,
-        "baseDefense": 93
+        "baseDefense": 90
       },
       "familyId": "FAMILY_JIGGLYPUFF",
       "types": [
@@ -877,9 +877,9 @@
       "templateId": "V0041_POKEMON_ZUBAT",
       "pokemonId": "ZUBAT",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 83,
-        "baseDefense": 76
+        "baseDefense": 73
       },
       "familyId": "FAMILY_ZUBAT",
       "types": [
@@ -894,9 +894,9 @@
       "templateId": "V0042_POKEMON_GOLBAT",
       "pokemonId": "GOLBAT",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 161,
-        "baseDefense": 153
+        "baseDefense": 150
       },
       "familyId": "FAMILY_ZUBAT",
       "types": [
@@ -911,9 +911,9 @@
       "templateId": "V0043_POKEMON_ODDISH",
       "pokemonId": "ODDISH",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 131,
-        "baseDefense": 116
+        "baseDefense": 112
       },
       "familyId": "FAMILY_ODDISH",
       "types": [
@@ -928,9 +928,9 @@
       "templateId": "V0044_POKEMON_GLOOM",
       "pokemonId": "GLOOM",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 153,
-        "baseDefense": 139
+        "baseDefense": 136
       },
       "familyId": "FAMILY_ODDISH",
       "types": [
@@ -945,9 +945,9 @@
       "templateId": "V0045_POKEMON_VILEPLUME",
       "pokemonId": "VILEPLUME",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 202,
-        "baseDefense": 170
+        "baseDefense": 167
       },
       "familyId": "FAMILY_ODDISH",
       "types": [
@@ -962,7 +962,7 @@
       "templateId": "V0046_POKEMON_PARAS",
       "pokemonId": "PARAS",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 121,
         "baseDefense": 99
       },
@@ -979,7 +979,7 @@
       "templateId": "V0047_POKEMON_PARASECT",
       "pokemonId": "PARASECT",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 165,
         "baseDefense": 146
       },
@@ -996,9 +996,9 @@
       "templateId": "V0048_POKEMON_VENONAT",
       "pokemonId": "VENONAT",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 100,
-        "baseDefense": 102
+        "baseDefense": 100
       },
       "familyId": "FAMILY_VENONAT",
       "types": [
@@ -1013,9 +1013,9 @@
       "templateId": "V0049_POKEMON_VENOMOTH",
       "pokemonId": "VENOMOTH",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 179,
-        "baseDefense": 150
+        "baseDefense": 143
       },
       "familyId": "FAMILY_VENONAT",
       "types": [
@@ -1030,9 +1030,9 @@
       "templateId": "V0050_POKEMON_DIGLETT",
       "pokemonId": "DIGLETT",
       "stats": {
-        "baseStamina": 20,
+        "baseStamina": 67,
         "baseAttack": 109,
-        "baseDefense": 88
+        "baseDefense": 78
       },
       "familyId": "FAMILY_DIGLETT",
       "types": [
@@ -1044,9 +1044,9 @@
       "templateId": "V0050_POKEMON_DIGLETT_ALOLA",
       "pokemonId": "DIGLETT",
       "stats": {
-        "baseStamina": 20,
+        "baseStamina": 67,
         "baseAttack": 109,
-        "baseDefense": 89
+        "baseDefense": 82
       },
       "familyId": "FAMILY_DIGLETT",
       "isotope": "ALOLA",
@@ -1060,9 +1060,9 @@
       "templateId": "V0050_POKEMON_DIGLETT_NORMAL",
       "pokemonId": "DIGLETT",
       "stats": {
-        "baseStamina": 20,
+        "baseStamina": 67,
         "baseAttack": 109,
-        "baseDefense": 88
+        "baseDefense": 78
       },
       "familyId": "FAMILY_DIGLETT",
       "isotope": "NORMAL",
@@ -1077,9 +1077,9 @@
       "templateId": "V0051_POKEMON_DUGTRIO",
       "pokemonId": "DUGTRIO",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 167,
-        "baseDefense": 147
+        "baseDefense": 134
       },
       "familyId": "FAMILY_DIGLETT",
       "types": [
@@ -1091,9 +1091,9 @@
       "templateId": "V0051_POKEMON_DUGTRIO_ALOLA",
       "pokemonId": "DUGTRIO",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 201,
-        "baseDefense": 148
+        "baseDefense": 145
       },
       "familyId": "FAMILY_DIGLETT",
       "isotope": "ALOLA",
@@ -1107,9 +1107,9 @@
       "templateId": "V0051_POKEMON_DUGTRIO_NORMAL",
       "pokemonId": "DUGTRIO",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 167,
-        "baseDefense": 147
+        "baseDefense": 134
       },
       "familyId": "FAMILY_DIGLETT",
       "isotope": "NORMAL",
@@ -1124,9 +1124,9 @@
       "templateId": "V0052_POKEMON_MEOWTH",
       "pokemonId": "MEOWTH",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 92,
-        "baseDefense": 81
+        "baseDefense": 78
       },
       "familyId": "FAMILY_MEOWTH",
       "types": [
@@ -1138,9 +1138,9 @@
       "templateId": "V0052_POKEMON_MEOWTH_ALOLA",
       "pokemonId": "MEOWTH",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 99,
-        "baseDefense": 81
+        "baseDefense": 78
       },
       "familyId": "FAMILY_MEOWTH",
       "isotope": "ALOLA",
@@ -1153,9 +1153,9 @@
       "templateId": "V0052_POKEMON_MEOWTH_NORMAL",
       "pokemonId": "MEOWTH",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 92,
-        "baseDefense": 81
+        "baseDefense": 78
       },
       "familyId": "FAMILY_MEOWTH",
       "isotope": "NORMAL",
@@ -1170,9 +1170,9 @@
       "templateId": "V0053_POKEMON_PERSIAN",
       "pokemonId": "PERSIAN",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 150,
-        "baseDefense": 139
+        "baseDefense": 136
       },
       "familyId": "FAMILY_MEOWTH",
       "types": [
@@ -1184,9 +1184,9 @@
       "templateId": "V0053_POKEMON_PERSIAN_ALOLA",
       "pokemonId": "PERSIAN",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 158,
-        "baseDefense": 139
+        "baseDefense": 136
       },
       "familyId": "FAMILY_MEOWTH",
       "isotope": "ALOLA",
@@ -1199,9 +1199,9 @@
       "templateId": "V0053_POKEMON_PERSIAN_NORMAL",
       "pokemonId": "PERSIAN",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 150,
-        "baseDefense": 139
+        "baseDefense": 136
       },
       "familyId": "FAMILY_MEOWTH",
       "isotope": "NORMAL",
@@ -1216,9 +1216,9 @@
       "templateId": "V0054_POKEMON_PSYDUCK",
       "pokemonId": "PSYDUCK",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 122,
-        "baseDefense": 96
+        "baseDefense": 95
       },
       "familyId": "FAMILY_PSYDUCK",
       "types": [
@@ -1232,9 +1232,9 @@
       "templateId": "V0055_POKEMON_GOLDUCK",
       "pokemonId": "GOLDUCK",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 191,
-        "baseDefense": 163
+        "baseDefense": 162
       },
       "familyId": "FAMILY_PSYDUCK",
       "types": [
@@ -1248,9 +1248,9 @@
       "templateId": "V0056_POKEMON_MANKEY",
       "pokemonId": "MANKEY",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 148,
-        "baseDefense": 87
+        "baseDefense": 82
       },
       "familyId": "FAMILY_MANKEY",
       "types": [
@@ -1264,9 +1264,9 @@
       "templateId": "V0057_POKEMON_PRIMEAPE",
       "pokemonId": "PRIMEAPE",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 207,
-        "baseDefense": 144
+        "baseDefense": 138
       },
       "familyId": "FAMILY_MANKEY",
       "types": [
@@ -1280,9 +1280,9 @@
       "templateId": "V0058_POKEMON_GROWLITHE",
       "pokemonId": "GROWLITHE",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 136,
-        "baseDefense": 96
+        "baseDefense": 93
       },
       "familyId": "FAMILY_GROWLITHE",
       "types": [
@@ -1296,7 +1296,7 @@
       "templateId": "V0059_POKEMON_ARCANINE",
       "pokemonId": "ARCANINE",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 227,
         "baseDefense": 166
       },
@@ -1312,7 +1312,7 @@
       "templateId": "V0060_POKEMON_POLIWAG",
       "pokemonId": "POLIWAG",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 101,
         "baseDefense": 82
       },
@@ -1328,9 +1328,9 @@
       "templateId": "V0061_POKEMON_POLIWHIRL",
       "pokemonId": "POLIWHIRL",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 130,
-        "baseDefense": 130
+        "baseDefense": 123
       },
       "familyId": "FAMILY_POLIWAG",
       "types": [
@@ -1344,9 +1344,9 @@
       "templateId": "V0062_POKEMON_POLIWRATH",
       "pokemonId": "POLIWRATH",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 182,
-        "baseDefense": 187
+        "baseDefense": 184
       },
       "familyId": "FAMILY_POLIWAG",
       "types": [
@@ -1361,9 +1361,9 @@
       "templateId": "V0063_POKEMON_ABRA",
       "pokemonId": "ABRA",
       "stats": {
-        "baseStamina": 50,
+        "baseStamina": 93,
         "baseAttack": 195,
-        "baseDefense": 103
+        "baseDefense": 82
       },
       "familyId": "FAMILY_ABRA",
       "types": [
@@ -1377,9 +1377,9 @@
       "templateId": "V0064_POKEMON_KADABRA",
       "pokemonId": "KADABRA",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 232,
-        "baseDefense": 138
+        "baseDefense": 117
       },
       "familyId": "FAMILY_ABRA",
       "types": [
@@ -1393,9 +1393,9 @@
       "templateId": "V0065_POKEMON_ALAKAZAM",
       "pokemonId": "ALAKAZAM",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 271,
-        "baseDefense": 194
+        "baseDefense": 167
       },
       "familyId": "FAMILY_ABRA",
       "types": [
@@ -1409,9 +1409,9 @@
       "templateId": "V0066_POKEMON_MACHOP",
       "pokemonId": "MACHOP",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 137,
-        "baseDefense": 88
+        "baseDefense": 82
       },
       "familyId": "FAMILY_MACHOP",
       "types": [
@@ -1425,9 +1425,9 @@
       "templateId": "V0067_POKEMON_MACHOKE",
       "pokemonId": "MACHOKE",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 177,
-        "baseDefense": 130
+        "baseDefense": 125
       },
       "familyId": "FAMILY_MACHOP",
       "types": [
@@ -1441,9 +1441,9 @@
       "templateId": "V0068_POKEMON_MACHAMP",
       "pokemonId": "MACHAMP",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 234,
-        "baseDefense": 162
+        "baseDefense": 159
       },
       "familyId": "FAMILY_MACHOP",
       "types": [
@@ -1457,9 +1457,9 @@
       "templateId": "V0069_POKEMON_BELLSPROUT",
       "pokemonId": "BELLSPROUT",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 139,
-        "baseDefense": 64
+        "baseDefense": 61
       },
       "familyId": "FAMILY_BELLSPROUT",
       "types": [
@@ -1474,9 +1474,9 @@
       "templateId": "V0070_POKEMON_WEEPINBELL",
       "pokemonId": "WEEPINBELL",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 172,
-        "baseDefense": 95
+        "baseDefense": 92
       },
       "familyId": "FAMILY_BELLSPROUT",
       "types": [
@@ -1491,9 +1491,9 @@
       "templateId": "V0071_POKEMON_VICTREEBEL",
       "pokemonId": "VICTREEBEL",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 207,
-        "baseDefense": 138
+        "baseDefense": 135
       },
       "familyId": "FAMILY_BELLSPROUT",
       "types": [
@@ -1508,9 +1508,9 @@
       "templateId": "V0072_POKEMON_TENTACOOL",
       "pokemonId": "TENTACOOL",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 97,
-        "baseDefense": 182
+        "baseDefense": 149
       },
       "familyId": "FAMILY_TENTACOOL",
       "types": [
@@ -1525,9 +1525,9 @@
       "templateId": "V0073_POKEMON_TENTACRUEL",
       "pokemonId": "TENTACRUEL",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 166,
-        "baseDefense": 237
+        "baseDefense": 209
       },
       "familyId": "FAMILY_TENTACOOL",
       "types": [
@@ -1542,9 +1542,9 @@
       "templateId": "V0074_POKEMON_GEODUDE",
       "pokemonId": "GEODUDE",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 132,
-        "baseDefense": 163
+        "baseDefense": 132
       },
       "familyId": "FAMILY_GEODUDE",
       "types": [
@@ -1557,9 +1557,9 @@
       "templateId": "V0074_POKEMON_GEODUDE_ALOLA",
       "pokemonId": "GEODUDE",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 132,
-        "baseDefense": 163
+        "baseDefense": 132
       },
       "familyId": "FAMILY_GEODUDE",
       "isotope": "ALOLA",
@@ -1573,9 +1573,9 @@
       "templateId": "V0074_POKEMON_GEODUDE_NORMAL",
       "pokemonId": "GEODUDE",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 132,
-        "baseDefense": 163
+        "baseDefense": 132
       },
       "familyId": "FAMILY_GEODUDE",
       "isotope": "NORMAL",
@@ -1591,9 +1591,9 @@
       "templateId": "V0075_POKEMON_GRAVELER",
       "pokemonId": "GRAVELER",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 164,
-        "baseDefense": 196
+        "baseDefense": 164
       },
       "familyId": "FAMILY_GEODUDE",
       "types": [
@@ -1606,9 +1606,9 @@
       "templateId": "V0075_POKEMON_GRAVELER_ALOLA",
       "pokemonId": "GRAVELER",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 164,
-        "baseDefense": 196
+        "baseDefense": 164
       },
       "familyId": "FAMILY_GEODUDE",
       "isotope": "ALOLA",
@@ -1622,9 +1622,9 @@
       "templateId": "V0075_POKEMON_GRAVELER_NORMAL",
       "pokemonId": "GRAVELER",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 164,
-        "baseDefense": 196
+        "baseDefense": 164
       },
       "familyId": "FAMILY_GEODUDE",
       "isotope": "NORMAL",
@@ -1640,9 +1640,9 @@
       "templateId": "V0076_POKEMON_GOLEM",
       "pokemonId": "GOLEM",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 211,
-        "baseDefense": 229
+        "baseDefense": 198
       },
       "familyId": "FAMILY_GEODUDE",
       "types": [
@@ -1655,9 +1655,9 @@
       "templateId": "V0076_POKEMON_GOLEM_ALOLA",
       "pokemonId": "GOLEM",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 211,
-        "baseDefense": 229
+        "baseDefense": 198
       },
       "familyId": "FAMILY_GEODUDE",
       "isotope": "ALOLA",
@@ -1671,9 +1671,9 @@
       "templateId": "V0076_POKEMON_GOLEM_NORMAL",
       "pokemonId": "GOLEM",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 211,
-        "baseDefense": 229
+        "baseDefense": 198
       },
       "familyId": "FAMILY_GEODUDE",
       "isotope": "NORMAL",
@@ -1689,9 +1689,9 @@
       "templateId": "V0077_POKEMON_PONYTA",
       "pokemonId": "PONYTA",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 170,
-        "baseDefense": 132
+        "baseDefense": 127
       },
       "familyId": "FAMILY_PONYTA",
       "types": [
@@ -1705,9 +1705,9 @@
       "templateId": "V0078_POKEMON_RAPIDASH",
       "pokemonId": "RAPIDASH",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 207,
-        "baseDefense": 167
+        "baseDefense": 162
       },
       "familyId": "FAMILY_PONYTA",
       "types": [
@@ -1721,9 +1721,9 @@
       "templateId": "V0079_POKEMON_SLOWPOKE",
       "pokemonId": "SLOWPOKE",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 109,
-        "baseDefense": 109
+        "baseDefense": 98
       },
       "familyId": "FAMILY_SLOWPOKE",
       "types": [
@@ -1738,9 +1738,9 @@
       "templateId": "V0080_POKEMON_SLOWBRO",
       "pokemonId": "SLOWBRO",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 177,
-        "baseDefense": 194
+        "baseDefense": 180
       },
       "familyId": "FAMILY_SLOWPOKE",
       "types": [
@@ -1755,9 +1755,9 @@
       "templateId": "V0081_POKEMON_MAGNEMITE",
       "pokemonId": "MAGNEMITE",
       "stats": {
-        "baseStamina": 50,
+        "baseStamina": 93,
         "baseAttack": 165,
-        "baseDefense": 128
+        "baseDefense": 121
       },
       "familyId": "FAMILY_MAGNEMITE",
       "types": [
@@ -1772,9 +1772,9 @@
       "templateId": "V0082_POKEMON_MAGNETON",
       "pokemonId": "MAGNETON",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 223,
-        "baseDefense": 182
+        "baseDefense": 169
       },
       "familyId": "FAMILY_MAGNEMITE",
       "types": [
@@ -1789,9 +1789,9 @@
       "templateId": "V0083_POKEMON_FARFETCHD",
       "pokemonId": "FARFETCHD",
       "stats": {
-        "baseStamina": 104,
+        "baseStamina": 141,
         "baseAttack": 124,
-        "baseDefense": 118
+        "baseDefense": 115
       },
       "familyId": "FAMILY_FARFETCHD",
       "types": [
@@ -1806,9 +1806,9 @@
       "templateId": "V0084_POKEMON_DODUO",
       "pokemonId": "DODUO",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 158,
-        "baseDefense": 88
+        "baseDefense": 83
       },
       "familyId": "FAMILY_DODUO",
       "types": [
@@ -1823,9 +1823,9 @@
       "templateId": "V0085_POKEMON_DODRIO",
       "pokemonId": "DODRIO",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 218,
-        "baseDefense": 145
+        "baseDefense": 140
       },
       "familyId": "FAMILY_DODUO",
       "types": [
@@ -1840,9 +1840,9 @@
       "templateId": "V0086_POKEMON_SEEL",
       "pokemonId": "SEEL",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 85,
-        "baseDefense": 128
+        "baseDefense": 121
       },
       "familyId": "FAMILY_SEEL",
       "types": [
@@ -1856,9 +1856,9 @@
       "templateId": "V0087_POKEMON_DEWGONG",
       "pokemonId": "DEWGONG",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 139,
-        "baseDefense": 184
+        "baseDefense": 177
       },
       "familyId": "FAMILY_SEEL",
       "types": [
@@ -1873,7 +1873,7 @@
       "templateId": "V0088_POKEMON_GRIMER",
       "pokemonId": "GRIMER",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 135,
         "baseDefense": 90
       },
@@ -1887,7 +1887,7 @@
       "templateId": "V0088_POKEMON_GRIMER_ALOLA",
       "pokemonId": "GRIMER",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 135,
         "baseDefense": 90
       },
@@ -1903,7 +1903,7 @@
       "templateId": "V0088_POKEMON_GRIMER_NORMAL",
       "pokemonId": "GRIMER",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 135,
         "baseDefense": 90
       },
@@ -1920,9 +1920,9 @@
       "templateId": "V0089_POKEMON_MUK",
       "pokemonId": "MUK",
       "stats": {
-        "baseStamina": 210,
+        "baseStamina": 233,
         "baseAttack": 190,
-        "baseDefense": 184
+        "baseDefense": 172
       },
       "familyId": "FAMILY_GRIMER",
       "types": [
@@ -1934,9 +1934,9 @@
       "templateId": "V0089_POKEMON_MUK_ALOLA",
       "pokemonId": "MUK",
       "stats": {
-        "baseStamina": 210,
+        "baseStamina": 233,
         "baseAttack": 190,
-        "baseDefense": 184
+        "baseDefense": 172
       },
       "familyId": "FAMILY_GRIMER",
       "isotope": "ALOLA",
@@ -1950,9 +1950,9 @@
       "templateId": "V0089_POKEMON_MUK_NORMAL",
       "pokemonId": "MUK",
       "stats": {
-        "baseStamina": 210,
+        "baseStamina": 233,
         "baseAttack": 190,
-        "baseDefense": 184
+        "baseDefense": 172
       },
       "familyId": "FAMILY_GRIMER",
       "isotope": "NORMAL",
@@ -1967,9 +1967,9 @@
       "templateId": "V0090_POKEMON_SHELLDER",
       "pokemonId": "SHELLDER",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 116,
-        "baseDefense": 168
+        "baseDefense": 134
       },
       "familyId": "FAMILY_SHELLDER",
       "types": [
@@ -1983,9 +1983,9 @@
       "templateId": "V0091_POKEMON_CLOYSTER",
       "pokemonId": "CLOYSTER",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 186,
-        "baseDefense": 323
+        "baseDefense": 256
       },
       "familyId": "FAMILY_SHELLDER",
       "types": [
@@ -2000,9 +2000,9 @@
       "templateId": "V0092_POKEMON_GASTLY",
       "pokemonId": "GASTLY",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 186,
-        "baseDefense": 70
+        "baseDefense": 67
       },
       "familyId": "FAMILY_GASTLY",
       "types": [
@@ -2017,9 +2017,9 @@
       "templateId": "V0093_POKEMON_HAUNTER",
       "pokemonId": "HAUNTER",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 223,
-        "baseDefense": 112
+        "baseDefense": 107
       },
       "familyId": "FAMILY_GASTLY",
       "types": [
@@ -2034,9 +2034,9 @@
       "templateId": "V0094_POKEMON_GENGAR",
       "pokemonId": "GENGAR",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 261,
-        "baseDefense": 156
+        "baseDefense": 149
       },
       "familyId": "FAMILY_GASTLY",
       "types": [
@@ -2051,9 +2051,9 @@
       "templateId": "V0095_POKEMON_ONIX",
       "pokemonId": "ONIX",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 85,
-        "baseDefense": 288
+        "baseDefense": 232
       },
       "familyId": "FAMILY_ONIX",
       "types": [
@@ -2068,9 +2068,9 @@
       "templateId": "V0096_POKEMON_DROWZEE",
       "pokemonId": "DROWZEE",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 89,
-        "baseDefense": 158
+        "baseDefense": 136
       },
       "familyId": "FAMILY_DROWZEE",
       "types": [
@@ -2084,9 +2084,9 @@
       "templateId": "V0097_POKEMON_HYPNO",
       "pokemonId": "HYPNO",
       "stats": {
-        "baseStamina": 170,
+        "baseStamina": 198,
         "baseAttack": 144,
-        "baseDefense": 215
+        "baseDefense": 193
       },
       "familyId": "FAMILY_DROWZEE",
       "types": [
@@ -2100,9 +2100,9 @@
       "templateId": "V0098_POKEMON_KRABBY",
       "pokemonId": "KRABBY",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 181,
-        "baseDefense": 156
+        "baseDefense": 124
       },
       "familyId": "FAMILY_KRABBY",
       "types": [
@@ -2116,9 +2116,9 @@
       "templateId": "V0099_POKEMON_KINGLER",
       "pokemonId": "KINGLER",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 240,
-        "baseDefense": 214
+        "baseDefense": 181
       },
       "familyId": "FAMILY_KRABBY",
       "types": [
@@ -2132,9 +2132,9 @@
       "templateId": "V0100_POKEMON_VOLTORB",
       "pokemonId": "VOLTORB",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 109,
-        "baseDefense": 114
+        "baseDefense": 111
       },
       "familyId": "FAMILY_VOLTORB",
       "types": [
@@ -2148,9 +2148,9 @@
       "templateId": "V0101_POKEMON_ELECTRODE",
       "pokemonId": "ELECTRODE",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 173,
-        "baseDefense": 179
+        "baseDefense": 173
       },
       "familyId": "FAMILY_VOLTORB",
       "types": [
@@ -2164,9 +2164,9 @@
       "templateId": "V0102_POKEMON_EXEGGCUTE",
       "pokemonId": "EXEGGCUTE",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 107,
-        "baseDefense": 140
+        "baseDefense": 125
       },
       "familyId": "FAMILY_EXEGGCUTE",
       "types": [
@@ -2181,9 +2181,9 @@
       "templateId": "V0103_POKEMON_EXEGGUTOR",
       "pokemonId": "EXEGGUTOR",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 233,
-        "baseDefense": 158
+        "baseDefense": 149
       },
       "familyId": "FAMILY_EXEGGCUTE",
       "types": [
@@ -2196,9 +2196,9 @@
       "templateId": "V0103_POKEMON_EXEGGUTOR_ALOLA",
       "pokemonId": "EXEGGUTOR",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 230,
-        "baseDefense": 158
+        "baseDefense": 153
       },
       "familyId": "FAMILY_EXEGGCUTE",
       "isotope": "ALOLA",
@@ -2212,9 +2212,9 @@
       "templateId": "V0103_POKEMON_EXEGGUTOR_NORMAL",
       "pokemonId": "EXEGGUTOR",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 233,
-        "baseDefense": 158
+        "baseDefense": 149
       },
       "familyId": "FAMILY_EXEGGCUTE",
       "isotope": "NORMAL",
@@ -2230,9 +2230,9 @@
       "templateId": "V0104_POKEMON_CUBONE",
       "pokemonId": "CUBONE",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 90,
-        "baseDefense": 165
+        "baseDefense": 144
       },
       "familyId": "FAMILY_CUBONE",
       "types": [
@@ -2246,9 +2246,9 @@
       "templateId": "V0105_POKEMON_MAROWAK",
       "pokemonId": "MAROWAK",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 144,
-        "baseDefense": 200
+        "baseDefense": 186
       },
       "familyId": "FAMILY_CUBONE",
       "types": [
@@ -2260,9 +2260,9 @@
       "templateId": "V0105_POKEMON_MAROWAK_ALOLA",
       "pokemonId": "MAROWAK",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 144,
-        "baseDefense": 200
+        "baseDefense": 186
       },
       "familyId": "FAMILY_CUBONE",
       "isotope": "ALOLA",
@@ -2276,9 +2276,9 @@
       "templateId": "V0105_POKEMON_MAROWAK_NORMAL",
       "pokemonId": "MAROWAK",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 144,
-        "baseDefense": 200
+        "baseDefense": 186
       },
       "familyId": "FAMILY_CUBONE",
       "isotope": "NORMAL",
@@ -2293,9 +2293,9 @@
       "templateId": "V0106_POKEMON_HITMONLEE",
       "pokemonId": "HITMONLEE",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 224,
-        "baseDefense": 211
+        "baseDefense": 181
       },
       "familyId": "FAMILY_TYROGUE",
       "types": [
@@ -2309,9 +2309,9 @@
       "templateId": "V0107_POKEMON_HITMONCHAN",
       "pokemonId": "HITMONCHAN",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 193,
-        "baseDefense": 212
+        "baseDefense": 197
       },
       "familyId": "FAMILY_TYROGUE",
       "types": [
@@ -2325,7 +2325,7 @@
       "templateId": "V0108_POKEMON_LICKITUNG",
       "pokemonId": "LICKITUNG",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 108,
         "baseDefense": 137
       },
@@ -2341,9 +2341,9 @@
       "templateId": "V0109_POKEMON_KOFFING",
       "pokemonId": "KOFFING",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 119,
-        "baseDefense": 164
+        "baseDefense": 141
       },
       "familyId": "FAMILY_KOFFING",
       "types": [
@@ -2357,9 +2357,9 @@
       "templateId": "V0110_POKEMON_WEEZING",
       "pokemonId": "WEEZING",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 174,
-        "baseDefense": 221
+        "baseDefense": 197
       },
       "familyId": "FAMILY_KOFFING",
       "types": [
@@ -2373,9 +2373,9 @@
       "templateId": "V0111_POKEMON_RHYHORN",
       "pokemonId": "RHYHORN",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 140,
-        "baseDefense": 157
+        "baseDefense": 127
       },
       "familyId": "FAMILY_RHYHORN",
       "types": [
@@ -2390,9 +2390,9 @@
       "templateId": "V0112_POKEMON_RHYDON",
       "pokemonId": "RHYDON",
       "stats": {
-        "baseStamina": 210,
+        "baseStamina": 233,
         "baseAttack": 222,
-        "baseDefense": 206
+        "baseDefense": 171
       },
       "familyId": "FAMILY_RHYHORN",
       "types": [
@@ -2407,9 +2407,9 @@
       "templateId": "V0113_POKEMON_CHANSEY",
       "pokemonId": "CHANSEY",
       "stats": {
-        "baseStamina": 500,
+        "baseStamina": 487,
         "baseAttack": 60,
-        "baseDefense": 176
+        "baseDefense": 128
       },
       "familyId": "FAMILY_CHANSEY",
       "types": [
@@ -2423,9 +2423,9 @@
       "templateId": "V0114_POKEMON_TANGELA",
       "pokemonId": "TANGELA",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 183,
-        "baseDefense": 205
+        "baseDefense": 169
       },
       "familyId": "FAMILY_TANGELA",
       "types": [
@@ -2439,7 +2439,7 @@
       "templateId": "V0115_POKEMON_KANGASKHAN",
       "pokemonId": "KANGASKHAN",
       "stats": {
-        "baseStamina": 210,
+        "baseStamina": 233,
         "baseAttack": 181,
         "baseDefense": 165
       },
@@ -2455,9 +2455,9 @@
       "templateId": "V0116_POKEMON_HORSEA",
       "pokemonId": "HORSEA",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 129,
-        "baseDefense": 125
+        "baseDefense": 103
       },
       "familyId": "FAMILY_HORSEA",
       "types": [
@@ -2471,9 +2471,9 @@
       "templateId": "V0117_POKEMON_SEADRA",
       "pokemonId": "SEADRA",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 187,
-        "baseDefense": 182
+        "baseDefense": 156
       },
       "familyId": "FAMILY_HORSEA",
       "types": [
@@ -2487,9 +2487,9 @@
       "templateId": "V0118_POKEMON_GOLDEEN",
       "pokemonId": "GOLDEEN",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 123,
-        "baseDefense": 115
+        "baseDefense": 110
       },
       "familyId": "FAMILY_GOLDEEN",
       "types": [
@@ -2503,9 +2503,9 @@
       "templateId": "V0119_POKEMON_SEAKING",
       "pokemonId": "SEAKING",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 175,
-        "baseDefense": 154
+        "baseDefense": 147
       },
       "familyId": "FAMILY_GOLDEEN",
       "types": [
@@ -2519,7 +2519,7 @@
       "templateId": "V0120_POKEMON_STARYU",
       "pokemonId": "STARYU",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 137,
         "baseDefense": 112
       },
@@ -2535,7 +2535,7 @@
       "templateId": "V0121_POKEMON_STARMIE",
       "pokemonId": "STARMIE",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 210,
         "baseDefense": 184
       },
@@ -2552,9 +2552,9 @@
       "templateId": "V0122_POKEMON_MR_MIME",
       "pokemonId": "MR_MIME",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 192,
-        "baseDefense": 233
+        "baseDefense": 205
       },
       "familyId": "FAMILY_MR_MIME",
       "types": [
@@ -2569,7 +2569,7 @@
       "templateId": "V0123_POKEMON_SCYTHER",
       "pokemonId": "SCYTHER",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 218,
         "baseDefense": 170
       },
@@ -2586,9 +2586,9 @@
       "templateId": "V0124_POKEMON_JYNX",
       "pokemonId": "JYNX",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 223,
-        "baseDefense": 182
+        "baseDefense": 151
       },
       "familyId": "FAMILY_JYNX",
       "types": [
@@ -2603,9 +2603,9 @@
       "templateId": "V0125_POKEMON_ELECTABUZZ",
       "pokemonId": "ELECTABUZZ",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 198,
-        "baseDefense": 173
+        "baseDefense": 158
       },
       "familyId": "FAMILY_ELECTABUZZ",
       "types": [
@@ -2619,9 +2619,9 @@
       "templateId": "V0126_POKEMON_MAGMAR",
       "pokemonId": "MAGMAR",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 206,
-        "baseDefense": 169
+        "baseDefense": 154
       },
       "familyId": "FAMILY_MAGMAR",
       "types": [
@@ -2635,9 +2635,9 @@
       "templateId": "V0127_POKEMON_PINSIR",
       "pokemonId": "PINSIR",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 238,
-        "baseDefense": 197
+        "baseDefense": 182
       },
       "familyId": "FAMILY_PINSIR",
       "types": [
@@ -2651,9 +2651,9 @@
       "templateId": "V0128_POKEMON_TAUROS",
       "pokemonId": "TAUROS",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 198,
-        "baseDefense": 197
+        "baseDefense": 183
       },
       "familyId": "FAMILY_TAUROS",
       "types": [
@@ -2667,9 +2667,9 @@
       "templateId": "V0129_POKEMON_MAGIKARP",
       "pokemonId": "MAGIKARP",
       "stats": {
-        "baseStamina": 40,
+        "baseStamina": 85,
         "baseAttack": 29,
-        "baseDefense": 102
+        "baseDefense": 85
       },
       "familyId": "FAMILY_MAGIKARP",
       "types": [
@@ -2683,9 +2683,9 @@
       "templateId": "V0130_POKEMON_GYARADOS",
       "pokemonId": "GYARADOS",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 237,
-        "baseDefense": 197
+        "baseDefense": 186
       },
       "familyId": "FAMILY_MAGIKARP",
       "types": [
@@ -2700,9 +2700,9 @@
       "templateId": "V0131_POKEMON_LAPRAS",
       "pokemonId": "LAPRAS",
       "stats": {
-        "baseStamina": 260,
+        "baseStamina": 277,
         "baseAttack": 165,
-        "baseDefense": 180
+        "baseDefense": 174
       },
       "familyId": "FAMILY_LAPRAS",
       "types": [
@@ -2717,7 +2717,7 @@
       "templateId": "V0132_POKEMON_DITTO",
       "pokemonId": "DITTO",
       "stats": {
-        "baseStamina": 96,
+        "baseStamina": 134,
         "baseAttack": 91,
         "baseDefense": 91
       },
@@ -2733,9 +2733,9 @@
       "templateId": "V0133_POKEMON_EEVEE",
       "pokemonId": "EEVEE",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 104,
-        "baseDefense": 121
+        "baseDefense": 114
       },
       "familyId": "FAMILY_EEVEE",
       "types": [
@@ -2749,9 +2749,9 @@
       "templateId": "V0134_POKEMON_VAPOREON",
       "pokemonId": "VAPOREON",
       "stats": {
-        "baseStamina": 260,
+        "baseStamina": 277,
         "baseAttack": 205,
-        "baseDefense": 177
+        "baseDefense": 161
       },
       "familyId": "FAMILY_EEVEE",
       "types": [
@@ -2765,9 +2765,9 @@
       "templateId": "V0135_POKEMON_JOLTEON",
       "pokemonId": "JOLTEON",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 232,
-        "baseDefense": 201
+        "baseDefense": 182
       },
       "familyId": "FAMILY_EEVEE",
       "types": [
@@ -2781,9 +2781,9 @@
       "templateId": "V0136_POKEMON_FLAREON",
       "pokemonId": "FLAREON",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 246,
-        "baseDefense": 204
+        "baseDefense": 179
       },
       "familyId": "FAMILY_EEVEE",
       "types": [
@@ -2797,9 +2797,9 @@
       "templateId": "V0137_POKEMON_PORYGON",
       "pokemonId": "PORYGON",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 153,
-        "baseDefense": 139
+        "baseDefense": 136
       },
       "familyId": "FAMILY_PORYGON",
       "types": [
@@ -2813,9 +2813,9 @@
       "templateId": "V0138_POKEMON_OMANYTE",
       "pokemonId": "OMANYTE",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 155,
-        "baseDefense": 174
+        "baseDefense": 153
       },
       "familyId": "FAMILY_OMANYTE",
       "types": [
@@ -2830,9 +2830,9 @@
       "templateId": "V0139_POKEMON_OMASTAR",
       "pokemonId": "OMASTAR",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 207,
-        "baseDefense": 227
+        "baseDefense": 201
       },
       "familyId": "FAMILY_OMANYTE",
       "types": [
@@ -2847,9 +2847,9 @@
       "templateId": "V0140_POKEMON_KABUTO",
       "pokemonId": "KABUTO",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 148,
-        "baseDefense": 162
+        "baseDefense": 140
       },
       "familyId": "FAMILY_KABUTO",
       "types": [
@@ -2864,9 +2864,9 @@
       "templateId": "V0141_POKEMON_KABUTOPS",
       "pokemonId": "KABUTOPS",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 220,
-        "baseDefense": 203
+        "baseDefense": 186
       },
       "familyId": "FAMILY_KABUTO",
       "types": [
@@ -2881,9 +2881,9 @@
       "templateId": "V0142_POKEMON_AERODACTYL",
       "pokemonId": "AERODACTYL",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 221,
-        "baseDefense": 164
+        "baseDefense": 159
       },
       "familyId": "FAMILY_AERODACTYL",
       "types": [
@@ -2898,9 +2898,9 @@
       "templateId": "V0143_POKEMON_SNORLAX",
       "pokemonId": "SNORLAX",
       "stats": {
-        "baseStamina": 320,
+        "baseStamina": 330,
         "baseAttack": 190,
-        "baseDefense": 190
+        "baseDefense": 169
       },
       "familyId": "FAMILY_SNORLAX",
       "types": [
@@ -2914,9 +2914,9 @@
       "templateId": "V0144_POKEMON_ARTICUNO",
       "pokemonId": "ARTICUNO",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 192,
-        "baseDefense": 249
+        "baseDefense": 236
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_ARTICUNO",
@@ -2932,9 +2932,9 @@
       "templateId": "V0145_POKEMON_ZAPDOS",
       "pokemonId": "ZAPDOS",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 253,
-        "baseDefense": 188
+        "baseDefense": 185
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_ZAPDOS",
@@ -2950,9 +2950,9 @@
       "templateId": "V0146_POKEMON_MOLTRES",
       "pokemonId": "MOLTRES",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 251,
-        "baseDefense": 184
+        "baseDefense": 181
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_MOLTRES",
@@ -2968,9 +2968,9 @@
       "templateId": "V0147_POKEMON_DRATINI",
       "pokemonId": "DRATINI",
       "stats": {
-        "baseStamina": 82,
+        "baseStamina": 121,
         "baseAttack": 119,
-        "baseDefense": 94
+        "baseDefense": 91
       },
       "familyId": "FAMILY_DRATINI",
       "types": [
@@ -2984,9 +2984,9 @@
       "templateId": "V0148_POKEMON_DRAGONAIR",
       "pokemonId": "DRAGONAIR",
       "stats": {
-        "baseStamina": 122,
+        "baseStamina": 156,
         "baseAttack": 163,
-        "baseDefense": 138
+        "baseDefense": 135
       },
       "familyId": "FAMILY_DRATINI",
       "types": [
@@ -3000,9 +3000,9 @@
       "templateId": "V0149_POKEMON_DRAGONITE",
       "pokemonId": "DRAGONITE",
       "stats": {
-        "baseStamina": 182,
+        "baseStamina": 209,
         "baseAttack": 263,
-        "baseDefense": 201
+        "baseDefense": 198
       },
       "familyId": "FAMILY_DRATINI",
       "types": [
@@ -3017,7 +3017,7 @@
       "templateId": "V0150_POKEMON_MEWTWO",
       "pokemonId": "MEWTWO",
       "stats": {
-        "baseStamina": 193,
+        "baseStamina": 214,
         "baseAttack": 300,
         "baseDefense": 182
       },
@@ -3034,7 +3034,7 @@
       "templateId": "V0151_POKEMON_MEW",
       "pokemonId": "MEW",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 210,
         "baseDefense": 210
       },
@@ -3051,7 +3051,7 @@
       "templateId": "V0152_POKEMON_CHIKORITA",
       "pokemonId": "CHIKORITA",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 92,
         "baseDefense": 122
       },
@@ -3067,7 +3067,7 @@
       "templateId": "V0153_POKEMON_BAYLEEF",
       "pokemonId": "BAYLEEF",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 122,
         "baseDefense": 155
       },
@@ -3083,7 +3083,7 @@
       "templateId": "V0154_POKEMON_MEGANIUM",
       "pokemonId": "MEGANIUM",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 168,
         "baseDefense": 202
       },
@@ -3099,9 +3099,9 @@
       "templateId": "V0155_POKEMON_CYNDAQUIL",
       "pokemonId": "CYNDAQUIL",
       "stats": {
-        "baseStamina": 78,
+        "baseStamina": 118,
         "baseAttack": 116,
-        "baseDefense": 96
+        "baseDefense": 93
       },
       "familyId": "FAMILY_CYNDAQUIL",
       "types": [
@@ -3115,9 +3115,9 @@
       "templateId": "V0156_POKEMON_QUILAVA",
       "pokemonId": "QUILAVA",
       "stats": {
-        "baseStamina": 116,
+        "baseStamina": 151,
         "baseAttack": 158,
-        "baseDefense": 129
+        "baseDefense": 126
       },
       "familyId": "FAMILY_CYNDAQUIL",
       "types": [
@@ -3131,9 +3131,9 @@
       "templateId": "V0157_POKEMON_TYPHLOSION",
       "pokemonId": "TYPHLOSION",
       "stats": {
-        "baseStamina": 156,
+        "baseStamina": 186,
         "baseAttack": 223,
-        "baseDefense": 176
+        "baseDefense": 173
       },
       "familyId": "FAMILY_CYNDAQUIL",
       "types": [
@@ -3147,9 +3147,9 @@
       "templateId": "V0158_POKEMON_TOTODILE",
       "pokemonId": "TOTODILE",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 117,
-        "baseDefense": 116
+        "baseDefense": 109
       },
       "familyId": "FAMILY_TOTODILE",
       "types": [
@@ -3163,9 +3163,9 @@
       "templateId": "V0159_POKEMON_CROCONAW",
       "pokemonId": "CROCONAW",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 150,
-        "baseDefense": 151
+        "baseDefense": 142
       },
       "familyId": "FAMILY_TOTODILE",
       "types": [
@@ -3179,9 +3179,9 @@
       "templateId": "V0160_POKEMON_FERALIGATR",
       "pokemonId": "FERALIGATR",
       "stats": {
-        "baseStamina": 170,
+        "baseStamina": 198,
         "baseAttack": 205,
-        "baseDefense": 197
+        "baseDefense": 188
       },
       "familyId": "FAMILY_TOTODILE",
       "types": [
@@ -3195,9 +3195,9 @@
       "templateId": "V0161_POKEMON_SENTRET",
       "pokemonId": "SENTRET",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 79,
-        "baseDefense": 77
+        "baseDefense": 73
       },
       "familyId": "FAMILY_SENTRET",
       "types": [
@@ -3211,9 +3211,9 @@
       "templateId": "V0162_POKEMON_FURRET",
       "pokemonId": "FURRET",
       "stats": {
-        "baseStamina": 170,
+        "baseStamina": 198,
         "baseAttack": 148,
-        "baseDefense": 130
+        "baseDefense": 125
       },
       "familyId": "FAMILY_SENTRET",
       "types": [
@@ -3227,9 +3227,9 @@
       "templateId": "V0163_POKEMON_HOOTHOOT",
       "pokemonId": "HOOTHOOT",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 67,
-        "baseDefense": 101
+        "baseDefense": 88
       },
       "familyId": "FAMILY_HOOTHOOT",
       "types": [
@@ -3244,9 +3244,9 @@
       "templateId": "V0164_POKEMON_NOCTOWL",
       "pokemonId": "NOCTOWL",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 145,
-        "baseDefense": 179
+        "baseDefense": 156
       },
       "familyId": "FAMILY_HOOTHOOT",
       "types": [
@@ -3261,9 +3261,9 @@
       "templateId": "V0165_POKEMON_LEDYBA",
       "pokemonId": "LEDYBA",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 72,
-        "baseDefense": 142
+        "baseDefense": 118
       },
       "familyId": "FAMILY_LEDYBA",
       "types": [
@@ -3278,9 +3278,9 @@
       "templateId": "V0166_POKEMON_LEDIAN",
       "pokemonId": "LEDIAN",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 107,
-        "baseDefense": 209
+        "baseDefense": 179
       },
       "familyId": "FAMILY_LEDYBA",
       "types": [
@@ -3295,7 +3295,7 @@
       "templateId": "V0167_POKEMON_SPINARAK",
       "pokemonId": "SPINARAK",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 105,
         "baseDefense": 73
       },
@@ -3312,9 +3312,9 @@
       "templateId": "V0168_POKEMON_ARIADOS",
       "pokemonId": "ARIADOS",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 161,
-        "baseDefense": 128
+        "baseDefense": 124
       },
       "familyId": "FAMILY_SPINARAK",
       "types": [
@@ -3329,7 +3329,7 @@
       "templateId": "V0169_POKEMON_CROBAT",
       "pokemonId": "CROBAT",
       "stats": {
-        "baseStamina": 170,
+        "baseStamina": 198,
         "baseAttack": 194,
         "baseDefense": 178
       },
@@ -3346,9 +3346,9 @@
       "templateId": "V0170_POKEMON_CHINCHOU",
       "pokemonId": "CHINCHOU",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 106,
-        "baseDefense": 106
+        "baseDefense": 97
       },
       "familyId": "FAMILY_CHINCHOU",
       "types": [
@@ -3363,9 +3363,9 @@
       "templateId": "V0171_POKEMON_LANTURN",
       "pokemonId": "LANTURN",
       "stats": {
-        "baseStamina": 250,
+        "baseStamina": 268,
         "baseAttack": 146,
-        "baseDefense": 146
+        "baseDefense": 137
       },
       "familyId": "FAMILY_CHINCHOU",
       "types": [
@@ -3380,9 +3380,9 @@
       "templateId": "V0172_POKEMON_PICHU",
       "pokemonId": "PICHU",
       "stats": {
-        "baseStamina": 40,
+        "baseStamina": 85,
         "baseAttack": 77,
-        "baseDefense": 63
+        "baseDefense": 53
       },
       "familyId": "FAMILY_PIKACHU",
       "types": [
@@ -3396,9 +3396,9 @@
       "templateId": "V0173_POKEMON_CLEFFA",
       "pokemonId": "CLEFFA",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 75,
-        "baseDefense": 91
+        "baseDefense": 79
       },
       "familyId": "FAMILY_CLEFAIRY",
       "types": [
@@ -3412,9 +3412,9 @@
       "templateId": "V0174_POKEMON_IGGLYBUFF",
       "pokemonId": "IGGLYBUFF",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 69,
-        "baseDefense": 34
+        "baseDefense": 32
       },
       "familyId": "FAMILY_JIGGLYPUFF",
       "types": [
@@ -3429,7 +3429,7 @@
       "templateId": "V0175_POKEMON_TOGEPI",
       "pokemonId": "TOGEPI",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 67,
         "baseDefense": 116
       },
@@ -3445,9 +3445,9 @@
       "templateId": "V0176_POKEMON_TOGETIC",
       "pokemonId": "TOGETIC",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 139,
-        "baseDefense": 191
+        "baseDefense": 181
       },
       "familyId": "FAMILY_TOGEPI",
       "types": [
@@ -3462,7 +3462,7 @@
       "templateId": "V0177_POKEMON_NATU",
       "pokemonId": "NATU",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 134,
         "baseDefense": 89
       },
@@ -3479,7 +3479,7 @@
       "templateId": "V0178_POKEMON_XATU",
       "pokemonId": "XATU",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 192,
         "baseDefense": 146
       },
@@ -3496,9 +3496,9 @@
       "templateId": "V0179_POKEMON_MAREEP",
       "pokemonId": "MAREEP",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 114,
-        "baseDefense": 82
+        "baseDefense": 79
       },
       "familyId": "FAMILY_MAREEP",
       "types": [
@@ -3512,9 +3512,9 @@
       "templateId": "V0180_POKEMON_FLAAFFY",
       "pokemonId": "FLAAFFY",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 145,
-        "baseDefense": 112
+        "baseDefense": 109
       },
       "familyId": "FAMILY_MAREEP",
       "types": [
@@ -3528,9 +3528,9 @@
       "templateId": "V0181_POKEMON_AMPHAROS",
       "pokemonId": "AMPHAROS",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 211,
-        "baseDefense": 172
+        "baseDefense": 169
       },
       "familyId": "FAMILY_MAREEP",
       "types": [
@@ -3544,9 +3544,9 @@
       "templateId": "V0182_POKEMON_BELLOSSOM",
       "pokemonId": "BELLOSSOM",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 169,
-        "baseDefense": 189
+        "baseDefense": 186
       },
       "familyId": "FAMILY_ODDISH",
       "types": [
@@ -3560,7 +3560,7 @@
       "templateId": "V0183_POKEMON_MARILL",
       "pokemonId": "MARILL",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 37,
         "baseDefense": 93
       },
@@ -3577,7 +3577,7 @@
       "templateId": "V0184_POKEMON_AZUMARILL",
       "pokemonId": "AZUMARILL",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 112,
         "baseDefense": 152
       },
@@ -3594,9 +3594,9 @@
       "templateId": "V0185_POKEMON_SUDOWOODO",
       "pokemonId": "SUDOWOODO",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 167,
-        "baseDefense": 198
+        "baseDefense": 176
       },
       "familyId": "FAMILY_SUDOWOODO",
       "types": [
@@ -3610,9 +3610,9 @@
       "templateId": "V0186_POKEMON_POLITOED",
       "pokemonId": "POLITOED",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 174,
-        "baseDefense": 192
+        "baseDefense": 179
       },
       "familyId": "FAMILY_POLIWAG",
       "types": [
@@ -3626,9 +3626,9 @@
       "templateId": "V0187_POKEMON_HOPPIP",
       "pokemonId": "HOPPIP",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 67,
-        "baseDefense": 101
+        "baseDefense": 94
       },
       "familyId": "FAMILY_HOPPIP",
       "types": [
@@ -3643,9 +3643,9 @@
       "templateId": "V0188_POKEMON_SKIPLOOM",
       "pokemonId": "SKIPLOOM",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 91,
-        "baseDefense": 127
+        "baseDefense": 120
       },
       "familyId": "FAMILY_HOPPIP",
       "types": [
@@ -3660,9 +3660,9 @@
       "templateId": "V0189_POKEMON_JUMPLUFF",
       "pokemonId": "JUMPLUFF",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 118,
-        "baseDefense": 197
+        "baseDefense": 183
       },
       "familyId": "FAMILY_HOPPIP",
       "types": [
@@ -3677,7 +3677,7 @@
       "templateId": "V0190_POKEMON_AIPOM",
       "pokemonId": "AIPOM",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 136,
         "baseDefense": 112
       },
@@ -3693,7 +3693,7 @@
       "templateId": "V0191_POKEMON_SUNKERN",
       "pokemonId": "SUNKERN",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 55,
         "baseDefense": 55
       },
@@ -3709,9 +3709,9 @@
       "templateId": "V0192_POKEMON_SUNFLORA",
       "pokemonId": "SUNFLORA",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 185,
-        "baseDefense": 148
+        "baseDefense": 135
       },
       "familyId": "FAMILY_SUNKERN",
       "types": [
@@ -3725,7 +3725,7 @@
       "templateId": "V0193_POKEMON_YANMA",
       "pokemonId": "YANMA",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 154,
         "baseDefense": 94
       },
@@ -3742,9 +3742,9 @@
       "templateId": "V0194_POKEMON_WOOPER",
       "pokemonId": "WOOPER",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 75,
-        "baseDefense": 75
+        "baseDefense": 66
       },
       "familyId": "FAMILY_WOOPER",
       "types": [
@@ -3759,9 +3759,9 @@
       "templateId": "V0195_POKEMON_QUAGSIRE",
       "pokemonId": "QUAGSIRE",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 152,
-        "baseDefense": 152
+        "baseDefense": 143
       },
       "familyId": "FAMILY_WOOPER",
       "types": [
@@ -3776,9 +3776,9 @@
       "templateId": "V0196_POKEMON_ESPEON",
       "pokemonId": "ESPEON",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 261,
-        "baseDefense": 194
+        "baseDefense": 175
       },
       "familyId": "FAMILY_EEVEE",
       "types": [
@@ -3792,9 +3792,9 @@
       "templateId": "V0197_POKEMON_UMBREON",
       "pokemonId": "UMBREON",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 126,
-        "baseDefense": 250
+        "baseDefense": 240
       },
       "familyId": "FAMILY_EEVEE",
       "types": [
@@ -3808,7 +3808,7 @@
       "templateId": "V0198_POKEMON_MURKROW",
       "pokemonId": "MURKROW",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 175,
         "baseDefense": 87
       },
@@ -3825,9 +3825,9 @@
       "templateId": "V0199_POKEMON_SLOWKING",
       "pokemonId": "SLOWKING",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 177,
-        "baseDefense": 194
+        "baseDefense": 180
       },
       "familyId": "FAMILY_SLOWPOKE",
       "types": [
@@ -3842,9 +3842,9 @@
       "templateId": "V0200_POKEMON_MISDREAVUS",
       "pokemonId": "MISDREAVUS",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 167,
-        "baseDefense": 167
+        "baseDefense": 154
       },
       "familyId": "FAMILY_MISDREAVUS",
       "types": [
@@ -3858,7 +3858,7 @@
       "templateId": "V0201_POKEMON_UNOWN",
       "pokemonId": "UNOWN",
       "stats": {
-        "baseStamina": 96,
+        "baseStamina": 134,
         "baseAttack": 136,
         "baseDefense": 91
       },
@@ -3874,7 +3874,7 @@
       "templateId": "V0202_POKEMON_WOBBUFFET",
       "pokemonId": "WOBBUFFET",
       "stats": {
-        "baseStamina": 380,
+        "baseStamina": 382,
         "baseAttack": 60,
         "baseDefense": 106
       },
@@ -3890,7 +3890,7 @@
       "templateId": "V0203_POKEMON_GIRAFARIG",
       "pokemonId": "GIRAFARIG",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 182,
         "baseDefense": 133
       },
@@ -3907,9 +3907,9 @@
       "templateId": "V0204_POKEMON_PINECO",
       "pokemonId": "PINECO",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 108,
-        "baseDefense": 146
+        "baseDefense": 122
       },
       "familyId": "FAMILY_PINECO",
       "types": [
@@ -3923,9 +3923,9 @@
       "templateId": "V0205_POKEMON_FORRETRESS",
       "pokemonId": "FORRETRESS",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 161,
-        "baseDefense": 242
+        "baseDefense": 205
       },
       "familyId": "FAMILY_PINECO",
       "types": [
@@ -3940,9 +3940,9 @@
       "templateId": "V0206_POKEMON_DUNSPARCE",
       "pokemonId": "DUNSPARCE",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 131,
-        "baseDefense": 131
+        "baseDefense": 128
       },
       "familyId": "FAMILY_DUNSPARCE",
       "types": [
@@ -3956,9 +3956,9 @@
       "templateId": "V0207_POKEMON_GLIGAR",
       "pokemonId": "GLIGAR",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 143,
-        "baseDefense": 204
+        "baseDefense": 184
       },
       "familyId": "FAMILY_GLIGAR",
       "types": [
@@ -3973,9 +3973,9 @@
       "templateId": "V0208_POKEMON_STEELIX",
       "pokemonId": "STEELIX",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 148,
-        "baseDefense": 333
+        "baseDefense": 272
       },
       "familyId": "FAMILY_ONIX",
       "types": [
@@ -3990,9 +3990,9 @@
       "templateId": "V0209_POKEMON_SNUBBULL",
       "pokemonId": "SNUBBULL",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 137,
-        "baseDefense": 89
+        "baseDefense": 85
       },
       "familyId": "FAMILY_SNUBBULL",
       "types": [
@@ -4006,9 +4006,9 @@
       "templateId": "V0210_POKEMON_GRANBULL",
       "pokemonId": "GRANBULL",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 212,
-        "baseDefense": 137
+        "baseDefense": 131
       },
       "familyId": "FAMILY_SNUBBULL",
       "types": [
@@ -4022,9 +4022,9 @@
       "templateId": "V0211_POKEMON_QWILFISH",
       "pokemonId": "QWILFISH",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 184,
-        "baseDefense": 148
+        "baseDefense": 138
       },
       "familyId": "FAMILY_QWILFISH",
       "types": [
@@ -4039,9 +4039,9 @@
       "templateId": "V0212_POKEMON_SCIZOR",
       "pokemonId": "SCIZOR",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 236,
-        "baseDefense": 191
+        "baseDefense": 181
       },
       "familyId": "FAMILY_SCYTHER",
       "types": [
@@ -4056,7 +4056,7 @@
       "templateId": "V0213_POKEMON_SHUCKLE",
       "pokemonId": "SHUCKLE",
       "stats": {
-        "baseStamina": 40,
+        "baseStamina": 85,
         "baseAttack": 17,
         "baseDefense": 396
       },
@@ -4073,9 +4073,9 @@
       "templateId": "V0214_POKEMON_HERACROSS",
       "pokemonId": "HERACROSS",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 234,
-        "baseDefense": 189
+        "baseDefense": 179
       },
       "familyId": "FAMILY_HERACROSS",
       "types": [
@@ -4090,9 +4090,9 @@
       "templateId": "V0215_POKEMON_SNEASEL",
       "pokemonId": "SNEASEL",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 189,
-        "baseDefense": 157
+        "baseDefense": 146
       },
       "familyId": "FAMILY_SNEASEL",
       "types": [
@@ -4107,7 +4107,7 @@
       "templateId": "V0216_POKEMON_TEDDIURSA",
       "pokemonId": "TEDDIURSA",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 142,
         "baseDefense": 93
       },
@@ -4123,7 +4123,7 @@
       "templateId": "V0217_POKEMON_URSARING",
       "pokemonId": "URSARING",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 236,
         "baseDefense": 144
       },
@@ -4139,7 +4139,7 @@
       "templateId": "V0218_POKEMON_SLUGMA",
       "pokemonId": "SLUGMA",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 118,
         "baseDefense": 71
       },
@@ -4155,9 +4155,9 @@
       "templateId": "V0219_POKEMON_MAGCARGO",
       "pokemonId": "MAGCARGO",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 139,
-        "baseDefense": 209
+        "baseDefense": 191
       },
       "familyId": "FAMILY_SLUGMA",
       "types": [
@@ -4172,9 +4172,9 @@
       "templateId": "V0220_POKEMON_SWINUB",
       "pokemonId": "SWINUB",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 90,
-        "baseDefense": 74
+        "baseDefense": 69
       },
       "familyId": "FAMILY_SWINUB",
       "types": [
@@ -4189,9 +4189,9 @@
       "templateId": "V0221_POKEMON_PILOSWINE",
       "pokemonId": "PILOSWINE",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 181,
-        "baseDefense": 147
+        "baseDefense": 138
       },
       "familyId": "FAMILY_SWINUB",
       "types": [
@@ -4206,7 +4206,7 @@
       "templateId": "V0222_POKEMON_CORSOLA",
       "pokemonId": "CORSOLA",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 118,
         "baseDefense": 156
       },
@@ -4223,7 +4223,7 @@
       "templateId": "V0223_POKEMON_REMORAID",
       "pokemonId": "REMORAID",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 127,
         "baseDefense": 69
       },
@@ -4239,7 +4239,7 @@
       "templateId": "V0224_POKEMON_OCTILLERY",
       "pokemonId": "OCTILLERY",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 197,
         "baseDefense": 141
       },
@@ -4255,7 +4255,7 @@
       "templateId": "V0225_POKEMON_DELIBIRD",
       "pokemonId": "DELIBIRD",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 128,
         "baseDefense": 90
       },
@@ -4272,9 +4272,9 @@
       "templateId": "V0226_POKEMON_MANTINE",
       "pokemonId": "MANTINE",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 148,
-        "baseDefense": 260
+        "baseDefense": 226
       },
       "familyId": "FAMILY_MANTINE",
       "types": [
@@ -4289,9 +4289,9 @@
       "templateId": "V0227_POKEMON_SKARMORY",
       "pokemonId": "SKARMORY",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 148,
-        "baseDefense": 260
+        "baseDefense": 226
       },
       "familyId": "FAMILY_SKARMORY",
       "types": [
@@ -4306,9 +4306,9 @@
       "templateId": "V0228_POKEMON_HOUNDOUR",
       "pokemonId": "HOUNDOUR",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 152,
-        "baseDefense": 93
+        "baseDefense": 83
       },
       "familyId": "FAMILY_HOUNDOUR",
       "types": [
@@ -4323,9 +4323,9 @@
       "templateId": "V0229_POKEMON_HOUNDOOM",
       "pokemonId": "HOUNDOOM",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 224,
-        "baseDefense": 159
+        "baseDefense": 144
       },
       "familyId": "FAMILY_HOUNDOUR",
       "types": [
@@ -4340,7 +4340,7 @@
       "templateId": "V0230_POKEMON_KINGDRA",
       "pokemonId": "KINGDRA",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 194,
         "baseDefense": 194
       },
@@ -4357,9 +4357,9 @@
       "templateId": "V0231_POKEMON_PHANPY",
       "pokemonId": "PHANPY",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 107,
-        "baseDefense": 107
+        "baseDefense": 98
       },
       "familyId": "FAMILY_PHANPY",
       "types": [
@@ -4373,9 +4373,9 @@
       "templateId": "V0232_POKEMON_DONPHAN",
       "pokemonId": "DONPHAN",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 214,
-        "baseDefense": 214
+        "baseDefense": 185
       },
       "familyId": "FAMILY_PHANPY",
       "types": [
@@ -4389,9 +4389,9 @@
       "templateId": "V0233_POKEMON_PORYGON2",
       "pokemonId": "PORYGON2",
       "stats": {
-        "baseStamina": 170,
+        "baseStamina": 198,
         "baseAttack": 198,
-        "baseDefense": 183
+        "baseDefense": 180
       },
       "familyId": "FAMILY_PORYGON",
       "types": [
@@ -4405,9 +4405,9 @@
       "templateId": "V0234_POKEMON_STANTLER",
       "pokemonId": "STANTLER",
       "stats": {
-        "baseStamina": 146,
+        "baseStamina": 177,
         "baseAttack": 192,
-        "baseDefense": 132
+        "baseDefense": 131
       },
       "familyId": "FAMILY_STANTLER",
       "types": [
@@ -4421,9 +4421,9 @@
       "templateId": "V0235_POKEMON_SMEARGLE",
       "pokemonId": "SMEARGLE",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 40,
-        "baseDefense": 88
+        "baseDefense": 83
       },
       "familyId": "FAMILY_SMEARGLE",
       "types": [
@@ -4437,7 +4437,7 @@
       "templateId": "V0236_POKEMON_TYROGUE",
       "pokemonId": "TYROGUE",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 64,
         "baseDefense": 64
       },
@@ -4453,9 +4453,9 @@
       "templateId": "V0237_POKEMON_HITMONTOP",
       "pokemonId": "HITMONTOP",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 173,
-        "baseDefense": 214
+        "baseDefense": 207
       },
       "familyId": "FAMILY_TYROGUE",
       "types": [
@@ -4469,9 +4469,9 @@
       "templateId": "V0238_POKEMON_SMOOCHUM",
       "pokemonId": "SMOOCHUM",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 153,
-        "baseDefense": 116
+        "baseDefense": 91
       },
       "familyId": "FAMILY_JYNX",
       "types": [
@@ -4486,9 +4486,9 @@
       "templateId": "V0239_POKEMON_ELEKID",
       "pokemonId": "ELEKID",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 135,
-        "baseDefense": 110
+        "baseDefense": 101
       },
       "familyId": "FAMILY_ELECTABUZZ",
       "types": [
@@ -4502,9 +4502,9 @@
       "templateId": "V0240_POKEMON_MAGBY",
       "pokemonId": "MAGBY",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 151,
-        "baseDefense": 108
+        "baseDefense": 99
       },
       "familyId": "FAMILY_MAGMAR",
       "types": [
@@ -4518,9 +4518,9 @@
       "templateId": "V0241_POKEMON_MILTANK",
       "pokemonId": "MILTANK",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 157,
-        "baseDefense": 211
+        "baseDefense": 193
       },
       "familyId": "FAMILY_MILTANK",
       "types": [
@@ -4534,9 +4534,9 @@
       "templateId": "V0242_POKEMON_BLISSEY",
       "pokemonId": "BLISSEY",
       "stats": {
-        "baseStamina": 510,
+        "baseStamina": 496,
         "baseAttack": 129,
-        "baseDefense": 229
+        "baseDefense": 169
       },
       "familyId": "FAMILY_CHANSEY",
       "types": [
@@ -4550,9 +4550,9 @@
       "templateId": "V0243_POKEMON_RAIKOU",
       "pokemonId": "RAIKOU",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 241,
-        "baseDefense": 210
+        "baseDefense": 195
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_RAIKOU",
@@ -4567,9 +4567,9 @@
       "templateId": "V0244_POKEMON_ENTEI",
       "pokemonId": "ENTEI",
       "stats": {
-        "baseStamina": 230,
+        "baseStamina": 251,
         "baseAttack": 235,
-        "baseDefense": 176
+        "baseDefense": 171
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_ENTEI",
@@ -4584,7 +4584,7 @@
       "templateId": "V0245_POKEMON_SUICUNE",
       "pokemonId": "SUICUNE",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 180,
         "baseDefense": 235
       },
@@ -4601,7 +4601,7 @@
       "templateId": "V0246_POKEMON_LARVITAR",
       "pokemonId": "LARVITAR",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 115,
         "baseDefense": 93
       },
@@ -4618,7 +4618,7 @@
       "templateId": "V0247_POKEMON_PUPITAR",
       "pokemonId": "PUPITAR",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 155,
         "baseDefense": 133
       },
@@ -4635,9 +4635,9 @@
       "templateId": "V0248_POKEMON_TYRANITAR",
       "pokemonId": "TYRANITAR",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 251,
-        "baseDefense": 212
+        "baseDefense": 207
       },
       "familyId": "FAMILY_LARVITAR",
       "types": [
@@ -4652,9 +4652,9 @@
       "templateId": "V0249_POKEMON_LUGIA",
       "pokemonId": "LUGIA",
       "stats": {
-        "baseStamina": 212,
+        "baseStamina": 235,
         "baseAttack": 193,
-        "baseDefense": 323
+        "baseDefense": 310
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_LUGIA",
@@ -4670,9 +4670,9 @@
       "templateId": "V0250_POKEMON_HO_OH",
       "pokemonId": "HO_OH",
       "stats": {
-        "baseStamina": 193,
+        "baseStamina": 214,
         "baseAttack": 239,
-        "baseDefense": 274
+        "baseDefense": 244
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_HO_OH",
@@ -4688,7 +4688,7 @@
       "templateId": "V0251_POKEMON_CELEBI",
       "pokemonId": "CELEBI",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 210,
         "baseDefense": 210
       },
@@ -4706,9 +4706,9 @@
       "templateId": "V0252_POKEMON_TREECKO",
       "pokemonId": "TREECKO",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 124,
-        "baseDefense": 104
+        "baseDefense": 94
       },
       "familyId": "FAMILY_TREECKO",
       "types": [
@@ -4722,9 +4722,9 @@
       "templateId": "V0253_POKEMON_GROVYLE",
       "pokemonId": "GROVYLE",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 172,
-        "baseDefense": 130
+        "baseDefense": 120
       },
       "familyId": "FAMILY_TREECKO",
       "types": [
@@ -4738,9 +4738,9 @@
       "templateId": "V0254_POKEMON_SCEPTILE",
       "pokemonId": "SCEPTILE",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 223,
-        "baseDefense": 180
+        "baseDefense": 169
       },
       "familyId": "FAMILY_TREECKO",
       "types": [
@@ -4754,9 +4754,9 @@
       "templateId": "V0255_POKEMON_TORCHIC",
       "pokemonId": "TORCHIC",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 130,
-        "baseDefense": 92
+        "baseDefense": 87
       },
       "familyId": "FAMILY_TORCHIC",
       "types": [
@@ -4770,7 +4770,7 @@
       "templateId": "V0256_POKEMON_COMBUSKEN",
       "pokemonId": "COMBUSKEN",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 163,
         "baseDefense": 115
       },
@@ -4787,7 +4787,7 @@
       "templateId": "V0257_POKEMON_BLAZIKEN",
       "pokemonId": "BLAZIKEN",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 240,
         "baseDefense": 141
       },
@@ -4804,7 +4804,7 @@
       "templateId": "V0258_POKEMON_MUDKIP",
       "pokemonId": "MUDKIP",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 126,
         "baseDefense": 93
       },
@@ -4820,7 +4820,7 @@
       "templateId": "V0259_POKEMON_MARSHTOMP",
       "pokemonId": "MARSHTOMP",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 156,
         "baseDefense": 133
       },
@@ -4837,7 +4837,7 @@
       "templateId": "V0260_POKEMON_SWAMPERT",
       "pokemonId": "SWAMPERT",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 208,
         "baseDefense": 175
       },
@@ -4854,9 +4854,9 @@
       "templateId": "V0261_POKEMON_POOCHYENA",
       "pokemonId": "POOCHYENA",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 96,
-        "baseDefense": 63
+        "baseDefense": 61
       },
       "familyId": "FAMILY_POOCHYENA",
       "types": [
@@ -4870,9 +4870,9 @@
       "templateId": "V0262_POKEMON_MIGHTYENA",
       "pokemonId": "MIGHTYENA",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 171,
-        "baseDefense": 137
+        "baseDefense": 132
       },
       "familyId": "FAMILY_POOCHYENA",
       "types": [
@@ -4886,7 +4886,7 @@
       "templateId": "V0263_POKEMON_ZIGZAGOON",
       "pokemonId": "ZIGZAGOON",
       "stats": {
-        "baseStamina": 76,
+        "baseStamina": 116,
         "baseAttack": 58,
         "baseDefense": 80
       },
@@ -4902,7 +4902,7 @@
       "templateId": "V0264_POKEMON_LINOONE",
       "pokemonId": "LINOONE",
       "stats": {
-        "baseStamina": 156,
+        "baseStamina": 186,
         "baseAttack": 142,
         "baseDefense": 128
       },
@@ -4918,9 +4918,9 @@
       "templateId": "V0265_POKEMON_WURMPLE",
       "pokemonId": "WURMPLE",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 75,
-        "baseDefense": 61
+        "baseDefense": 59
       },
       "familyId": "FAMILY_WURMPLE",
       "types": [
@@ -4934,9 +4934,9 @@
       "templateId": "V0266_POKEMON_SILCOON",
       "pokemonId": "SILCOON",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 60,
-        "baseDefense": 91
+        "baseDefense": 77
       },
       "familyId": "FAMILY_WURMPLE",
       "types": [
@@ -4950,7 +4950,7 @@
       "templateId": "V0267_POKEMON_BEAUTIFLY",
       "pokemonId": "BEAUTIFLY",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 189,
         "baseDefense": 98
       },
@@ -4967,9 +4967,9 @@
       "templateId": "V0268_POKEMON_CASCOON",
       "pokemonId": "CASCOON",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 60,
-        "baseDefense": 91
+        "baseDefense": 77
       },
       "familyId": "FAMILY_WURMPLE",
       "types": [
@@ -4983,9 +4983,9 @@
       "templateId": "V0269_POKEMON_DUSTOX",
       "pokemonId": "DUSTOX",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 98,
-        "baseDefense": 172
+        "baseDefense": 162
       },
       "familyId": "FAMILY_WURMPLE",
       "types": [
@@ -5000,9 +5000,9 @@
       "templateId": "V0270_POKEMON_LOTAD",
       "pokemonId": "LOTAD",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 71,
-        "baseDefense": 86
+        "baseDefense": 77
       },
       "familyId": "FAMILY_LOTAD",
       "types": [
@@ -5017,9 +5017,9 @@
       "templateId": "V0271_POKEMON_LOMBRE",
       "pokemonId": "LOMBRE",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 112,
-        "baseDefense": 128
+        "baseDefense": 119
       },
       "familyId": "FAMILY_LOTAD",
       "types": [
@@ -5034,9 +5034,9 @@
       "templateId": "V0272_POKEMON_LUDICOLO",
       "pokemonId": "LUDICOLO",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 173,
-        "baseDefense": 191
+        "baseDefense": 176
       },
       "familyId": "FAMILY_LOTAD",
       "types": [
@@ -5051,9 +5051,9 @@
       "templateId": "V0273_POKEMON_SEEDOT",
       "pokemonId": "SEEDOT",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 71,
-        "baseDefense": 86
+        "baseDefense": 77
       },
       "familyId": "FAMILY_SEEDOT",
       "types": [
@@ -5067,7 +5067,7 @@
       "templateId": "V0274_POKEMON_NUZLEAF",
       "pokemonId": "NUZLEAF",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 134,
         "baseDefense": 78
       },
@@ -5084,7 +5084,7 @@
       "templateId": "V0275_POKEMON_SHIFTRY",
       "pokemonId": "SHIFTRY",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 200,
         "baseDefense": 121
       },
@@ -5101,7 +5101,7 @@
       "templateId": "V0276_POKEMON_TAILLOW",
       "pokemonId": "TAILLOW",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 106,
         "baseDefense": 61
       },
@@ -5118,9 +5118,9 @@
       "templateId": "V0277_POKEMON_SWELLOW",
       "pokemonId": "SWELLOW",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 185,
-        "baseDefense": 130
+        "baseDefense": 124
       },
       "familyId": "FAMILY_TAILLOW",
       "types": [
@@ -5135,7 +5135,7 @@
       "templateId": "V0278_POKEMON_WINGULL",
       "pokemonId": "WINGULL",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 106,
         "baseDefense": 61
       },
@@ -5152,9 +5152,9 @@
       "templateId": "V0279_POKEMON_PELIPPER",
       "pokemonId": "PELIPPER",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 175,
-        "baseDefense": 189
+        "baseDefense": 174
       },
       "familyId": "FAMILY_WINGULL",
       "types": [
@@ -5169,9 +5169,9 @@
       "templateId": "V0280_POKEMON_RALTS",
       "pokemonId": "RALTS",
       "stats": {
-        "baseStamina": 56,
+        "baseStamina": 99,
         "baseAttack": 79,
-        "baseDefense": 63
+        "baseDefense": 59
       },
       "familyId": "FAMILY_RALTS",
       "types": [
@@ -5186,9 +5186,9 @@
       "templateId": "V0281_POKEMON_KIRLIA",
       "pokemonId": "KIRLIA",
       "stats": {
-        "baseStamina": 76,
+        "baseStamina": 116,
         "baseAttack": 117,
-        "baseDefense": 100
+        "baseDefense": 90
       },
       "familyId": "FAMILY_RALTS",
       "types": [
@@ -5203,9 +5203,9 @@
       "templateId": "V0282_POKEMON_GARDEVOIR",
       "pokemonId": "GARDEVOIR",
       "stats": {
-        "baseStamina": 136,
+        "baseStamina": 169,
         "baseAttack": 237,
-        "baseDefense": 220
+        "baseDefense": 195
       },
       "familyId": "FAMILY_RALTS",
       "types": [
@@ -5220,9 +5220,9 @@
       "templateId": "V0283_POKEMON_SURSKIT",
       "pokemonId": "SURSKIT",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 93,
-        "baseDefense": 97
+        "baseDefense": 87
       },
       "familyId": "FAMILY_SURSKIT",
       "types": [
@@ -5237,9 +5237,9 @@
       "templateId": "V0284_POKEMON_MASQUERAIN",
       "pokemonId": "MASQUERAIN",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 192,
-        "baseDefense": 161
+        "baseDefense": 150
       },
       "familyId": "FAMILY_SURSKIT",
       "types": [
@@ -5254,7 +5254,7 @@
       "templateId": "V0285_POKEMON_SHROOMISH",
       "pokemonId": "SHROOMISH",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 74,
         "baseDefense": 110
       },
@@ -5270,9 +5270,9 @@
       "templateId": "V0286_POKEMON_BRELOOM",
       "pokemonId": "BRELOOM",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 241,
-        "baseDefense": 153
+        "baseDefense": 144
       },
       "familyId": "FAMILY_SHROOMISH",
       "types": [
@@ -5287,9 +5287,9 @@
       "templateId": "V0287_POKEMON_SLAKOTH",
       "pokemonId": "SLAKOTH",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 104,
-        "baseDefense": 104
+        "baseDefense": 92
       },
       "familyId": "FAMILY_SLAKOTH",
       "types": [
@@ -5303,9 +5303,9 @@
       "templateId": "V0288_POKEMON_VIGOROTH",
       "pokemonId": "VIGOROTH",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 159,
-        "baseDefense": 159
+        "baseDefense": 145
       },
       "familyId": "FAMILY_SLAKOTH",
       "types": [
@@ -5319,9 +5319,9 @@
       "templateId": "V0289_POKEMON_SLAKING",
       "pokemonId": "SLAKING",
       "stats": {
-        "baseStamina": 273,
+        "baseStamina": 284,
         "baseAttack": 290,
-        "baseDefense": 183
+        "baseDefense": 166
       },
       "familyId": "FAMILY_SLAKOTH",
       "types": [
@@ -5335,9 +5335,9 @@
       "templateId": "V0290_POKEMON_NINCADA",
       "pokemonId": "NINCADA",
       "stats": {
-        "baseStamina": 62,
+        "baseStamina": 104,
         "baseAttack": 80,
-        "baseDefense": 153
+        "baseDefense": 126
       },
       "familyId": "FAMILY_NINCADA",
       "types": [
@@ -5352,9 +5352,9 @@
       "templateId": "V0291_POKEMON_NINJASK",
       "pokemonId": "NINJASK",
       "stats": {
-        "baseStamina": 122,
+        "baseStamina": 156,
         "baseAttack": 196,
-        "baseDefense": 114
+        "baseDefense": 112
       },
       "familyId": "FAMILY_NINCADA",
       "types": [
@@ -5369,9 +5369,9 @@
       "templateId": "V0292_POKEMON_SHEDINJA",
       "pokemonId": "SHEDINJA",
       "stats": {
-        "baseStamina": 2,
+        "baseStamina": 1,
         "baseAttack": 153,
-        "baseDefense": 80
+        "baseDefense": 73
       },
       "familyId": "FAMILY_NINCADA",
       "types": [
@@ -5386,7 +5386,7 @@
       "templateId": "V0293_POKEMON_WHISMUR",
       "pokemonId": "WHISMUR",
       "stats": {
-        "baseStamina": 128,
+        "baseStamina": 162,
         "baseAttack": 92,
         "baseDefense": 42
       },
@@ -5402,7 +5402,7 @@
       "templateId": "V0294_POKEMON_LOUDRED",
       "pokemonId": "LOUDRED",
       "stats": {
-        "baseStamina": 168,
+        "baseStamina": 197,
         "baseAttack": 134,
         "baseDefense": 81
       },
@@ -5418,9 +5418,9 @@
       "templateId": "V0295_POKEMON_EXPLOUD",
       "pokemonId": "EXPLOUD",
       "stats": {
-        "baseStamina": 208,
+        "baseStamina": 232,
         "baseAttack": 179,
-        "baseDefense": 142
+        "baseDefense": 137
       },
       "familyId": "FAMILY_WHISMUR",
       "types": [
@@ -5434,7 +5434,7 @@
       "templateId": "V0296_POKEMON_MAKUHITA",
       "pokemonId": "MAKUHITA",
       "stats": {
-        "baseStamina": 144,
+        "baseStamina": 176,
         "baseAttack": 99,
         "baseDefense": 54
       },
@@ -5450,7 +5450,7 @@
       "templateId": "V0297_POKEMON_HARIYAMA",
       "pokemonId": "HARIYAMA",
       "stats": {
-        "baseStamina": 288,
+        "baseStamina": 302,
         "baseAttack": 209,
         "baseDefense": 114
       },
@@ -5466,7 +5466,7 @@
       "templateId": "V0298_POKEMON_AZURILL",
       "pokemonId": "AZURILL",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 36,
         "baseDefense": 71
       },
@@ -5483,9 +5483,9 @@
       "templateId": "V0299_POKEMON_NOSEPASS",
       "pokemonId": "NOSEPASS",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 82,
-        "baseDefense": 236
+        "baseDefense": 215
       },
       "familyId": "FAMILY_NOSEPASS",
       "types": [
@@ -5499,9 +5499,9 @@
       "templateId": "V0300_POKEMON_SKITTY",
       "pokemonId": "SKITTY",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 84,
-        "baseDefense": 84
+        "baseDefense": 79
       },
       "familyId": "FAMILY_SKITTY",
       "types": [
@@ -5515,9 +5515,9 @@
       "templateId": "V0301_POKEMON_DELCATTY",
       "pokemonId": "DELCATTY",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 132,
-        "baseDefense": 132
+        "baseDefense": 127
       },
       "familyId": "FAMILY_SKITTY",
       "types": [
@@ -5531,9 +5531,9 @@
       "templateId": "V0302_POKEMON_SABLEYE",
       "pokemonId": "SABLEYE",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 141,
-        "baseDefense": 141
+        "baseDefense": 136
       },
       "familyId": "FAMILY_SABLEYE",
       "types": [
@@ -5548,9 +5548,9 @@
       "templateId": "V0303_POKEMON_MAWILE",
       "pokemonId": "MAWILE",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 155,
-        "baseDefense": 155
+        "baseDefense": 141
       },
       "familyId": "FAMILY_MAWILE",
       "types": [
@@ -5565,9 +5565,9 @@
       "templateId": "V0304_POKEMON_ARON",
       "pokemonId": "ARON",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 121,
-        "baseDefense": 168
+        "baseDefense": 141
       },
       "familyId": "FAMILY_ARON",
       "types": [
@@ -5582,9 +5582,9 @@
       "templateId": "V0305_POKEMON_LAIRON",
       "pokemonId": "LAIRON",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 158,
-        "baseDefense": 240
+        "baseDefense": 198
       },
       "familyId": "FAMILY_ARON",
       "types": [
@@ -5599,9 +5599,9 @@
       "templateId": "V0306_POKEMON_AGGRON",
       "pokemonId": "AGGRON",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 198,
-        "baseDefense": 314
+        "baseDefense": 257
       },
       "familyId": "FAMILY_ARON",
       "types": [
@@ -5616,7 +5616,7 @@
       "templateId": "V0307_POKEMON_MEDITITE",
       "pokemonId": "MEDITITE",
       "stats": {
-        "baseStamina": 60,
+        "baseStamina": 102,
         "baseAttack": 78,
         "baseDefense": 107
       },
@@ -5633,7 +5633,7 @@
       "templateId": "V0308_POKEMON_MEDICHAM",
       "pokemonId": "MEDICHAM",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 121,
         "baseDefense": 152
       },
@@ -5650,7 +5650,7 @@
       "templateId": "V0309_POKEMON_ELECTRIKE",
       "pokemonId": "ELECTRIKE",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 123,
         "baseDefense": 78
       },
@@ -5666,7 +5666,7 @@
       "templateId": "V0310_POKEMON_MANECTRIC",
       "pokemonId": "MANECTRIC",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 215,
         "baseDefense": 127
       },
@@ -5682,9 +5682,9 @@
       "templateId": "V0311_POKEMON_PLUSLE",
       "pokemonId": "PLUSLE",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 167,
-        "baseDefense": 147
+        "baseDefense": 129
       },
       "familyId": "FAMILY_PLUSLE",
       "types": [
@@ -5698,9 +5698,9 @@
       "templateId": "V0312_POKEMON_MINUN",
       "pokemonId": "MINUN",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 147,
-        "baseDefense": 167
+        "baseDefense": 150
       },
       "familyId": "FAMILY_MINUN",
       "types": [
@@ -5714,9 +5714,9 @@
       "templateId": "V0313_POKEMON_VOLBEAT",
       "pokemonId": "VOLBEAT",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 143,
-        "baseDefense": 171
+        "baseDefense": 166
       },
       "familyId": "FAMILY_VOLBEAT",
       "types": [
@@ -5730,9 +5730,9 @@
       "templateId": "V0314_POKEMON_ILLUMISE",
       "pokemonId": "ILLUMISE",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 143,
-        "baseDefense": 171
+        "baseDefense": 166
       },
       "familyId": "FAMILY_ILLUMISE",
       "types": [
@@ -5746,9 +5746,9 @@
       "templateId": "V0315_POKEMON_ROSELIA",
       "pokemonId": "ROSELIA",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 186,
-        "baseDefense": 148
+        "baseDefense": 131
       },
       "familyId": "FAMILY_ROSELIA",
       "types": [
@@ -5763,7 +5763,7 @@
       "templateId": "V0316_POKEMON_GULPIN",
       "pokemonId": "GULPIN",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 80,
         "baseDefense": 99
       },
@@ -5779,7 +5779,7 @@
       "templateId": "V0317_POKEMON_SWALOT",
       "pokemonId": "SWALOT",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 140,
         "baseDefense": 159
       },
@@ -5795,7 +5795,7 @@
       "templateId": "V0318_POKEMON_CARVANHA",
       "pokemonId": "CARVANHA",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 171,
         "baseDefense": 39
       },
@@ -5812,7 +5812,7 @@
       "templateId": "V0319_POKEMON_SHARPEDO",
       "pokemonId": "SHARPEDO",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 243,
         "baseDefense": 83
       },
@@ -5829,7 +5829,7 @@
       "templateId": "V0320_POKEMON_WAILMER",
       "pokemonId": "WAILMER",
       "stats": {
-        "baseStamina": 260,
+        "baseStamina": 277,
         "baseAttack": 136,
         "baseDefense": 68
       },
@@ -5845,7 +5845,7 @@
       "templateId": "V0321_POKEMON_WAILORD",
       "pokemonId": "WAILORD",
       "stats": {
-        "baseStamina": 340,
+        "baseStamina": 347,
         "baseAttack": 175,
         "baseDefense": 87
       },
@@ -5861,9 +5861,9 @@
       "templateId": "V0322_POKEMON_NUMEL",
       "pokemonId": "NUMEL",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 119,
-        "baseDefense": 82
+        "baseDefense": 79
       },
       "familyId": "FAMILY_NUMEL",
       "types": [
@@ -5878,9 +5878,9 @@
       "templateId": "V0323_POKEMON_CAMERUPT",
       "pokemonId": "CAMERUPT",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 194,
-        "baseDefense": 139
+        "baseDefense": 136
       },
       "familyId": "FAMILY_NUMEL",
       "types": [
@@ -5895,9 +5895,9 @@
       "templateId": "V0324_POKEMON_TORKOAL",
       "pokemonId": "TORKOAL",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 151,
-        "baseDefense": 234
+        "baseDefense": 203
       },
       "familyId": "FAMILY_TORKOAL",
       "types": [
@@ -5911,9 +5911,9 @@
       "templateId": "V0325_POKEMON_SPOINK",
       "pokemonId": "SPOINK",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 125,
-        "baseDefense": 145
+        "baseDefense": 122
       },
       "familyId": "FAMILY_SPOINK",
       "types": [
@@ -5927,9 +5927,9 @@
       "templateId": "V0326_POKEMON_GRUMPIG",
       "pokemonId": "GRUMPIG",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 171,
-        "baseDefense": 211
+        "baseDefense": 188
       },
       "familyId": "FAMILY_SPOINK",
       "types": [
@@ -5943,7 +5943,7 @@
       "templateId": "V0327_POKEMON_SPINDA",
       "pokemonId": "SPINDA",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 116,
         "baseDefense": 116
       },
@@ -5959,7 +5959,7 @@
       "templateId": "V0328_POKEMON_TRAPINCH",
       "pokemonId": "TRAPINCH",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 162,
         "baseDefense": 78
       },
@@ -5975,7 +5975,7 @@
       "templateId": "V0329_POKEMON_VIBRAVA",
       "pokemonId": "VIBRAVA",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 134,
         "baseDefense": 99
       },
@@ -5992,7 +5992,7 @@
       "templateId": "V0330_POKEMON_FLYGON",
       "pokemonId": "FLYGON",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 205,
         "baseDefense": 168
       },
@@ -6009,7 +6009,7 @@
       "templateId": "V0331_POKEMON_CACNEA",
       "pokemonId": "CACNEA",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 156,
         "baseDefense": 74
       },
@@ -6025,7 +6025,7 @@
       "templateId": "V0332_POKEMON_CACTURNE",
       "pokemonId": "CACTURNE",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 221,
         "baseDefense": 115
       },
@@ -6042,9 +6042,9 @@
       "templateId": "V0333_POKEMON_SWABLU",
       "pokemonId": "SWABLU",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 76,
-        "baseDefense": 139
+        "baseDefense": 132
       },
       "familyId": "FAMILY_SWABLU",
       "types": [
@@ -6059,9 +6059,9 @@
       "templateId": "V0334_POKEMON_ALTARIA",
       "pokemonId": "ALTARIA",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 141,
-        "baseDefense": 208
+        "baseDefense": 201
       },
       "familyId": "FAMILY_SWABLU",
       "types": [
@@ -6076,7 +6076,7 @@
       "templateId": "V0335_POKEMON_ZANGOOSE",
       "pokemonId": "ZANGOOSE",
       "stats": {
-        "baseStamina": 146,
+        "baseStamina": 177,
         "baseAttack": 222,
         "baseDefense": 124
       },
@@ -6092,7 +6092,7 @@
       "templateId": "V0336_POKEMON_SEVIPER",
       "pokemonId": "SEVIPER",
       "stats": {
-        "baseStamina": 146,
+        "baseStamina": 177,
         "baseAttack": 196,
         "baseDefense": 118
       },
@@ -6108,9 +6108,9 @@
       "templateId": "V0337_POKEMON_LUNATONE",
       "pokemonId": "LUNATONE",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 178,
-        "baseDefense": 163
+        "baseDefense": 153
       },
       "familyId": "FAMILY_LUNATONE",
       "types": [
@@ -6125,9 +6125,9 @@
       "templateId": "V0338_POKEMON_SOLROCK",
       "pokemonId": "SOLROCK",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 178,
-        "baseDefense": 163
+        "baseDefense": 153
       },
       "familyId": "FAMILY_SOLROCK",
       "types": [
@@ -6142,9 +6142,9 @@
       "templateId": "V0339_POKEMON_BARBOACH",
       "pokemonId": "BARBOACH",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 93,
-        "baseDefense": 83
+        "baseDefense": 82
       },
       "familyId": "FAMILY_BARBOACH",
       "types": [
@@ -6159,9 +6159,9 @@
       "templateId": "V0340_POKEMON_WHISCASH",
       "pokemonId": "WHISCASH",
       "stats": {
-        "baseStamina": 220,
+        "baseStamina": 242,
         "baseAttack": 151,
-        "baseDefense": 142
+        "baseDefense": 141
       },
       "familyId": "FAMILY_BARBOACH",
       "types": [
@@ -6176,9 +6176,9 @@
       "templateId": "V0341_POKEMON_CORPHISH",
       "pokemonId": "CORPHISH",
       "stats": {
-        "baseStamina": 86,
+        "baseStamina": 125,
         "baseAttack": 141,
-        "baseDefense": 113
+        "baseDefense": 99
       },
       "familyId": "FAMILY_CORPHISH",
       "types": [
@@ -6192,9 +6192,9 @@
       "templateId": "V0342_POKEMON_CRAWDAUNT",
       "pokemonId": "CRAWDAUNT",
       "stats": {
-        "baseStamina": 126,
+        "baseStamina": 160,
         "baseAttack": 224,
-        "baseDefense": 156
+        "baseDefense": 142
       },
       "familyId": "FAMILY_CORPHISH",
       "types": [
@@ -6209,9 +6209,9 @@
       "templateId": "V0343_POKEMON_BALTOY",
       "pokemonId": "BALTOY",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 77,
-        "baseDefense": 131
+        "baseDefense": 124
       },
       "familyId": "FAMILY_BALTOY",
       "types": [
@@ -6226,9 +6226,9 @@
       "templateId": "V0344_POKEMON_CLAYDOL",
       "pokemonId": "CLAYDOL",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 140,
-        "baseDefense": 236
+        "baseDefense": 229
       },
       "familyId": "FAMILY_BALTOY",
       "types": [
@@ -6243,9 +6243,9 @@
       "templateId": "V0345_POKEMON_LILEEP",
       "pokemonId": "LILEEP",
       "stats": {
-        "baseStamina": 132,
+        "baseStamina": 165,
         "baseAttack": 105,
-        "baseDefense": 154
+        "baseDefense": 150
       },
       "familyId": "FAMILY_LILEEP",
       "types": [
@@ -6260,9 +6260,9 @@
       "templateId": "V0346_POKEMON_CRADILY",
       "pokemonId": "CRADILY",
       "stats": {
-        "baseStamina": 172,
+        "baseStamina": 200,
         "baseAttack": 152,
-        "baseDefense": 198
+        "baseDefense": 194
       },
       "familyId": "FAMILY_LILEEP",
       "types": [
@@ -6277,7 +6277,7 @@
       "templateId": "V0347_POKEMON_ANORITH",
       "pokemonId": "ANORITH",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 176,
         "baseDefense": 100
       },
@@ -6294,9 +6294,9 @@
       "templateId": "V0348_POKEMON_ARMALDO",
       "pokemonId": "ARMALDO",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 222,
-        "baseDefense": 183
+        "baseDefense": 174
       },
       "familyId": "FAMILY_ANORITH",
       "types": [
@@ -6311,9 +6311,9 @@
       "templateId": "V0349_POKEMON_FEEBAS",
       "pokemonId": "FEEBAS",
       "stats": {
-        "baseStamina": 40,
+        "baseStamina": 85,
         "baseAttack": 29,
-        "baseDefense": 102
+        "baseDefense": 85
       },
       "familyId": "FAMILY_FEEBAS",
       "types": [
@@ -6327,9 +6327,9 @@
       "templateId": "V0350_POKEMON_MILOTIC",
       "pokemonId": "MILOTIC",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 192,
-        "baseDefense": 242
+        "baseDefense": 219
       },
       "familyId": "FAMILY_FEEBAS",
       "types": [
@@ -6343,7 +6343,7 @@
       "templateId": "V0351_POKEMON_CASTFORM",
       "pokemonId": "CASTFORM",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 139,
         "baseDefense": 139
       },
@@ -6357,7 +6357,7 @@
       "templateId": "V0351_POKEMON_CASTFORM_NORMAL",
       "pokemonId": "CASTFORM",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 139,
         "baseDefense": 139
       },
@@ -6372,7 +6372,7 @@
       "templateId": "V0351_POKEMON_CASTFORM_RAINY",
       "pokemonId": "CASTFORM",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 139,
         "baseDefense": 139
       },
@@ -6387,7 +6387,7 @@
       "templateId": "V0351_POKEMON_CASTFORM_SNOWY",
       "pokemonId": "CASTFORM",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 139,
         "baseDefense": 139
       },
@@ -6402,7 +6402,7 @@
       "templateId": "V0351_POKEMON_CASTFORM_SUNNY",
       "pokemonId": "CASTFORM",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 139,
         "baseDefense": 139
       },
@@ -6419,9 +6419,9 @@
       "templateId": "V0352_POKEMON_KECLEON",
       "pokemonId": "KECLEON",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 161,
-        "baseDefense": 212
+        "baseDefense": 189
       },
       "familyId": "FAMILY_KECLEON",
       "types": [
@@ -6435,9 +6435,9 @@
       "templateId": "V0353_POKEMON_SHUPPET",
       "pokemonId": "SHUPPET",
       "stats": {
-        "baseStamina": 88,
+        "baseStamina": 127,
         "baseAttack": 138,
-        "baseDefense": 66
+        "baseDefense": 65
       },
       "familyId": "FAMILY_SHUPPET",
       "types": [
@@ -6451,9 +6451,9 @@
       "templateId": "V0354_POKEMON_BANETTE",
       "pokemonId": "BANETTE",
       "stats": {
-        "baseStamina": 128,
+        "baseStamina": 162,
         "baseAttack": 218,
-        "baseDefense": 127
+        "baseDefense": 126
       },
       "familyId": "FAMILY_SHUPPET",
       "types": [
@@ -6467,7 +6467,7 @@
       "templateId": "V0355_POKEMON_DUSKULL",
       "pokemonId": "DUSKULL",
       "stats": {
-        "baseStamina": 40,
+        "baseStamina": 85,
         "baseAttack": 70,
         "baseDefense": 162
       },
@@ -6483,7 +6483,7 @@
       "templateId": "V0356_POKEMON_DUSCLOPS",
       "pokemonId": "DUSCLOPS",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 124,
         "baseDefense": 234
       },
@@ -6499,9 +6499,9 @@
       "templateId": "V0357_POKEMON_TROPIUS",
       "pokemonId": "TROPIUS",
       "stats": {
-        "baseStamina": 198,
+        "baseStamina": 223,
         "baseAttack": 136,
-        "baseDefense": 165
+        "baseDefense": 163
       },
       "familyId": "FAMILY_TROPIUS",
       "types": [
@@ -6516,9 +6516,9 @@
       "templateId": "V0358_POKEMON_CHIMECHO",
       "pokemonId": "CHIMECHO",
       "stats": {
-        "baseStamina": 150,
+        "baseStamina": 181,
         "baseAttack": 175,
-        "baseDefense": 174
+        "baseDefense": 170
       },
       "familyId": "FAMILY_CHIMECHO",
       "types": [
@@ -6532,7 +6532,7 @@
       "templateId": "V0359_POKEMON_ABSOL",
       "pokemonId": "ABSOL",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 246,
         "baseDefense": 120
       },
@@ -6548,7 +6548,7 @@
       "templateId": "V0360_POKEMON_WYNAUT",
       "pokemonId": "WYNAUT",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 41,
         "baseDefense": 86
       },
@@ -6564,7 +6564,7 @@
       "templateId": "V0361_POKEMON_SNORUNT",
       "pokemonId": "SNORUNT",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 95,
         "baseDefense": 95
       },
@@ -6580,7 +6580,7 @@
       "templateId": "V0362_POKEMON_GLALIE",
       "pokemonId": "GLALIE",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 162,
         "baseDefense": 162
       },
@@ -6596,7 +6596,7 @@
       "templateId": "V0363_POKEMON_SPHEAL",
       "pokemonId": "SPHEAL",
       "stats": {
-        "baseStamina": 140,
+        "baseStamina": 172,
         "baseAttack": 95,
         "baseDefense": 90
       },
@@ -6613,7 +6613,7 @@
       "templateId": "V0364_POKEMON_SEALEO",
       "pokemonId": "SEALEO",
       "stats": {
-        "baseStamina": 180,
+        "baseStamina": 207,
         "baseAttack": 137,
         "baseDefense": 132
       },
@@ -6630,7 +6630,7 @@
       "templateId": "V0365_POKEMON_WALREIN",
       "pokemonId": "WALREIN",
       "stats": {
-        "baseStamina": 220,
+        "baseStamina": 242,
         "baseAttack": 182,
         "baseDefense": 176
       },
@@ -6647,9 +6647,9 @@
       "templateId": "V0366_POKEMON_CLAMPERL",
       "pokemonId": "CLAMPERL",
       "stats": {
-        "baseStamina": 70,
+        "baseStamina": 111,
         "baseAttack": 133,
-        "baseDefense": 149
+        "baseDefense": 135
       },
       "familyId": "FAMILY_CLAMPERL",
       "types": [
@@ -6663,9 +6663,9 @@
       "templateId": "V0367_POKEMON_HUNTAIL",
       "pokemonId": "HUNTAIL",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 197,
-        "baseDefense": 194
+        "baseDefense": 179
       },
       "familyId": "FAMILY_CLAMPERL",
       "types": [
@@ -6679,9 +6679,9 @@
       "templateId": "V0368_POKEMON_GOREBYSS",
       "pokemonId": "GOREBYSS",
       "stats": {
-        "baseStamina": 110,
+        "baseStamina": 146,
         "baseAttack": 211,
-        "baseDefense": 194
+        "baseDefense": 179
       },
       "familyId": "FAMILY_CLAMPERL",
       "types": [
@@ -6695,9 +6695,9 @@
       "templateId": "V0369_POKEMON_RELICANTH",
       "pokemonId": "RELICANTH",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 162,
-        "baseDefense": 234
+        "baseDefense": 203
       },
       "familyId": "FAMILY_RELICANTH",
       "types": [
@@ -6712,9 +6712,9 @@
       "templateId": "V0370_POKEMON_LUVDISC",
       "pokemonId": "LUVDISC",
       "stats": {
-        "baseStamina": 86,
+        "baseStamina": 125,
         "baseAttack": 81,
-        "baseDefense": 134
+        "baseDefense": 128
       },
       "familyId": "FAMILY_LUVDISC",
       "types": [
@@ -6728,9 +6728,9 @@
       "templateId": "V0371_POKEMON_BAGON",
       "pokemonId": "BAGON",
       "stats": {
-        "baseStamina": 90,
+        "baseStamina": 128,
         "baseAttack": 134,
-        "baseDefense": 107
+        "baseDefense": 93
       },
       "familyId": "FAMILY_BAGON",
       "types": [
@@ -6744,9 +6744,9 @@
       "templateId": "V0372_POKEMON_SHELGON",
       "pokemonId": "SHELGON",
       "stats": {
-        "baseStamina": 130,
+        "baseStamina": 163,
         "baseAttack": 172,
-        "baseDefense": 179
+        "baseDefense": 155
       },
       "familyId": "FAMILY_BAGON",
       "types": [
@@ -6760,7 +6760,7 @@
       "templateId": "V0373_POKEMON_SALAMENCE",
       "pokemonId": "SALAMENCE",
       "stats": {
-        "baseStamina": 190,
+        "baseStamina": 216,
         "baseAttack": 277,
         "baseDefense": 168
       },
@@ -6777,9 +6777,9 @@
       "templateId": "V0374_POKEMON_BELDUM",
       "pokemonId": "BELDUM",
       "stats": {
-        "baseStamina": 80,
+        "baseStamina": 120,
         "baseAttack": 96,
-        "baseDefense": 141
+        "baseDefense": 132
       },
       "familyId": "FAMILY_BELDUM",
       "types": [
@@ -6794,9 +6794,9 @@
       "templateId": "V0375_POKEMON_METANG",
       "pokemonId": "METANG",
       "stats": {
-        "baseStamina": 120,
+        "baseStamina": 155,
         "baseAttack": 138,
-        "baseDefense": 185
+        "baseDefense": 176
       },
       "familyId": "FAMILY_BELDUM",
       "types": [
@@ -6811,9 +6811,9 @@
       "templateId": "V0376_POKEMON_METAGROSS",
       "pokemonId": "METAGROSS",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 257,
-        "baseDefense": 247
+        "baseDefense": 228
       },
       "familyId": "FAMILY_BELDUM",
       "types": [
@@ -6828,9 +6828,9 @@
       "templateId": "V0377_POKEMON_REGIROCK",
       "pokemonId": "REGIROCK",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 179,
-        "baseDefense": 356
+        "baseDefense": 309
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_REGIROCK",
@@ -6845,9 +6845,9 @@
       "templateId": "V0378_POKEMON_REGICE",
       "pokemonId": "REGICE",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 179,
-        "baseDefense": 356
+        "baseDefense": 309
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_REGICE",
@@ -6862,7 +6862,7 @@
       "templateId": "V0379_POKEMON_REGISTEEL",
       "pokemonId": "REGISTEEL",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 143,
         "baseDefense": 285
       },
@@ -6879,9 +6879,9 @@
       "templateId": "V0380_POKEMON_LATIAS",
       "pokemonId": "LATIAS",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 228,
-        "baseDefense": 268
+        "baseDefense": 246
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_LATIAS",
@@ -6897,9 +6897,9 @@
       "templateId": "V0381_POKEMON_LATIOS",
       "pokemonId": "LATIOS",
       "stats": {
-        "baseStamina": 160,
+        "baseStamina": 190,
         "baseAttack": 268,
-        "baseDefense": 228
+        "baseDefense": 212
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_LATIOS",
@@ -6915,9 +6915,9 @@
       "templateId": "V0382_POKEMON_KYOGRE",
       "pokemonId": "KYOGRE",
       "stats": {
-        "baseStamina": 182,
+        "baseStamina": 205,
         "baseAttack": 270,
-        "baseDefense": 251
+        "baseDefense": 228
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_KYOGRE",
@@ -6932,9 +6932,9 @@
       "templateId": "V0383_POKEMON_GROUDON",
       "pokemonId": "GROUDON",
       "stats": {
-        "baseStamina": 182,
+        "baseStamina": 205,
         "baseAttack": 270,
-        "baseDefense": 251
+        "baseDefense": 228
       },
       "rarity": "POKEMON_RARITY_LEGENDARY",
       "familyId": "FAMILY_GROUDON",
@@ -6949,7 +6949,7 @@
       "templateId": "V0384_POKEMON_RAYQUAZA",
       "pokemonId": "RAYQUAZA",
       "stats": {
-        "baseStamina": 191,
+        "baseStamina": 213,
         "baseAttack": 284,
         "baseDefense": 170
       },
@@ -6967,7 +6967,7 @@
       "templateId": "V0385_POKEMON_JIRACHI",
       "pokemonId": "JIRACHI",
       "stats": {
-        "baseStamina": 200,
+        "baseStamina": 225,
         "baseAttack": 210,
         "baseDefense": 210
       },
@@ -6985,7 +6985,7 @@
       "templateId": "V0386_POKEMON_DEOXYS",
       "pokemonId": "DEOXYS",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 345,
         "baseDefense": 115
       },
@@ -7000,7 +7000,7 @@
       "templateId": "V0386_POKEMON_DEOXYS_ATTACK",
       "pokemonId": "DEOXYS",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 414,
         "baseDefense": 46
       },
@@ -7016,7 +7016,7 @@
       "templateId": "V0386_POKEMON_DEOXYS_DEFENSE",
       "pokemonId": "DEOXYS",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 144,
         "baseDefense": 330
       },
@@ -7032,7 +7032,7 @@
       "templateId": "V0386_POKEMON_DEOXYS_NORMAL",
       "pokemonId": "DEOXYS",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 345,
         "baseDefense": 115
       },
@@ -7048,7 +7048,7 @@
       "templateId": "V0386_POKEMON_DEOXYS_SPEED",
       "pokemonId": "DEOXYS",
       "stats": {
-        "baseStamina": 100,
+        "baseStamina": 137,
         "baseAttack": 230,
         "baseDefense": 218
       },
@@ -7528,8 +7528,8 @@
       "pokemonId": "WORMADAM",
       "stats": {
         "baseStamina": 155,
-        "baseAttack": 127,
-        "baseDefense": 175
+        "baseAttack": 141,
+        "baseDefense": 180
       },
       "familyId": "FAMILY_BURMY",
       "isotope": "SANDY",
@@ -7544,8 +7544,8 @@
       "pokemonId": "WORMADAM",
       "stats": {
         "baseStamina": 155,
-        "baseAttack": 141,
-        "baseDefense": 180
+        "baseAttack": 127,
+        "baseDefense": 175
       },
       "familyId": "FAMILY_BURMY",
       "isotope": "TRASH",
@@ -8402,8 +8402,8 @@
       },
       "familyId": "FAMILY_SNOVER",
       "types": [
-        "POKEMON_TYPE_ICE",
-        "POKEMON_TYPE_GRASS"
+        "POKEMON_TYPE_GRASS",
+        "POKEMON_TYPE_ICE"
       ],
       "pokedex": 459
     }
@@ -8419,8 +8419,8 @@
       },
       "familyId": "FAMILY_SNOVER",
       "types": [
-        "POKEMON_TYPE_ICE",
-        "POKEMON_TYPE_GRASS"
+        "POKEMON_TYPE_GRASS",
+        "POKEMON_TYPE_ICE"
       ],
       "pokedex": 460
     }
@@ -8729,8 +8729,8 @@
       "pokemonId": "ROTOM",
       "stats": {
         "baseStamina": 137,
-        "baseAttack": 204,
-        "baseDefense": 219
+        "baseAttack": 185,
+        "baseDefense": 159
       },
       "familyId": "FAMILY_ROTOM",
       "types": [
@@ -8808,8 +8808,8 @@
       "pokemonId": "ROTOM",
       "stats": {
         "baseStamina": 137,
-        "baseAttack": 204,
-        "baseDefense": 219
+        "baseAttack": 185,
+        "baseDefense": 159
       },
       "familyId": "FAMILY_ROTOM",
       "isotope": "NORMAL",
@@ -8824,8 +8824,8 @@
       "pokemonId": "ROTOM",
       "stats": {
         "baseStamina": 137,
-        "baseAttack": 185,
-        "baseDefense": 159
+        "baseAttack": 204,
+        "baseDefense": 219
       },
       "familyId": "FAMILY_ROTOM",
       "isotope": "WASH",
@@ -9084,8 +9084,8 @@
       "pokemonId": "SHAYMIN",
       "stats": {
         "baseStamina": 225,
-        "baseAttack": 261,
-        "baseDefense": 166
+        "baseAttack": 210,
+        "baseDefense": 210
       },
       "rarity": "POKEMON_RARITY_MYTHIC",
       "familyId": "FAMILY_SHAYMIN",
@@ -9099,8 +9099,8 @@
       "pokemonId": "SHAYMIN",
       "stats": {
         "baseStamina": 225,
-        "baseAttack": 261,
-        "baseDefense": 166
+        "baseAttack": 210,
+        "baseDefense": 210
       },
       "rarity": "POKEMON_RARITY_MYTHIC",
       "familyId": "FAMILY_SHAYMIN",
@@ -9115,8 +9115,8 @@
       "pokemonId": "SHAYMIN",
       "stats": {
         "baseStamina": 225,
-        "baseAttack": 210,
-        "baseDefense": 210
+        "baseAttack": 261,
+        "baseDefense": 166
       },
       "rarity": "POKEMON_RARITY_MYTHIC",
       "familyId": "FAMILY_SHAYMIN",
@@ -9431,6 +9431,40 @@
         "POKEMON_TYPE_WATER"
       ],
       "pokedex": 493
+    }
+  ],
+  "808": [
+    {
+      "templateId": "V0808_POKEMON_MELTAN",
+      "pokemonId": "MELTAN",
+      "stats": {
+        "baseStamina": 130,
+        "baseAttack": 112,
+        "baseDefense": 113
+      },
+      "rarity": "POKEMON_RARITY_MYTHIC",
+      "familyId": "FAMILY_MELTAN",
+      "types": [
+        "POKEMON_TYPE_STEEL"
+      ],
+      "pokedex": 808
+    }
+  ],
+  "809": [
+    {
+      "templateId": "V0809_POKEMON_MELMETAL",
+      "pokemonId": "MELMETAL",
+      "stats": {
+        "baseStamina": 264,
+        "baseAttack": 231,
+        "baseDefense": 213
+      },
+      "rarity": "POKEMON_RARITY_MYTHIC",
+      "familyId": "FAMILY_MELTAN",
+      "types": [
+        "POKEMON_TYPE_STEEL"
+      ],
+      "pokedex": 809
     }
   ]
 }
