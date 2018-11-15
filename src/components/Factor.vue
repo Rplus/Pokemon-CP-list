@@ -1,6 +1,6 @@
 <template>
-  <section class="factors">
-    <table>
+  <section class="factors section">
+    <table class="factors-table">
       <tr>
         <td>PM Lv:</td>
         <td><input type="number" min="1" max="40" v-model.number="l" step="0.5" /></td>
@@ -31,8 +31,7 @@
       </tr>
       <tr>
         <td>IV</td>
-        <td>{{ iv }}%</td>
-        <td colspan="3">123</td>
+        <td colspan="4">{{ iv }}%</td>
       </tr>
     </table>
     <v-style v-html=pmCpHp />
@@ -94,3 +93,18 @@ export default {
   },
 };
 </script>
+
+
+<style lang="scss">
+.factors {
+  text-align: left;
+}
+
+.factors-table {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: .5em .25em;
+  font-size: smaller;
+
+}
+</style>

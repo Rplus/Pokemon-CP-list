@@ -10,12 +10,19 @@ let uniDex = [
   493,
 ];
 
+let genDex = {
+  'gen1': [1, 151],
+  'gen2': [152, 251],
+  'gen3': [252, 386],
+  'gen4': [387, 493],
+};
+
 let getPmName = (pm = 1, lang) => {
   let dex = `${pm.pokedex}`.padStart(3, '0');
   return (lang ? pmName[dex][lang] : pmName[dex]) || pm.pokemonId;
 };
 
-let pmTypes = {};
+let pmClasses = {};
 
 Object.keys(pmData).forEach((dex) => {
   pmData[dex].sort((a, b) => (
@@ -25,13 +32,14 @@ Object.keys(pmData).forEach((dex) => {
   pmData[dex] = pmData[dex].filter(pm => {
     pm.uid = `${pm.pokedex}${pm.isotope ? '_' + pm.isotope : ''}`;
     pm.names = getPmName(pm);
+    pm.class = [...pm.types];
     if (pm.rarity) {
-      pm.types.push('POKEMON_TYPE_RARITY');
+      pm.class.push('POKEMON_TYPE_RARITY');
     }
     if (pm.isotope === 'ALOLA') {
-      pm.types.push('POKEMON_TYPE_ALOLA');
+      pm.class.push('POKEMON_TYPE_ALOLA');
     }
-    pm.types.forEach(t => (pmTypes[t] = ''));
+    pm.class.forEach(t => (pmClasses[t] = ''));
 
     if (pmData[dex].length > 1) {
       // console.log(pm.templateId);
@@ -41,14 +49,18 @@ Object.keys(pmData).forEach((dex) => {
   });
 });
 
-pmTypes = (
-  Object.keys(pmTypes)
+pmClasses = (
+  Object.keys(pmClasses)
     .sort()
     .map(t => t.replace('POKEMON_TYPE_', '').toLowerCase())
 );
 
-const dexMap = (
+const allDex =
   Object.keys(pmData)
+    .filter(dex => dex <= genDex.gen4[1]);
+
+const dexMap = (
+  allDex
     .reduce((all, dex) => {
       all[dex] = dex;
       return all;
@@ -57,11 +69,13 @@ const dexMap = (
 
 const pms = [];
 
-Object.keys(pmData).forEach(dex => {
-  pmData[dex].forEach(pm => {
-    pms.push(pm);
+allDex
+  .forEach(dex => {
+    pmData[dex]
+      .forEach(pm => {
+        pms.push(pm);
+      });
   });
-});
 
 const calPmData = (pm, adsl) => {
   let [a, d, s, l] = adsl;
@@ -77,13 +91,8 @@ const calPmData = (pm, adsl) => {
 
 export default {
   pms: pms,
-  types: pmTypes,
+  classes: pmClasses,
   dexMap,
   calPmData: calPmData,
-  genDex: {
-    'gen1': [1, 151],
-    'gen2': [152, 251],
-    'gen3': [252, 386],
-    'gen4': [387, 493],
-  },
+  genDex,
 };

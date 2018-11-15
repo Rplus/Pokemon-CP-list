@@ -7418,7 +7418,6 @@
       },
       "familyId": "FAMILY_CRANIDOS",
       "types": [
-        "POKEMON_TYPE_ROCK",
         "POKEMON_TYPE_ROCK"
       ],
       "pokedex": 408
@@ -7435,7 +7434,6 @@
       },
       "familyId": "FAMILY_CRANIDOS",
       "types": [
-        "POKEMON_TYPE_ROCK",
         "POKEMON_TYPE_ROCK"
       ],
       "pokedex": 409

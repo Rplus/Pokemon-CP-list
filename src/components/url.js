@@ -34,11 +34,11 @@ export default {
     }, 500);
   },
 
-  getPara (para) {
+  getPara (para, split = true) {
     let search = new URLSearchParams(location.search);
     let value = search.get(para);
     if (value) {
-      return value.split(this.spliter);
+      return split ? value.split(this.spliter) : value;
     } else {
       return null;
     }

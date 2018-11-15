@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="type-filters-box">
     <template v-for="type in pmTypes">
       <label :for="`ck-type-${type}`" class="filter-label" :key="`ck-type-${type}--label`">
         <img :src="imgSrc(type)" />
@@ -46,13 +46,62 @@ export default {
     }
   }
 
+  .section {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .section summary {
+    text-align: center;
+    margin: 0 auto 1rem;
+    padding: .5rem 1.5rem;
+    display: inline-block;
+    background-color: #ffd;
+    cursor: pointer;
+  }
+
+  .filters {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  .type-filters {
+    margin-bottom: 1rem;
+    font-size: smaller;
+    align-items: center;
+
+    @media (min-width: 500px) {
+      display: flex;
+    }
+
+    button {
+      flex-shrink: 0;
+      width: 3rem;
+      margin: 1em;
+      padding-top: .7em;
+      padding-bottom: .7em;
+    }
+
+    button:nth-of-type(2) {
+      order: 1;
+    }
+  }
+
+  .type-filters-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: start;
+  }
+
   .filter-label {
     position: relative;
     display: inline-flex;
     align-items: center;
     min-width: 7em;
     text-transform: capitalize;
-    margin-bottom: .3em;
+    margin: .5em 1vw;
+    cursor: pointer;
 
     img {
       width: 24px;

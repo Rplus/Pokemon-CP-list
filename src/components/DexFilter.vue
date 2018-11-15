@@ -28,10 +28,10 @@
       :max="max"
     />
     <div class="gen-range">
-      <button @click="setDexRange('gen1')">gen1</button>
-      <button @click="setDexRange('gen2')">gen2</button>
-      <button @click="setDexRange('gen3')">gen3</button>
-      <button @click="setDexRange('gen4')">gen4</button>
+      <button @click="setDexRange('gen1')">Gen1</button>
+      <button @click="setDexRange('gen2')">Gen2</button>
+      <button @click="setDexRange('gen3')">Gen3</button>
+      <button @click="setDexRange('gen4')">Gen4</button>
     </div>
     <v-style v-html=dexFilterStyle />
   </div>
@@ -96,6 +96,8 @@ export default {
 <style lang="scss">
 .dex-filters {
   display: flex;
+  max-width: 30rem;
+  margin: 0 auto 3em;
   flex-wrap: wrap;
   text-align: center;
 
@@ -120,5 +122,10 @@ export default {
 
 .gen-range {
   width: 100%;
+
+  button {
+    margin: 1rem .3rem;
+    padding: .3rem;
+  }
 }
 </style>
