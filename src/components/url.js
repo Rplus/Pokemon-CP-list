@@ -1,4 +1,5 @@
 export default {
+  urls: [],
   spliter: '-',
 
   search (state) {
@@ -15,7 +16,22 @@ export default {
       }
     }
 
-    history.pushState(null, null, `?${search.toString()}`);
+    this.updateUrl(`?${search.toString()}`);
+  },
+
+  updateUrl (searchString) {
+    this.urls.push(searchString);
+    if (this.timer) {
+      return;
+    }
+    this.timer = setTimeout(() => {
+      let latestUrl = this.urls[this.urls.length - 1];
+      history.pushState(null, null, latestUrl);
+
+      clearTimeout(this.timer);
+      this.timer = null;
+      this.urls = [];
+    }, 500);
   },
 
   getPara (para) {
