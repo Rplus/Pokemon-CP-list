@@ -74,7 +74,7 @@ export default {
 </script>
 
 <style lang="scss">
-$types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'ghost', 'steel', 'fire', 'water', 'grass', 'electric', 'psychic', 'ice', 'dragon', 'dark', 'fairy', 'legendary', 'alolan');
+$types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'ghost', 'steel', 'fire', 'water', 'grass', 'electric', 'psychic', 'ice', 'dragon', 'dark', 'fairy', 'rarity', 'alola');
 
 .pm-list {
   display: grid;
@@ -186,7 +186,7 @@ $types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'gho
 
   @for $i from 1 through length($types) {
     &--#{nth($types, $i)} {
-      background-image: url('../../public/img/img/type_#{nth($types, $i)}.png');
+      background-image: url('../assets/type/type_#{nth($types, $i)}.png');
     }
   }
 }

@@ -23,7 +23,7 @@ export default {
 
   methods: {
     imgSrc (type) {
-      return require(`../assets/type/type_${capitalize(type)}.png`);
+      return require(`../assets/type/type_${type}.png`);
     },
   },
 };
