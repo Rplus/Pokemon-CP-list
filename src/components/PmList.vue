@@ -106,7 +106,7 @@ $types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'gho
     content: counter(cp);
     font-size: larger;
     font-family: monospace;
-    font: 100 calc(1em + 2vmin) monospace;
+    font-size: calc(1em + 2vmin);
   }
 }
 
