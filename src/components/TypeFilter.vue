@@ -50,9 +50,9 @@ export default {
   .section summary {
     text-align: center;
     margin: 0 auto 1rem;
-    padding: .5rem 1.5rem;
+    padding: .25rem 1.25rem .25rem 1rem;
     display: inline-block;
-    background-color: #ffd;
+    border: 1px dashed #ccc;
     cursor: pointer;
   }
 
