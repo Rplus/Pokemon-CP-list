@@ -188,7 +188,7 @@ $types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'gho
 
   @for $i from 1 through length($types) {
     &--#{nth($types, $i)} {
-      background-image: url('../assets/type/type_#{nth($types, $i)}.png');
+      background-image: url('../../public/img/type/type_#{nth($types, $i)}.png');
     }
   }
 }
