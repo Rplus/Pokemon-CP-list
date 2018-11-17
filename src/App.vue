@@ -45,8 +45,10 @@
       </summary>
 
       <div class="type-filters">
-        <button @click.stop.prevent="chooseAllFilters(false)">None</button>
-        <button @click.stop.prevent="chooseAllFilters">All</button>
+        <div>
+          <button @click.stop.prevent="chooseAllFilters(false)">None</button>
+          <button @click.stop.prevent="chooseAllFilters">All</button>
+        </div>
 
         <TypeFilter :pm-types=classes />
       </div>
@@ -81,10 +83,6 @@ import Sortby from './components/Sortby.vue';
 
 import pmData from './components/pmData.js';
 import url from './components/url.js';
-
-window.url = url;
-
-console.log(pmData);
 
 export default {
   name: 'app',
@@ -145,7 +143,6 @@ export default {
     },
 
     openDialog (pm) {
-      console.log(123);
       this.targetPm = { ...pm, adsl: this.adsl };
     },
 

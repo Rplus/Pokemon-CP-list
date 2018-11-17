@@ -97,7 +97,7 @@ export default {
 .dex-filters {
   display: flex;
   max-width: 30rem;
-  margin: 0 auto 3em;
+  margin: 0 auto;
   flex-wrap: wrap;
   text-align: center;
 

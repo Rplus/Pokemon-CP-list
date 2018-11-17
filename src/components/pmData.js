@@ -1,6 +1,7 @@
 import pmData from '../data/pm-data-by-dex.json';
 import pmName from '../data/pm-name.json';
 import levelMultiplier from '../data/level-multiplier.json';
+import u from './u.js';
 
 let uniDex = [
   351,
@@ -17,11 +18,6 @@ let genDex = {
   'gen4': [387, 493],
 };
 
-let getPmName = (pm = 1, lang) => {
-  let dex = `${pm.pokedex}`.padStart(3, '0');
-  return (lang ? pmName[dex][lang] : pmName[dex]) || pm.pokemonId;
-};
-
 let pmClasses = {};
 
 Object.keys(pmData).forEach((dex) => {
@@ -31,7 +27,9 @@ Object.keys(pmData).forEach((dex) => {
 
   pmData[dex] = pmData[dex].filter(pm => {
     pm.uid = `${pm.pokedex}${pm.isotope ? '_' + pm.isotope : ''}`;
-    pm.names = getPmName(pm);
+    pm.names = pmName[`${pm.pokedex}`.padStart(3, '0')] || {};
+    pm.name = u.getPmName(pm);
+    pm.title = `${pm.name}${pm.isotope ? '-' + pm.isotope.toLowerCase() : ''}`;
     pm.class = [...pm.types];
     if (pm.rarity) {
       pm.class.push('POKEMON_TYPE_RARITY');
@@ -42,7 +40,6 @@ Object.keys(pmData).forEach((dex) => {
     pm.class.forEach(t => (pmClasses[t] = ''));
 
     if (pmData[dex].length > 1) {
-      // console.log(pm.templateId);
       return (uniDex.indexOf(+dex) !== -1) ? !pm.isotope : pm.isotope;
     }
     return true;
@@ -56,8 +53,7 @@ pmClasses = (
 );
 
 const allDex =
-  Object.keys(pmData)
-    .filter(dex => dex <= genDex.gen4[1]);
+  Object.keys(pmData);
 
 const dexMap = (
   allDex

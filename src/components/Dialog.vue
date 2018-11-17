@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="tbody">
-          <div class="tr" v-for="d in data100" :key="d">
+          <div class="tr" v-for="d in data100" :key="JSON.stringify(d)">
             <div class="td">{{ d.lv }}</div>
             <div class="td">{{ d.cp }}</div>
             <div class="td">{{ d.hp }}</div>
@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="tbody">
-          <div class="tr" v-for="d in dataLv" :key="d">
+          <div class="tr" v-for="d in dataLv" :key="JSON.stringify(d)">
             <div class="th">{{ d.cp }}</div>
             <div class="th">{{ d.atk }}</div>
             <div class="th">{{ d.def }}</div>
@@ -83,14 +83,14 @@ export default {
       if (!this.pm) {
         return '';
       }
-      return `${u.getPmName(this.pm)} IV100 Lv & CP`;
+      return `${this.pm.title} IV100 Lv & CP`;
     },
 
     dataLvTitle () {
       if (!this.pm) {
         return '';
       }
-      return `${u.getPmName(this.pm)} LV:${this.pm.adsl[3]} CP list`;
+      return `${this.pm.title} LV:${this.pm.adsl[3]} CP list`;
     },
 
     data100 () {
@@ -151,7 +151,7 @@ export default {
   right: 0;
   bottom: 0;
   z-index: 1;
-  width: calc(12em + 10vw);
+  width: calc(15em + 10vw);
   max-height: 85vh;
   margin: auto;
   padding: 0 3vw;

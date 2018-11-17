@@ -19,7 +19,7 @@ export default {
 
   methods: {
     imgSrc (type) {
-      return require(`../assets/type/type_${type}.png`);
+      return require(`../../public/img/type/type_${type}.png`);
     },
   },
 };
@@ -43,13 +43,12 @@ export default {
   }
 
   .section {
-    text-align: center;
     margin-bottom: 1rem;
   }
 
   .section summary {
-    text-align: center;
-    margin: 0 auto 1rem;
+    text-align: left;
+    margin: 0 auto;
     padding: .25rem 1.25rem .25rem 1rem;
     display: inline-block;
     border: 1px dashed #ccc;
@@ -58,10 +57,12 @@ export default {
 
   .filters {
     max-width: 50rem;
-    margin: 0 auto;
+    margin: 0 auto 3em;
   }
 
   .type-filters {
+    text-align: center;
+    margin-top: -1rem;
     margin-bottom: 1rem;
     font-size: smaller;
     align-items: center;
@@ -73,7 +74,7 @@ export default {
     button {
       flex-shrink: 0;
       width: 3rem;
-      margin: 1em;
+      margin: .5em 1em;
       padding-top: .7em;
       padding-bottom: .7em;
     }

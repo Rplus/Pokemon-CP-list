@@ -8,8 +8,8 @@
       :style="genStyle(pm)"
       :key="pm.templateId"
     >
-      <div class="pm-name" :data-pokedex="pm.pokedex">
-        {{ getPmName(pm) }}
+      <div class="pm-name" :data-pokedex="pm.pokedex" :title="pm.name">
+        {{ pm.title }}
       </div>
 
       <div class="pm-img" />
@@ -32,22 +32,24 @@
 </template>
 
 <script>
-import u from './u.js';
-
 export default {
   name: 'PmList',
   props: {
     'pms': Array,
   },
   methods: {
-    getPmName (p) {
-      return u.getPmName(p);
-    },
-
     genStyle (pm) {
       let index = pm.pokedex - 1;
       let row = ~~(index / 28);
       let col = index % 28;
+      let specialBgi = (pm.isotope && pm.isotope !== 'NORMAL')
+        ? 'url(' + require(`../../public/img/pm/${pm.pokedex}-${pm.isotope.toLowerCase()}.png`) + ')'
+        : null;
+
+      if (pm.pokedex > 800) {
+        specialBgi = `url(${require(`../../public/img/pm/${pm.pokedex}.png`)})`;
+      }
+
       return {
         '--pm-atk': pm.stats.baseAttack,
         '--pm-def': pm.stats.baseDefense,
@@ -59,6 +61,7 @@ export default {
         '--pm-custom-bg': pm.isotope && pm.isotope !== 'NORMAL' ? '1' : null,
         '--pm-col': col,
         '--pm-row': row,
+        '--pm-special-bgi': specialBgi,
       };
     },
 
@@ -122,11 +125,10 @@ $types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'gho
   background-position:
     calc(var(--pm-col) * var(--img-size) * -1)
     calc(var(--pm-row) * var(--img-size) * -1);
-  // transition: opacity .3s;
   opacity: .65;
 
   .pm[style*="pm-special-bgi"] & {
-    background: var(--pm-special-bgi);
+    background: var(--pm-special-bgi) no-repeat 50% 50%;
     background-size: contain;
   }
 }
@@ -138,8 +140,8 @@ $types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'gho
   padding-left: .5em;
   text-align: right;
   font-size: smaller;
-  color: rgba(#000, .75);
-  opacity: .3;
+  color: #333;
+  opacity: .5;
 
   &::after {
     content: '\A#' attr(data-pokedex) ' ';
