@@ -1,4 +1,4 @@
-# ooo
+# Pokemon-CP-list Vue version
 
 ## Project setup
 ```
