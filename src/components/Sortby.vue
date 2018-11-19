@@ -33,8 +33,8 @@ export default {
 .pmSort {
   position: relative;
   z-index: calc(1 - var(--activity, 0));
-  padding-right: .2em;
-  padding-left: .5em;
+  padding-right: .25em;
+  padding-left: .75em;
   cursor: pointer;
   box-shadow: 0 0 0 1px rgba(#000, .2);
   background-color: #{'rgba(255, 255, 200, var(--activity, 0))'};

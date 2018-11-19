@@ -264,6 +264,10 @@ body {
 input {
   display: block;
   width: 100%;
+
+  &[type="number"] {
+    max-width: 4rem;
+  }
 }
 
 button {

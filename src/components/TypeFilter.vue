@@ -47,17 +47,21 @@ export default {
   }
 
   .section summary {
+    position: absolute;
+    top: 0;
     text-align: left;
     margin: 0 auto;
+    width: fit-content;
     padding: .25rem 1.25rem .25rem 1rem;
-    display: inline-block;
     border: 1px dashed #ccc;
     cursor: pointer;
   }
 
   .filters {
+    position: relative;
     max-width: 50rem;
     margin: 0 auto 3em;
+    padding-top: 2em;
   }
 
   .type-filters {
@@ -72,11 +76,12 @@ export default {
     }
 
     button {
-      flex-shrink: 0;
-      width: 3rem;
+      width: 4rem;
       margin: .5em 1em;
       padding-top: .7em;
       padding-bottom: .7em;
+      padding: .7em 0;
+      font-size: smaller;
     }
 
     button:nth-of-type(2) {
