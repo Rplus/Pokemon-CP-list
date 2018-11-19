@@ -24,14 +24,16 @@ export default {
     if (this.timer) {
       return;
     }
-    this.timer = setTimeout(() => {
-      let latestUrl = this.urls[this.urls.length - 1];
-      history.pushState(null, null, latestUrl);
+    this.timer = setTimeout(this.pushLatestUrl.bind(this), 500);
+  },
 
-      clearTimeout(this.timer);
-      this.timer = null;
-      this.urls = [];
-    }, 500);
+  pushLatestUrl () {
+    let latestUrl = this.urls[this.urls.length - 1];
+    history.pushState(null, null, latestUrl);
+
+    clearTimeout(this.timer);
+    this.timer = null;
+    this.urls = [];
   },
 
   getPara (para, split = true) {
