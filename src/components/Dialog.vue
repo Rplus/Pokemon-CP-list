@@ -125,13 +125,7 @@ export default {
         let defDelta = b.def - a.def;
         let staDelta = b.sta - a.sta;
         return (
-          cpDelta
-            ? cpDelta
-            : atkDelta
-              ? atkDelta
-              : defDelta
-                ? defDelta
-                : staDelta
+          cpDelta || (atkDelta || (defDelta || staDelta))
         );
       });
 
