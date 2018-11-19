@@ -215,7 +215,7 @@ body {
 
 .footer {
   position: relative;
-  padding: 3em;
+  padding: 3em 10vw;
 }
 
 .info {

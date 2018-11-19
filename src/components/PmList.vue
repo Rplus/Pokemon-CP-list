@@ -81,6 +81,8 @@ $types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'gho
 
 .pm-list {
   display: grid;
+  max-width: 1600px;
+  margin: auto;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   grid-gap: calc(2vmin + .5em) calc(1vmin + .5em);
   list-style: none;
