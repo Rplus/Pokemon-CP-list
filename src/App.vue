@@ -216,6 +216,8 @@ body {
 .footer {
   position: relative;
   padding: 3em 10vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .info {
@@ -232,6 +234,7 @@ body {
   position: relative;
   padding-left: 1.25em;
   margin-right: 1em;
+  margin-bottom: .5em;
 
   &::before,
   &::after {
