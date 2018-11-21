@@ -1,5 +1,5 @@
 export default {
-  urls: [],
+  querys: [],
   spliter: '-',
 
   search (state) {
@@ -20,7 +20,7 @@ export default {
   },
 
   updateUrl (searchString) {
-    this.urls.push(searchString);
+    this.querys.push(searchString);
     if (this.timer) {
       return;
     }
@@ -28,12 +28,12 @@ export default {
   },
 
   pushLatestUrl () {
-    let latestUrl = this.urls[this.urls.length - 1];
+    let latestUrl = this.querys[this.querys.length - 1];
     history.pushState(null, null, latestUrl);
 
     clearTimeout(this.timer);
     this.timer = null;
-    this.urls = [];
+    this.querys = [];
   },
 
   getPara (para, split = true) {
