@@ -1,7 +1,9 @@
 <template>
   <div class="dex-filters">
+    <label for="f-dex-1">dex filter 1</label>
     <input
       type="number"
+      id="f-dex-1"
       v-model="v0"
       :min="min"
       :max="max"
@@ -12,7 +14,6 @@
         v-model="v0"
         :min="min"
         :max="max"
-        lazy
       />
       <input
         type="range"
@@ -21,8 +22,10 @@
         :max="max"
       />
     </div>
+    <label for="f-dex-2">dex filter 2</label>
     <input
       type="number"
+      id="f-dex-2"
       v-model="v1"
       :min="min"
       :max="max"
@@ -95,11 +98,23 @@ export default {
 
 <style lang="scss">
 .dex-filters {
+  position: relative;
   display: flex;
   max-width: 30rem;
   margin: 0 auto;
   flex-wrap: wrap;
   text-align: center;
+
+  label {
+    position: absolute;
+    bottom: 100%;
+    color: #ccc;
+    font-family: monospace;
+
+    &:nth-of-type(2) {
+      right: 0;
+    }
+  }
 
   input {
     margin: 0;

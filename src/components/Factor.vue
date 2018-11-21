@@ -2,29 +2,29 @@
   <section class="factors section">
     <table class="factors-table">
       <tr>
-        <td>PM Lv:</td>
-        <td><input type="number" min="1" max="40" v-model.number="l" step="0.5" /></td>
+        <td><label for="f-lv">PM Lv:</label></td>
+        <td><input type="number" min="1" max="40" v-model.number="l" step="0.5" id="f-lv" /></td>
         <td><button @click="l -= 5">-5</button></td>
         <td><input type="range" min="1" max="40" v-model.number="l" step="0.5" /></td>
         <td><button @click="l += 5">+5</button></td>
       </tr>
       <tr>
-        <td>Attack:</td>
-        <td><input type="number" min="0" max="15" step="1" v-model.number="a" /></td>
+        <td><label for="f-a">Attack:</label></td>
+        <td><input type="number" min="0" max="15" step="1" v-model.number="a" id="f-a" /></td>
         <td><button @click="a -= 1">-1</button></td>
         <td><input type="range" min="0" max="15" step="1" v-model.number="a" /></td>
         <td><button @click="a += 1">+1</button></td>
       </tr>
       <tr>
-        <td>Defense:</td>
-        <td><input type="number" min="0" max="15" step="1" v-model.number="d" /></td>
+        <td><label for="f-d">Defense:</label></td>
+        <td><input type="number" min="0" max="15" step="1" v-model.number="d" id="f-d" /></td>
         <td><button @click="d -= 1">-1</button></td>
         <td><input type="range" min="0" max="15" step="1" v-model.number="d" /></td>
         <td><button @click="d += 1">+1</button></td>
       </tr>
       <tr>
-        <td>Stamina:</td>
-        <td><input type="number" min="0" max="15" step="1" v-model.number="s" /></td>
+        <td><label for="f-s">Stamina:</label></td>
+        <td><input type="number" min="0" max="15" step="1" v-model.number="s" id="f-s" /></td>
         <td><button @click="s -= 1">-1</button></td>
         <td><input type="range" min="0" max="15" step="1" v-model.number="s" /></td>
         <td><button @click="s += 1">+1</button></td>

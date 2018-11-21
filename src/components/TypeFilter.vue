@@ -2,7 +2,7 @@
   <div class="type-filters-box">
     <template v-for="type in pmTypes">
       <label :for="`ck-type-${type}`" class="filter-label" :key="`ck-type-${type}--label`">
-        <img :src="imgSrc(type)" />
+        <img :src="imgSrc(type)" :alt="`${type} type`" />
         {{ type }}
       </label>
     </template>
