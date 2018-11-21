@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "serve-https": "vue-cli-service serve --https",
+    "serve": "vue-cli-service serve --copy",
+    "serve-https": "vue-cli-service serve --https --copy",
     "build": "vue-cli-service build",
     "deploy": "sh deploy.sh",
     "lint": "vue-cli-service lint"
