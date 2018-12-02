@@ -12,7 +12,11 @@
           </div>
         </div>
         <div class="tbody">
-          <div class="tr" v-for="d in data100" :key="JSON.stringify(d)">
+          <div class="tr"
+            v-for="d in data100"
+            :key="JSON.stringify(d)"
+            @click="updateLv(d.lv)"
+          >
             <div class="td">{{ d.lv }}</div>
             <div class="td">{{ d.cp }}</div>
             <div class="td">{{ d.hp }}</div>
@@ -68,9 +72,18 @@ export default {
     pm: Object,
   },
 
+  data () {
+    window.dialog = this;
+    return {};
+  },
+
   methods: {
     close () {
       this.$emit('close-dialog');
+    },
+
+    updateLv (lv) {
+      this.pm.adsl = [15, 15, 15, lv];
     },
   },
 
