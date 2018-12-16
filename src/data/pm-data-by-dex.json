@@ -1045,8 +1045,8 @@
       "pokemonId": "DIGLETT",
       "stats": {
         "baseStamina": 67,
-        "baseAttack": 109,
-        "baseDefense": 82
+        "baseAttack": 108,
+        "baseDefense": 81
       },
       "familyId": "FAMILY_DIGLETT",
       "isotope": "ALOLA",
@@ -1093,7 +1093,7 @@
       "stats": {
         "baseStamina": 111,
         "baseAttack": 201,
-        "baseDefense": 145
+        "baseDefense": 142
       },
       "familyId": "FAMILY_DIGLETT",
       "isotope": "ALOLA",
@@ -1109,7 +1109,7 @@
       "stats": {
         "baseStamina": 111,
         "baseAttack": 167,
-        "baseDefense": 134
+        "baseDefense": 136
       },
       "familyId": "FAMILY_DIGLETT",
       "isotope": "NORMAL",
@@ -5353,7 +5353,7 @@
       "pokemonId": "NINJASK",
       "stats": {
         "baseStamina": 156,
-        "baseAttack": 196,
+        "baseAttack": 199,
         "baseDefense": 112
       },
       "familyId": "FAMILY_NINCADA",
@@ -7418,6 +7418,7 @@
       },
       "familyId": "FAMILY_CRANIDOS",
       "types": [
+        "POKEMON_TYPE_ROCK",
         "POKEMON_TYPE_ROCK"
       ],
       "pokedex": 408
@@ -7434,6 +7435,7 @@
       },
       "familyId": "FAMILY_CRANIDOS",
       "types": [
+        "POKEMON_TYPE_ROCK",
         "POKEMON_TYPE_ROCK"
       ],
       "pokedex": 409
@@ -7483,6 +7485,51 @@
         "baseDefense": 83
       },
       "familyId": "FAMILY_BURMY",
+      "types": [
+        "POKEMON_TYPE_BUG"
+      ],
+      "pokedex": 412
+    },
+    {
+      "templateId": "V0412_POKEMON_BURMY_PLANT",
+      "pokemonId": "BURMY",
+      "stats": {
+        "baseStamina": 120,
+        "baseAttack": 53,
+        "baseDefense": 83
+      },
+      "familyId": "FAMILY_BURMY",
+      "isotope": "PLANT",
+      "types": [
+        "POKEMON_TYPE_BUG"
+      ],
+      "pokedex": 412
+    },
+    {
+      "templateId": "V0412_POKEMON_BURMY_SANDY",
+      "pokemonId": "BURMY",
+      "stats": {
+        "baseStamina": 120,
+        "baseAttack": 53,
+        "baseDefense": 83
+      },
+      "familyId": "FAMILY_BURMY",
+      "isotope": "SANDY",
+      "types": [
+        "POKEMON_TYPE_BUG"
+      ],
+      "pokedex": 412
+    },
+    {
+      "templateId": "V0412_POKEMON_BURMY_TRASH",
+      "pokemonId": "BURMY",
+      "stats": {
+        "baseStamina": 120,
+        "baseAttack": 53,
+        "baseDefense": 83
+      },
+      "familyId": "FAMILY_BURMY",
+      "isotope": "TRASH",
       "types": [
         "POKEMON_TYPE_BUG"
       ],
@@ -9437,8 +9484,8 @@
       "pokemonId": "MELTAN",
       "stats": {
         "baseStamina": 130,
-        "baseAttack": 112,
-        "baseDefense": 113
+        "baseAttack": 118,
+        "baseDefense": 99
       },
       "rarity": "POKEMON_RARITY_MYTHIC",
       "familyId": "FAMILY_MELTAN",
@@ -9454,8 +9501,8 @@
       "pokemonId": "MELMETAL",
       "stats": {
         "baseStamina": 264,
-        "baseAttack": 231,
-        "baseDefense": 213
+        "baseAttack": 226,
+        "baseDefense": 190
       },
       "rarity": "POKEMON_RARITY_MYTHIC",
       "familyId": "FAMILY_MELTAN",
