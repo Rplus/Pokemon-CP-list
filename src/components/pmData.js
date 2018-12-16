@@ -31,6 +31,7 @@ Object.keys(pmData).forEach((dex) => {
     pm.names = pmName[`${pm.pokedex}`.padStart(3, '0')] || {};
     pm.name = u.getPmName(pm);
     pm.title = `${pm.name}${pm.isotope ? '-' + pm.isotope.toLowerCase() : ''}`;
+    pm.types = [...new Set(pm.types)];
     pm.class = [...pm.types];
     if (pm.rarity) {
       pm.class.push('POKEMON_TYPE_RARITY');
