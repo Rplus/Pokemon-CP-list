@@ -49,16 +49,20 @@ export default {
 
   data () {
     window.Factor = this;
-    let [a, d, s, l] = this.adsl.map(Number);
-    return {
-      a: this.normalizeNumber(a),
-      d: this.normalizeNumber(d),
-      s: this.normalizeNumber(s),
-      l: this.normalizeNumber(l, 1, 40),
-    };
+    return this.getADSL();
   },
 
   methods: {
+    getADSL () {
+      let [a, d, s, l] = this.adsl;
+      return {
+        a: this.normalizeNumber(a),
+        d: this.normalizeNumber(d),
+        s: this.normalizeNumber(s),
+        l: this.normalizeNumber(l, 1, 40),
+      };
+    },
+
     normalizeNumber (n, min = 0, max = 15) {
       if (n >= min && n <= max) {
         return n;
@@ -68,10 +72,9 @@ export default {
   },
 
   watch: {
-    a (_a) { this.a = this.normalizeNumber(_a); },
-    d (_d) { this.d = this.normalizeNumber(_d); },
-    s (_s) { this.s = this.normalizeNumber(_s); },
-    l (_l) { this.l = this.normalizeNumber(_l, 1, 40); },
+    adsl () {
+      Object.assign(this, this.getADSL());
+    },
   },
 
   computed: {

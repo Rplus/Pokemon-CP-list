@@ -129,6 +129,12 @@ export default {
       });
     },
 
+    adsl () {
+      url.search({
+        adsl: this.adsl.join('-'),
+      });
+    },
+
     sortby () {
       url.search({
         sortby: this.sortby,
@@ -139,9 +145,6 @@ export default {
   methods: {
     setFactor (adsl) {
       this.adsl = adsl;
-      url.search({
-        adsl: adsl.join('-'),
-      });
     },
 
     setDexFilter (dex) {
