@@ -98,12 +98,25 @@ export default {
 
   data () {
     window.app = this;
+
+    let targetPm;
+    let adsl = url.getPara('adsl') || [15, 15, 15, 20];
+
+    let openArgs = url.getPara('open');
+
+    if (openArgs) {
+      let pm = pmData.pms.find(pm => pm.uid === openArgs[0]);
+      if (pm) {
+        targetPm = { ...pm, adsl };
+      }
+    }
+
     return {
       ...pmData,
       filters: url.getPara('filters') || ['rarity'],
       dex: url.getPara('dex') || [],
-      adsl: url.getPara('adsl') || [15, 15, 15, 20],
-      targetPm: null,
+      adsl,
+      targetPm,
       sortTypes: ['id', 'cp', 'atk', 'def', 'sta', 'tank'],
       sortby: url.getPara('sortby', false) || 'sort-by-id-▲',
     };
@@ -144,10 +157,16 @@ export default {
 
     openDialog (pm) {
       this.targetPm = { ...pm, adsl: this.adsl };
+      url.search({
+        open: pm.uid,
+      });
     },
 
     closeDialog () {
       this.targetPm = null;
+      url.search({
+        open: null,
+      });
     },
   },
 };
