@@ -143,6 +143,10 @@ export default {
   },
 
   methods: {
+    setLv (lv) {
+      this.adsl = [...this.adsl.slice(0, 3), lv];
+    },
+
     setFactor (adsl) {
       this.adsl = adsl;
     },

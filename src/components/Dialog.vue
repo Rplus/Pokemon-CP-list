@@ -15,7 +15,7 @@
           <div class="tr"
             v-for="d in data100"
             :key="JSON.stringify(d)"
-            @click="updateLv(d.lv)"
+            @click="setLv(d.lv)"
           >
             <div class="td">{{ d.lv }}</div>
             <div class="td">{{ d.cp }}</div>
@@ -83,8 +83,8 @@ export default {
       this.$emit('close-dialog');
     },
 
-    updateLv (lv) {
-      this.pm.adsl = [15, 15, 15, lv];
+    setLv (lv) {
+      this.$emit('set-lv', lv);
     },
   },
 
