@@ -58,7 +58,7 @@
 
     <PmList :pms=pms @open-dialog="openDialog" />
 
-    <Dialog :pm=targetPm @close-dialog="closeDialog" />
+    <Dialog :pm=targetPm :adsl=adsl @close-dialog="closeDialog" @set-lv="setLv" />
 
     <footer class="footer">
       <label class="ctrl-info" for="show-ads">show ADS</label>
@@ -107,7 +107,7 @@ export default {
     if (openArgs) {
       let pm = pmData.pms.find(pm => pm.uid === openArgs[0]);
       if (pm) {
-        targetPm = { ...pm, adsl };
+        targetPm = { ...pm };
       }
     }
 
@@ -115,7 +115,7 @@ export default {
       ...pmData,
       filters: url.getPara('filters') || ['rarity'],
       dex: url.getPara('dex') || [],
-      adsl,
+      adsl: adsl.map(Number),
       targetPm,
       sortTypes: ['id', 'cp', 'atk', 'def', 'sta', 'tank'],
       sortby: url.getPara('sortby', false) || 'sort-by-id-▲',
@@ -156,7 +156,7 @@ export default {
     },
 
     openDialog (pm) {
-      this.targetPm = { ...pm, adsl: this.adsl };
+      this.targetPm = { ...pm };
       url.search({
         open: pm.uid,
       });

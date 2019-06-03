@@ -70,6 +70,7 @@ export default {
   name: 'Dialog',
   props: {
     pm: Object,
+    adsl: Array,
   },
 
   data () {
@@ -103,7 +104,7 @@ export default {
       if (!this.pm) {
         return '';
       }
-      return `${this.pm.title} LV:${this.pm.adsl[3]} CP list`;
+      return `${this.pm.title} LV:${this.adsl[3]} CP list`;
     },
 
     data100 () {
@@ -128,7 +129,7 @@ export default {
         let { atk, def, sta } = iv;
         return {
           ...iv,
-          ...pmData.calPmData(this.pm, [atk, def, sta, this.pm.adsl[3]]),
+          ...pmData.calPmData(this.pm, [atk, def, sta, this.adsl[3]]),
         };
       });
 
