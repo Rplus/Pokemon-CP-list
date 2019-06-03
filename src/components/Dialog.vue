@@ -29,24 +29,40 @@
       <div class="table">
         <div class="thead">
           <div class="tr">
-            <div class="th">CP</div>
-            <div class="th">A</div>
-            <div class="th">D</div>
-            <div class="th">S</div>
-            <div class="th">IV</div>
-            <div class="th">HP</div>
+            <span class="th td td-CP" v-for="sLv in sLvs" :data-lv="sLv">CP</span>
+            <div class="th td td-A">A</div>
+            <div class="th td td-D">D</div>
+            <div class="th td td-S">S</div>
+            <div class="th td td-IV">IV</div>
+            <div class="th td td-HP" v-for="sLv in sLvs" :data-lv="sLv">HP</div>
           </div>
         </div>
         <div class="tbody">
           <div class="tr" v-for="d in dataLv" :key="JSON.stringify(d)">
-            <div class="th">{{ d.cp }}</div>
-            <div class="th">{{ d.atk }}</div>
-            <div class="th">{{ d.def }}</div>
-            <div class="th">{{ d.sta }}</div>
-            <div class="th">{{ d.iv }}</div>
-            <div class="th">{{ d.hp }}</div>
+            <div class="td td-CP" v-for="sLv in sLvs">{{ d.hpcp[sLv].cp }}</div>
+            <div class="td td-A">{{ d.atk }}</div>
+            <div class="td td-D">{{ d.def }}</div>
+            <div class="td td-S">{{ d.sta }}</div>
+            <div class="td td-IV">{{ d.iv }}</div>
+            <div class="td td-HP" v-for="sLv in sLvs">{{ d.hpcp[sLv].hp }}</div>
           </div>
         </div>
+      </div>
+    </details>
+    <details class="lvs">
+      <summary>Levels</summary>
+      <div>
+        <label
+          v-for="lv in lvs"
+        >
+          <input type="checkbox"
+            v-model="sLvs"
+            :value="lv"
+            :id="`lv-${lv}`"
+            :disabled="checkDisabled(lv)"
+          >
+          <span class="lv">{{ lv }}</span>
+        </label>
       </div>
     </details>
   </div>
@@ -75,7 +91,10 @@ export default {
 
   data () {
     window.dialog = this;
-    return {};
+    return {
+      lvs: new Array(40).fill(1).map((i, j) => j + 1),
+      sLvs: [ this.adsl[3] ],
+    };
   },
 
   methods: {
@@ -85,6 +104,23 @@ export default {
 
     setLv (lv) {
       this.$emit('set-lv', lv);
+    },
+
+    checkDisabled (lv) {
+      return (
+        (this.sLvs.indexOf(lv) === -1) && (this.sLvs.length >= 3)
+      ) || (
+        (this.sLvs.indexOf(lv) !== -1) && (this.sLvs.length === 1)
+      );
+    },
+  },
+
+  watch: {
+    pm () {
+      this.sLvs = [ this.adsl[3] ];
+    },
+    adsl () {
+      this.sLvs = [ this.adsl[3] ];
     },
   },
 
@@ -104,7 +140,7 @@ export default {
       if (!this.pm) {
         return '';
       }
-      return `${this.pm.title} LV:${this.adsl[3]} CP list`;
+      return `${this.pm.title} LV:${this.sLvs.join()} CP list`;
     },
 
     data100 () {
@@ -125,16 +161,22 @@ export default {
       if (!this.pm) {
         return [];
       }
+
+      const sLvs = this.sLvs;
+
       let cpList = ivList.map(iv => {
         let { atk, def, sta } = iv;
         return {
           ...iv,
-          ...pmData.calPmData(this.pm, [atk, def, sta, this.adsl[3]]),
+          hpcp: sLvs.reduce((o, lv) => {
+            o[lv] = pmData.calPmData(this.pm, [atk, def, sta, lv]);
+            return o;
+          }, {}),
         };
       });
 
       cpList.sort((a, b) => {
-        let cpDelta = b.cp - a.cp;
+        let cpDelta = b.hpcp[sLvs[0]].cp - a.hpcp[sLvs[0]].cp;
         let atkDelta = b.atk - a.atk;
         let defDelta = b.def - a.def;
         let staDelta = b.sta - a.sta;
@@ -151,7 +193,7 @@ export default {
 </script>
 
 
-<style scoped lang="scss">
+<style lang="scss">
 .dialog {
   position: fixed;
   top: 0;
@@ -159,7 +201,7 @@ export default {
   right: 0;
   bottom: 0;
   z-index: 1;
-  width: calc(15em + 10vw);
+  width: calc(17em + 10vw);
   max-height: 85vh;
   margin: auto;
   padding: 0 3vw;
@@ -179,8 +221,10 @@ export default {
     top: 0;
     z-index: 1;
     font-size: smaller;
-    height: 15px;
+    height: 1.5em;
+    margin-bottom: .5em;
     background-color: #fff;
+    box-shadow: 0 -3px #fff;
   }
 
   .caption {
@@ -190,18 +234,19 @@ export default {
 
   .thead {
     position: sticky;
-    top: 1em;
+    top: 1.2em;
     margin-bottom: 5px;
     padding-top: .3em;
     font-size: smaller;
     font-weight: 900;
     border-bottom: 1px dotted;
-    background-color: #fff;
+    background-color: #ffe;
   }
 
   .tr {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding-bottom: 2px;
     text-align: center;
@@ -214,22 +259,38 @@ export default {
       margin-bottom: 10px;
     }
 
-    > div {
-      width: 15%;
+    .td-CP {
+      width: 3rem;
+
+      // hide Lv indicator of CP when there is just one Lv.
+      &:only-of-type::after {
+        display: none;
+      }
+
+      // there is no more space of "HP" when there are multi Lv
+      + .td-CP ~ .td-HP {
+        display: none;
+      }
     }
 
-    > div:first-child,
-    > div:nth-of-type(5) {
-      width: 25%;
-    }
-
-    > div:nth-of-type(6) {
-      margin-left: .5em;
+    .td-IV,
+    .td-HP {
+      width: 2.5rem;
     }
   }
 
   .td {
-    padding: 1px .5em;
+    width: 2rem;
+    padding: 1px 5px;
+  }
+
+  .th.td-CP:after {
+    content: attr(data-lv);
+    font-size: 12px;
+    font-weight: 100;
+    transform-origin: 50% 0;
+    transform: scale(.75);
+    position: absolute;
   }
 
   .dialog__closeBtn {
@@ -278,6 +339,37 @@ export default {
   details {
     margin-top: 1em;
     margin-bottom: 1em;
+  }
+}
+
+.lvs {
+  label {
+    display: inline-block;
+    width: 14%;
+    margin-top: .5em;
+    margin-bottom: .25em;
+    margin-left: 5%;
+    cursor: pointer;
+    font-size: smaller;
+  }
+
+  .lv {
+    padding-left: .25em;
+  }
+
+  input {
+    display: unset;
+    width: unset;
+    pointer-events: none;
+
+    &:checked + .lv {
+      font-weight: 900;
+      text-shadow: 1px 1px #999;
+    }
+
+    &:disabled + .lv {
+      opacity: .3;
+    }
   }
 }
 
