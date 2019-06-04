@@ -216,6 +216,17 @@ export default {
   overflow: auto;
   box-shadow: 0 0 0 100vw rgba(#000, .25);
 
+  // dialog shadow overlay
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
   &[aria-hidden="true"] {
     display: none;
   }
