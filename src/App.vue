@@ -58,7 +58,12 @@
 
     <PmList :pms=pms @open-dialog="openDialog" />
 
-    <Dialog :pm=targetPm :adsl=adsl @close-dialog="closeDialog" @set-lv="setLv" />
+    <Dialog
+      :pm=targetPm
+      :adsl=adsl
+      @close-dialog="closeDialog"
+      v-if="targetPm"
+    />
 
     <footer class="footer">
       <label class="ctrl-info" for="show-ads">show ADS</label>
@@ -105,9 +110,19 @@ export default {
     let openArgs = url.getPara('open');
 
     if (openArgs) {
-      let pm = pmData.pms.find(pm => pm.uid === openArgs[0]);
+      let uid = openArgs.shift();
+      let pm = pmData.pms.find(pm => pm.uid === uid);
+
+      openArgs = openArgs.map(Number);
+      if (!openArgs.length) {
+        openArgs = [ adsl[3] ];
+      }
+
       if (pm) {
-        targetPm = { ...pm };
+        targetPm = {
+          ...pm,
+          sLvs: openArgs.map(Number) || [ adsl[3] ],
+        };
       }
     }
 
@@ -143,10 +158,6 @@ export default {
   },
 
   methods: {
-    setLv (lv) {
-      this.adsl = [...this.adsl.slice(0, 3), lv];
-    },
-
     setFactor (adsl) {
       this.adsl = adsl;
     },
@@ -163,9 +174,12 @@ export default {
     },
 
     openDialog (pm) {
-      this.targetPm = { ...pm };
+      this.targetPm = {
+        ...pm,
+        sLvs: this.adsl.slice(-1),
+      };
       url.search({
-        open: pm.uid,
+        open: [ pm.uid, this.adsl[3] ].join('-'),
       });
     },
 

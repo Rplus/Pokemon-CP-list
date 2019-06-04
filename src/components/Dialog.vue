@@ -15,7 +15,7 @@
           <div class="tr"
             v-for="d in data100"
             :key="JSON.stringify(d)"
-            @click="setLv(d.lv)"
+            @click="setLv([ d.lv ])"
           >
             <div class="td">{{ d.lv }}</div>
             <div class="td">{{ d.cp }}</div>
@@ -29,22 +29,22 @@
       <div class="table">
         <div class="thead">
           <div class="tr">
-            <span class="th td td-CP" v-for="sLv in sLvs" :data-lv="sLv">CP</span>
+            <span class="th td td-CP" v-for="sLv in pm.sLvs" :data-lv="sLv">CP</span>
             <div class="th td td-A">A</div>
             <div class="th td td-D">D</div>
             <div class="th td td-S">S</div>
             <div class="th td td-IV">IV</div>
-            <div class="th td td-HP" v-for="sLv in sLvs" :data-lv="sLv">HP</div>
+            <div class="th td td-HP" v-for="sLv in pm.sLvs" :data-lv="sLv">HP</div>
           </div>
         </div>
         <div class="tbody">
           <div class="tr" v-for="d in dataLv" :key="JSON.stringify(d)">
-            <div class="td td-CP" v-for="sLv in sLvs">{{ d.hpcp[sLv].cp }}</div>
+            <div class="td td-CP" v-for="sLv in pm.sLvs">{{ d.hpcp[sLv].cp }}</div>
             <div class="td td-A">{{ d.atk }}</div>
             <div class="td td-D">{{ d.def }}</div>
             <div class="td td-S">{{ d.sta }}</div>
             <div class="td td-IV">{{ d.iv }}</div>
-            <div class="td td-HP" v-for="sLv in sLvs">{{ d.hpcp[sLv].hp }}</div>
+            <div class="td td-HP" v-for="sLv in pm.sLvs">{{ d.hpcp[sLv].hp }}</div>
           </div>
         </div>
       </div>
@@ -53,10 +53,10 @@
       <summary>Levels</summary>
       <div>
         <label
-          v-for="lv in lvs"
+          v-for="lv in lv_1to40"
         >
           <input type="checkbox"
-            v-model="sLvs"
+            v-model="pm.sLvs"
             :value="lv"
             :id="`lv-${lv}`"
             :disabled="checkDisabled(lv)"
@@ -71,6 +71,7 @@
 
 <script>
 import pmData from './pmData.js';
+import url from './url.js';
 import u from './u.js';
 
 const ivs = u.range(10, 15);
@@ -86,15 +87,25 @@ export default {
   name: 'Dialog',
   props: {
     pm: Object,
-    adsl: Array,
   },
 
   data () {
     window.dialog = this;
     return {
-      lvs: new Array(40).fill(1).map((i, j) => j + 1),
-      sLvs: [ this.adsl[3] ],
+      lv_1to40: new Array(40).fill(1).map((i, j) => j + 1),
     };
+  },
+
+  watch: {
+    pm: {
+      handler(newPm) {
+        url.search({
+          open: [ newPm.uid, ...newPm.sLvs ].join('-'),
+        });
+      },
+      immediate: true,
+      deep: true,
+    }
   },
 
   methods: {
@@ -103,24 +114,15 @@ export default {
     },
 
     setLv (lv) {
-      this.$emit('set-lv', lv);
+      this.pm.sLvs = [ ...lv ];
     },
 
     checkDisabled (lv) {
       return (
-        (this.sLvs.indexOf(lv) === -1) && (this.sLvs.length >= 3)
+        (this.pm.sLvs.indexOf(lv) === -1) && (this.pm.sLvs.length >= 3)
       ) || (
-        (this.sLvs.indexOf(lv) !== -1) && (this.sLvs.length === 1)
+        (this.pm.sLvs.indexOf(lv) !== -1) && (this.pm.sLvs.length === 1)
       );
-    },
-  },
-
-  watch: {
-    pm () {
-      this.sLvs = [ this.adsl[3] ];
-    },
-    adsl () {
-      this.sLvs = [ this.adsl[3] ];
     },
   },
 
@@ -130,24 +132,14 @@ export default {
     },
 
     data100Title () {
-      if (!this.pm) {
-        return '';
-      }
       return `${this.pm.title} IV100 Lv & CP`;
     },
 
     dataLvTitle () {
-      if (!this.pm) {
-        return '';
-      }
-      return `${this.pm.title} LV:${this.sLvs.join()} CP list`;
+      return `${this.pm.title} LV:${this.pm.sLvs.join()} CP list`;
     },
 
     data100 () {
-      if (!this.pm) {
-        return [];
-      }
-
       return u.range(1, 40)
         .map(lv => {
           return {
@@ -158,11 +150,7 @@ export default {
     },
 
     dataLv () {
-      if (!this.pm) {
-        return [];
-      }
-
-      const sLvs = this.sLvs;
+      const sLvs = this.pm.sLvs;
 
       let cpList = ivList.map(iv => {
         let { atk, def, sta } = iv;
