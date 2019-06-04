@@ -1,5 +1,6 @@
 <template>
   <div class="dialog" id="dialog" :aria-hidden="hidden">
+   <div class="dialog-content">
     <button class="dialog__closeBtn" @click="close">X</button>
     <details class="lv-cp__iv100">
       <summary>{{ data100Title }}</summary>
@@ -78,6 +79,7 @@
         </label>
       </div>
     </details>
+   </div>
   </div>
 </template>
 
@@ -205,8 +207,17 @@ export default {
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: rgba(#000, .25);
+}
+
+.dialog-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 1;
-  width: calc(17em + 10vw);
+  width: calc(17rem + 10vw);
   max-height: 85vh;
   margin: auto;
   padding: 0 3vw;
@@ -214,18 +225,6 @@ export default {
   font-family: monospace;
   font-size: larger;
   overflow: auto;
-  box-shadow: 0 0 0 100vw rgba(#000, .25);
-
-  // dialog shadow overlay
-  &::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-  }
 
   &[aria-hidden="true"] {
     display: none;
