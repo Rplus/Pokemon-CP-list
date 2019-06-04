@@ -12,7 +12,7 @@
         {{ pm.title }}
       </div>
 
-      <div class="pm-img" />
+      <div class="pm-img" @click="openDialog(pm)" />
       <div class="pm-cp" />
       <div class="pm-info"
         @click="openDialog(pm)"
@@ -128,6 +128,7 @@ $types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'gho
     calc(var(--pm-col) * var(--img-size) * -1)
     calc(var(--pm-row) * var(--img-size) * -1);
   opacity: .65;
+  cursor: pointer;
 
   .pm[style*="pm-special-bgi"] & {
     background: var(--pm-special-bgi) no-repeat 50% 50%;
