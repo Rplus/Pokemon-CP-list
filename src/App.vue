@@ -72,6 +72,17 @@
       <ul class="info">
         <li>GitHub repo: <a href="https://github.com/Rplus">Rplus</a> > <a href="https://github.com/Rplus/Pokemon-CP-list">Pokemon-CP-list</a></li>
         <li>image source: <a href="https://veekun.com/dex/downloads">veekun.com</a></li>
+        <li>
+          <details class="fb-like-details" @toggle="showFBLike">
+            <summary>Give a 👍️ with Facebook</summary>
+            <div class="fb-like"
+              data-href="https://rplus.github.io/Pokemon-CP-list/"
+              data-layout="button_count"
+              data-action="like"
+              data-share="true">
+            </div>
+          </details>
+        </li>
       </ul>
     </footer>
 
@@ -189,6 +200,24 @@ export default {
         open: null,
       });
     },
+
+    showFBLike () {
+      console.log('showFBLike');
+      if (this.fbLikeInit) {
+        return;
+      }
+
+      // https://developers.facebook.com/docs/plugins/like-button
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'))
+
+      this.fbLikeInit = true;
+    }
   },
 };
 </script>
