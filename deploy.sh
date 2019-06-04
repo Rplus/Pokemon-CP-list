@@ -3,7 +3,7 @@
 # abort on errors
 set -e
 
-git push git@github.com:rplus/Pokemon-CP-list.git master:vue
+git push
 
 # build
 npm run build
