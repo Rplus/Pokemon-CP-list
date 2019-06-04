@@ -361,27 +361,34 @@ export default {
 
 .lvs {
   label {
+    position: relative;
     display: inline-block;
-    width: 14%;
-    margin-top: .5em;
-    margin-bottom: .25em;
-    margin-left: 5%;
+    width: 10%;
+    margin: .5em 5%;
     cursor: pointer;
     font-size: smaller;
+    text-align: center;
   }
 
   .lv {
-    padding-left: .25em;
+    position: relative;
+    display: block;
+    padding: .25em .25em;
+    background-color: rgba(#000, .03);
   }
 
   input {
+    position: absolute;
+    z-index: -1;
     display: unset;
     width: unset;
     pointer-events: none;
+    visibility: hidden;
 
     &:checked + .lv {
       font-weight: 900;
       text-shadow: 1px 1px #999;
+      box-shadow: 0 0 0 1px;
     }
 
     &:disabled + .lv {
