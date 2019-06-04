@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="tbody">
-          <div class="tr" v-for="d in dataLv" :key="JSON.stringify(d)">
+          <div class="tr" v-for="d in dataLv.part1" :key="JSON.stringify(d)">
             <div class="td td-CP" v-for="sLv in pm.sLvs">{{ d.hpcp[sLv].cp }}</div>
             <div class="td td-A">{{ d.atk }}</div>
             <div class="td td-D">{{ d.def }}</div>
@@ -47,6 +47,19 @@
             <div class="td td-HP" v-for="sLv in pm.sLvs">{{ d.hpcp[sLv].hp }}</div>
           </div>
         </div>
+        <details>
+          <summary class="no-sticky">more…</summary>
+          <div class="tbody">
+            <div class="tr" v-for="d in dataLv.part2" :key="JSON.stringify(d)">
+              <div class="td td-CP" v-for="sLv in pm.sLvs">{{ d.hpcp[sLv].cp }}</div>
+              <div class="td td-A">{{ d.atk }}</div>
+              <div class="td td-D">{{ d.def }}</div>
+              <div class="td td-S">{{ d.sta }}</div>
+              <div class="td td-IV">{{ d.iv }}</div>
+              <div class="td td-HP" v-for="sLv in pm.sLvs">{{ d.hpcp[sLv].hp }}</div>
+            </div>
+          </div>
+        </details>
       </div>
     </details>
     <details class="lvs">
@@ -173,7 +186,11 @@ export default {
         );
       });
 
-      return cpList;
+      return {
+        cpList,
+        part1: cpList.slice(0, 45),
+        part2: cpList.slice(45),
+      };
     },
   },
 
@@ -203,7 +220,7 @@ export default {
     display: none;
   }
 
-  summary,
+  summary:not(.no-sticky),
   .caption {
     position: sticky;
     top: 0;
@@ -213,6 +230,18 @@ export default {
     margin-bottom: .5em;
     background-color: #fff;
     box-shadow: 0 -3px #fff;
+  }
+
+
+  details details summary {
+    margin-left: 1em;
+    margin-right: 1em;
+    background-color: #eef;
+  }
+
+  .no-sticky {
+    margin-bottom: 1em;
+    font-size: smaller;
   }
 
   .caption {
