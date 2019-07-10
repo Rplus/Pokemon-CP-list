@@ -113,14 +113,14 @@ export default {
 
   watch: {
     pm: {
-      handler(newPm) {
+      handler (newPm) {
         url.search({
           open: [ newPm.uid, ...newPm.sLvs ].join('-'),
         });
       },
       immediate: true,
       deep: true,
-    }
+    },
   },
 
   methods: {
