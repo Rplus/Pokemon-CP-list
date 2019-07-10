@@ -79,6 +79,7 @@
         </label>
       </div>
     </details>
+    <a href="###">右鍵複製連結網址，分享目前狀態</a>
    </div>
   </div>
 </template>
