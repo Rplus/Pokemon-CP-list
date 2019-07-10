@@ -3027,6 +3027,38 @@
         "POKEMON_TYPE_PSYCHIC"
       ],
       "pokedex": 150
+    },
+    {
+      "templateId": "V0150_POKEMON_MEWTWO_A",
+      "pokemonId": "MEWTWO",
+      "stats": {
+        "baseStamina": 214,
+        "baseAttack": 182,
+        "baseDefense": 278
+      },
+      "rarity": "POKEMON_RARITY_LEGENDARY",
+      "familyId": "FAMILY_MEWTWO",
+      "isotope": "A",
+      "types": [
+        "POKEMON_TYPE_PSYCHIC"
+      ],
+      "pokedex": 150
+    },
+    {
+      "templateId": "V0150_POKEMON_MEWTWO_NORMAL",
+      "pokemonId": "MEWTWO",
+      "stats": {
+        "baseStamina": 214,
+        "baseAttack": 300,
+        "baseDefense": 182
+      },
+      "rarity": "POKEMON_RARITY_LEGENDARY",
+      "familyId": "FAMILY_MEWTWO",
+      "isotope": "NORMAL",
+      "types": [
+        "POKEMON_TYPE_PSYCHIC"
+      ],
+      "pokedex": 150
     }
   ],
   "151": [
@@ -7418,7 +7450,6 @@
       },
       "familyId": "FAMILY_CRANIDOS",
       "types": [
-        "POKEMON_TYPE_ROCK",
         "POKEMON_TYPE_ROCK"
       ],
       "pokedex": 408
@@ -7435,7 +7466,6 @@
       },
       "familyId": "FAMILY_CRANIDOS",
       "types": [
-        "POKEMON_TYPE_ROCK",
         "POKEMON_TYPE_ROCK"
       ],
       "pokedex": 409
