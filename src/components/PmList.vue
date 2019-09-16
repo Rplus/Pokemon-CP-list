@@ -45,7 +45,7 @@ export default {
       let col = index % SPRITE_COL;
       let specialBgi = null;
 
-      if (pm.pokedex > 493) {
+      if (pm.pokedex > 493 && pm.pokedex < 800) {
         // TODO gen-5 special image
         specialBgi = null;
       } else if (pm.pokedex > 800) {
