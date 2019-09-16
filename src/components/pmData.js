@@ -17,9 +17,22 @@ let genDex = {
   'gen2': [152, 251],
   'gen3': [252, 386],
   'gen4': [387, 493],
+  'gen5': [494, 649],
 };
 
 let pmClasses = {};
+
+for (let i in pmData) {
+  if (pmData[i].findIndex(pm => pm.templateId.indexOf('_PURIFIED') !== -1) !== -1) {
+    pmData[i] = pmData[i].filter(pm => {
+      return (
+        pm.templateId.indexOf('_PURIFIED') === -1 &&
+        pm.templateId.indexOf('_SHADOW') === -1
+      );
+    });
+  }
+}
+
 
 Object.keys(pmData).forEach((dex) => {
   pmData[dex].sort((a, b) => (
@@ -30,7 +43,8 @@ Object.keys(pmData).forEach((dex) => {
     pm.uid = `${pm.pokedex}${pm.isotope ? '_' + pm.isotope : ''}`;
     pm.names = pmName[`${pm.pokedex}`.padStart(3, '0')] || {};
     pm.name = u.getPmName(pm);
-    pm.title = `${pm.name}${pm.isotope ? '-' + pm.isotope.toLowerCase() : ''}`;
+    let titleSufix = (pm.isotope && pm.isotope !== 'NORMAL') ? `-${pm.isotope.toLowerCase()}` : '';
+    pm.title = `${pm.name}${titleSufix}`;
     pm.types = [...new Set(pm.types)];
     pm.class = [...pm.types];
     if (pm.rarity) {

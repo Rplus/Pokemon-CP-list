@@ -32,6 +32,7 @@
 </template>
 
 <script>
+const SPRITE_COL = 31;
 export default {
   name: 'PmList',
   props: {
@@ -40,14 +41,19 @@ export default {
   methods: {
     genStyle (pm) {
       let index = pm.pokedex - 1;
-      let row = ~~(index / 28);
-      let col = index % 28;
-      let specialBgi = (pm.isotope && pm.isotope !== 'NORMAL')
-        ? 'url(' + require(`../../public/img/pm/${pm.pokedex}-${pm.isotope.toLowerCase()}.png`) + ')'
-        : null;
+      let row = ~~(index / SPRITE_COL);
+      let col = index % SPRITE_COL;
+      let specialBgi = null;
 
-      if (pm.pokedex > 800) {
+      if (pm.pokedex > 493) {
+        // TODO gen-5 special image
+        specialBgi = null;
+      } else if (pm.pokedex > 800) {
         specialBgi = `url(${require(`../../public/img/pm/${pm.pokedex}.png`)})`;
+      } else {
+        specialBgi = (pm.isotope && pm.isotope !== 'NORMAL')
+          ? 'url(' + require(`../../public/img/pm/${pm.pokedex}-${pm.isotope.toLowerCase()}.png`) + ')'
+          : null;
       }
 
       return {
@@ -119,7 +125,7 @@ $types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'gho
   width: var(--img-size);
   height: var(--img-size);
   margin: 0 30% 0;
-  background-image: url('../../public/img/sprite1-4.png');
+  background-image: url('../../public/img/sprite1-5.png');
   background-size:
     calc(var(--sprite-grid-col) * var(--img-size))
     calc(var(--sprite-grid-row) * var(--img-size));
@@ -127,7 +133,6 @@ $types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'gho
   background-position:
     calc(var(--pm-col) * var(--img-size) * -1)
     calc(var(--pm-row) * var(--img-size) * -1);
-  opacity: .65;
   cursor: pointer;
 
   .pm[style*="pm-special-bgi"] & {
@@ -143,6 +148,8 @@ $types: ('normal', 'fighting', 'flying', 'poison', 'ground', 'rock', 'bug', 'gho
   padding-left: .5em;
   text-align: right;
   font-size: smaller;
+  text-transform: capitalize;
+  max-width: 60%;
   color: #333;
   opacity: .5;
 

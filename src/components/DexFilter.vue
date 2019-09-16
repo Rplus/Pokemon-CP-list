@@ -35,6 +35,7 @@
       <button @click="setDexRange('gen2')">Gen2</button>
       <button @click="setDexRange('gen3')">Gen3</button>
       <button @click="setDexRange('gen4')">Gen4</button>
+      <button @click="setDexRange('gen5')">Gen5</button>
     </div>
     <v-style v-html=dexFilterStyle />
   </div>
