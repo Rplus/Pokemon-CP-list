@@ -1,4 +1,12 @@
-window.lang = navigator.language.slice(0, 2);
+import url from './url.js';
+
+const LANG_WHITELIST = ['de', 'en', 'fr', 'ja', 'kr', 'zh'];
+
+window.lang = url.getPara('lang', false) || navigator.language.slice(0, 2);
+
+if (LANG_WHITELIST.indexOf(window.lang) === -1) {
+  window.lang = LANG_WHITELIST[1];
+}
 
 // String.prototype.capitalize = function () {
 //   return this.charAt(0).toUpperCase() + this.slice(1);
