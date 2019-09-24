@@ -1,5 +1,6 @@
 <template>
   <div class="dialog" id="dialog" :aria-hidden="hidden">
+   <div class="dialog-overlay" @click="close" />
    <div class="dialog-content">
     <button class="dialog__closeBtn" @click="close">X</button>
     <details class="lv-cp__iv100">
